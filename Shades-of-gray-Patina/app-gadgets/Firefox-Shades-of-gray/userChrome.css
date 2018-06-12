@@ -1,0 +1,234 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/***********************************************
+   Name: Shades of gray Firefox userChrome.css
+   Author: WernerFP
+   License: GPL-3.0+
+***********************************************/
+
+:root {
+
+	/****** Shades of gray theme colors ******/
+
+	/* Shades of gray: */
+	/*--base_bg_selected: #787878;*/
+
+	/* Orient blue: */
+	/*--base_bg_selected: #1B779E;*/
+
+	/* Cerulean blue:; */
+	/*--base_bg_selected: #6484a4;*/
+
+	/* Arch blue: */
+	/*--base_bg_selected: #1F77B7;*/
+
+	/* Patina green: */
+	--base_bg_selected: #3c7460;
+
+	/* Firebrick: */
+	/*--base_bg_selected: #c14e4e;*/
+
+	/* Harvest: */
+	/*--base_bg_selected: #AD8641;*/
+
+	/*****************************************/
+
+	/* Base */
+	--base_dark_color:               #373737;
+	--base_color:                    #515151;
+	--base_fg:                       #f5f5f5;
+	--base_bg:                       #404040;
+	--base_fg_selected:              #ffffff;
+	--base_fg_insens:                #a3a3a3;
+
+	/* Sidebar */
+	--sidebar_bg:                    #3a3a3a;
+
+	/* Tabs */
+	--tab_bg:                        #595959;
+	--tab_fg_insens:                 #afafaf;
+
+	/* Buttons */
+	--button_bg:                     #575757;
+	--button_bg_hover:               #696969;
+	--button_bg_active:              #757575;
+
+	/* Borders */
+	--borders:                       #181818;
+	--borders_active:                #999999;
+
+	/* Entry */
+	--entry_bg_focus:                #3a3a3a;
+}
+
+
+#urlbar,
+.searchbar-textbox {
+
+	-moz-appearance: none !important;
+	background-color: var(--button_bg) !important;
+	border: 1px solid  var(--borders) !important;
+	border-radius: 3px !important;
+}
+#urlbar:hover,
+.searchbar-textbox:hover {
+
+	box-shadow: inset 1px 0 var(--borders_active),
+		inset -1px 0 var(--borders_active),
+		inset 0 1px var(--borders_active),
+		inset 0 -1px var(--borders_active) !important;
+}
+#urlbar:-moz-lwtheme[focused="true"],
+#navigator-toolbox .searchbar-textbox:-moz-lwtheme[focused="true"] {
+
+	color: var(--base_fg_selected) !important;
+	background-color: var(--entry_bg_focus) !important;
+	box-shadow: inset 1px 0 var(--borders_active),
+		inset -1px 0 var(--borders_active),
+		inset 0 1px var(--borders_active),
+		inset 0 -1px var(--borders_active) !important;
+	outline: none;
+}
+#sidebar,
+#sidebar-header,
+#bookmarksPanel,
+#bookmarks-view,
+#history-panel,
+#historyTree,
+#viewButton {
+
+	color: var(--base_fg) !important;
+	background-color: var(--sidebar_bg) !important;
+
+}
+.sidebar-placesTreechildren::-moz-tree-cell(hover),
+.sidebar-placesTreechildren::-moz-tree-cell-text(hover),
+#viewButton:hover {
+
+	color: var(--base_fg_selected) !important;
+	background: rgba(128, 128, 128, 0.32) !important;
+	text-decoration: none !important;
+}
+.sidebar-placesTreechildren::-moz-tree-row(selected),
+.sidebar-placesTreechildren::-moz-tree-cell-text(selected) {
+
+	color: var(--base_fg_selected) !important;
+	background: var(--base_bg_selected) !important;
+	border: none !important;
+}
+#sidebar-header,
+.sidebar-header {
+
+	font-size: 1.1em !important;
+	font-weight: normal !important;
+}
+#sidebar-switcher-target:hover {
+
+  background-color: var(--button_bg_hover) !important;
+}
+#sidebar-switcher-target:hover:active,
+#sidebar-switcher-target.active {
+
+  background-color: var(--button_bg_active) !important;
+}
+#titlebar,
+#tabbrowser-tabs {
+
+	--tab-min-height: 30px !important;
+}
+#tabbrowser-tabs {
+
+	--tab-line-color: var(--base_bg_selected) !important;
+
+}
+#TabsToolbar {
+
+	background-color: #262626 !important;
+}
+#toolbar-menubar {
+
+	background-color: var(--base_dark_color) !important;
+}
+
+/******************************************/
+/********* Searchbar in list form *********/
+/******************************************/
+
+.searchbar-engine-one-off-item[tooltiptext] {
+
+	color: var(--base_fg) !important;
+	background-color: var(--base_bg) !important;
+	width: 100% !important;
+	height: 24px !important;
+	background-image: none !important;
+	padding-left: 6px !important;
+	box-sizing: content-box !important;
+	line-height: 1em !important;
+}
+.searchbar-engine-one-off-item[tooltiptext]:hover {
+
+	color: var(--base_fg_selected) !important;
+	background: var(--base_bg_selected) !important;
+	border: none !important;
+}
+/* Hide empty fields of search engines */
+.searchbar-engine-one-off-item:not([tooltiptext]), .search-panel-current-input {
+
+	display: none !important;
+}
+.searchbar-engine-one-off-item[tooltiptext], .addengine-item,
+.searchbar-engine-one-off-item.last-of-row:not(.dummy),
+.search-setting-button,
+.search-setting-button:not(.last-row),
+.search-panel-one-offs {
+
+	border: none !important;
+}
+/* Labels of search engine */
+.searchbar-engine-one-off-item[tooltiptext]::after {
+
+	content: attr(tooltiptext);
+	display: block !important;
+	margin: 5px 6px 0px !important;
+}
+/* Icons of search engines */
+.searchbar-engine-one-off-item > .button-box {
+
+	display: inline-flex !important;
+	width: 16px !important;
+	max-width: 16px !important;
+	margin-top: 4px !important;
+}
+/* Minimum vertical height search suggestions 5 entries 1.5em */
+.search-panel-tree {
+
+	background-color: var(--button_bg) !important;
+	min-height: 7.5em !important;
+}
+.search-panel-header {
+
+	border: none !important;
+	color: var(--base_fg_insens) !important;
+	background-color: #313131 !important;
+}
+.search-panel-header > label {
+
+	font-style: italic !important;
+}
+.search-setting-button {
+
+	-moz-appearance: none !important;
+	color: var(--base_fg) !important;
+	background-color: var(--button_bg) !important;
+}
+.search-setting-button:hover,
+.search-setting-button[selected] {
+
+	color: var(--base_fg_selected) !important;
+	background-color: var(--button_bg_active) !important;
+}
+/* Adjust vertical center of font if necessary (default 6px): */
+.searchbar-engine-one-off-item[tooltiptext]::after {
+
+	margin-top: 6px !important;
+}

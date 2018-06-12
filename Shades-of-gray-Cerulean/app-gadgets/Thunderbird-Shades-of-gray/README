@@ -1,0 +1,10 @@
+******************
+* userChrome.css *
+******************
+
+The file "userChrome.css" contains a Thunderbird theme adapted to Shades of gray.
+Copy the file or its content to this location:
+
+~/.thunderbird/<name-of-your-profile>/chrome/userChrome.css
+
+If you change a Shades of gray theme color, it is not necessary to copy the file again. You can simply comment out the current theme color and comment in the new theme color value.
