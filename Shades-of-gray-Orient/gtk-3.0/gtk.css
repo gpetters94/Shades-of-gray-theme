@@ -4938,38 +4938,32 @@ filechooser placessidebar.sidebar scrollbar trough,
 	background-color: @scrollbar_trough;
 }
 
-/* ************************************************ */
-/* ******************** nemo ********************** */
-/* ************************************************ */
+/******************************************/
+/****************** nemo ******************/
+/******************************************/
 
-.nemo-window .places-treeview {
+.nemo-window .sidebar treeview {
 	color: @sidebar_fg;
 	background-color: @sidebar_bg;
-	 -NemoPlacesTreeView-disk-full-bg-color: @progressbar_bg;
-	 -NemoPlacesTreeView-disk-full-fg-color: @base_bg_selected;
-	 -NemoPlacesTreeView-disk-full-bar-width: 3px;
-	 -NemoPlacesTreeView-disk-full-bottom-padding: 0px;
+	-NemoPlacesTreeView-disk-full-bg-color: @progressbar_bg;
+	-NemoPlacesTreeView-disk-full-fg-color: @base_bg_selected;
+	-NemoPlacesTreeView-disk-full-bar-width: 3px;
+	-NemoPlacesTreeView-disk-full-bottom-padding: 0px;
 }
-
-.nemo-window .places-treeview .view:hover,
-.nemo-window .places-treeview iconview:hover,
-.nemo-window .places-treeview row:hover,
-.nemo-window .places-treeview .view.expander:hover,
-.nemo-window .places-treeview iconview.expander:hover,
-.nemo-window .places-treeview row.expander:hover {
+.nemo-window .sidebar treeview:hover {
 
 	color: @base_fg_selected;
 	background-color: @sidebar_bg_hover;
 }
-.nemo-window .places-treeview:selected,
-.nemo-window .places-treeview:selected:hover {
+.nemo-window .sidebar treeview:selected,
+.nemo-window .sidebar treeview:selected:hover {
 
 	color: @base_fg_selected;
 	background-color: @base_bg_selected;
 	-NemoPlacesTreeView-disk-full-fg-color: shade(@base_bg_selected, 2.0);
 	-NemoPlacesTreeView-disk-full-bg-color: shade(@progressbar_bg, 2.0);
 }
-.nemo-window .places-treeview separator {
+.nemo-window .sidebar treeview separator {
 
 	background-color: transparent;
 }
@@ -5029,6 +5023,10 @@ filechooser placessidebar.sidebar scrollbar trough,
 .thunar toolitem button:not(.path-bar-button):disabled {
 
 	background-color: transparent;
+}
+.thunar toolbar .path-bar-button:nth-last-child(2):hover {
+
+	background-color: rgba(128, 128, 128, 0.45);
 }
 
 /******************************************/
@@ -5183,9 +5181,9 @@ headerbar .nautilus-canvas-item.subtitle:selected:focus,
 	background-color: @base_bg_selected;
 }
 
-/***************************************************/
-/********************** pluma **********************/
-/***************************************************/
+/******************************************/
+/************* pluma * gedit **************/
+/******************************************/
 
 .pluma-window treeview:hover  {
 
@@ -5212,6 +5210,26 @@ box-shadow: none;
 	border-top: none;
 	border-bottom: none;
 	border-radius: 0;
+}
+.pluma-window treeview,
+.gedit-side-panel-paned treeview {
+
+	color: @sidebar_fg;
+	background-color: @sidebar_bg;
+}
+.pluma-window treeview:hover,
+.gedit-side-panel-paned treeview:hover  {
+
+	background-color: @sidebar_bg_hover;
+}
+.pluma-window treeview:selected,
+.gedit-side-panel-paned treeview:selected  {
+
+	background-color: @base_bg_selected;
+}
+.pluma-window treeview.separator {
+
+	color: @sidebar_bg;
 }
 
 /******************************************/

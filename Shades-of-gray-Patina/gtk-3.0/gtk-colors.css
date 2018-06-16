@@ -107,7 +107,7 @@ you're on your own... */
 /* Border */
 @define-color borders                     #181818;
 @define-color borders_insens              @unfocused_borders;          /* #262626 */
-@define-color borders_active              #999999;
+@define-color borders_active              #787878;
 
 /* Sidebar */
 @define-color sidebar_fg                  rgba(255, 255, 255, 0.75);
@@ -210,21 +210,12 @@ you're on your own... */
 @define-color treeview_expander_fg          #a6a6a6;
 @define-color treeview_expander_fg_hover    @theme_fg_color;          /* #f5f5f5 */
 
-/* Switch */
-@define-color switch_fg                     #c9c9c9;
-@define-color switch_bg                     #686868;
-@define-color switch_bg_checked             #848484;
-@define-color switch_bg_insens              #535353;
-@define-color switch_slider                 #393939;
-@define-color switch_slider_checked         #393939;
-@define-color switch_slider_insens          #3a3a3a;
-
 /* Raw */
 @define-color raw_bg_hover                  rgba(255, 255, 255, 0.12);
 
 /* Tab */
 @define-color tab_bg_activatable            rgba(128, 128, 128, 0);
-@define-color tab_bg_activatable_hover      rgba(128, 128, 128, 0.25);
+@define-color tab_bg_activatable_hover      rgba(128, 128, 128, 0.12);
 
 /* Link */
 @define-color link_fg                       #cccccc;
