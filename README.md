@@ -14,7 +14,10 @@ Shades-of-gray is available in seven color variants:
 
 ![Screenshot](preview_01.png)
 
-## Manual Installation
+## Installation
+**Arch Linux:** You can install the AUR package [gtk-theme-shades-of-gray](https://aur.archlinux.org/packages/gtk-theme-shades-of-gray)
+
+### Manual Installation
 Copy the chosen theme folders either for personal use into directory `~/.themes/` or for common use into `/usr/share/themes/`.
 
 ### Gadgets
@@ -37,7 +40,7 @@ Firefox uses the widgets of the current GTK3 theme in websites that have not des
 With dark themes this is ugly and input fields, checkboxes etc. are difficult to use (e.g. black font in dark input fields).
 To fix this behavior the file `userContent.css` contains color-neutral form widgets. Copy the file or its contents to this location for enabling:
 
-`~/.mozilla/firefox//<name-of-your-profile>/chrome/userContent.css`
+`~/.mozilla/firefox/<name-of-your-profile>/chrome/userContent.css`
 
 #### Inkscape
 Original colored icons in Inkscape are hard to identify in dark themes. The file `icon.svg` in folder `Inkscape-icons` contains bright icons.
