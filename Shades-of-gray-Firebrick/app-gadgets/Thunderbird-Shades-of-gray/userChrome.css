@@ -64,7 +64,7 @@
 	--button_bg_hover:               #696969;
 	--button_bg_active:              #757575;
 	--button_bg_disabled:            #464646;
-	--borders_active:                #787878;
+	--borders_active:                #999999;
 
 	/* Entries */
 	--entry_bg:                      #515151;
@@ -109,6 +109,7 @@ statusbar {
 	display: none !important;
 }
 rezsizer {
+
 	-moz-appearance: none !important;
 	display: none !important;
 }
@@ -118,10 +119,10 @@ menuseparator {
 	background-color: transparent !important;
 }
 listbox {
+
 	-moz-appearance: none !important;
 	border: none !important;
 	background-color: var(--base_bg) !important;
-
 }
 
 /******************************************/
@@ -173,6 +174,7 @@ tabbox tabs tab[selected="true"]:hover {
 	background-color: var(--base_dark_color) !important;
 }
 .mail-toolbox {
+
 	-moz-appearance: none !important;
 	background-color: var(--tab_bg) !important;
 	box-shadow: none !important;
@@ -194,6 +196,7 @@ toolbarseparator {
 /******************************************/
 
 .tabmail-tab .tab-background {
+
 	-moz-appearance: none !important;
 	opacity: 0 !important;
 	background-color: none !important;
@@ -542,6 +545,7 @@ treechildren::-moz-tree-cell-text(selected) {
 }
 #folderTree treecol label,
 #threadCols treecol label {
+
 	padding-bottom: 2px !important;
 	color: var(--treeview_header_fg);
 	font-weight: bold !important;
@@ -649,7 +653,6 @@ background-color: var(--base_color) !important;
 
 	color: var(--message-list-text-color) !important;
 }
-
 #threadTree > treechildren::-moz-tree-row(selected) {
 
 	border: none !important;
@@ -657,7 +660,7 @@ background-color: var(--base_color) !important;
 }
 #threadTree > treechildren::-moz-tree-cell-text(selected) {
 
-	color: var(--message-list-highlight-text-color) !important;
+	color: var(--message-list-highlight-text-color);
 }
 #threadCols treecol[sortDirection="ascending"] .treecol-sortdirection {
 
@@ -838,4 +841,388 @@ background-color: var(--base_color) !important;
 .CardViewLink:hover {
 
 	color: var(--theme-highlight-blue) !important;
+}
+
+/******************************************/
+/*************** Color tags ***************/
+/******************************************/
+
+/*************** Column 1 *****************/
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFFFFF, subjectCol) {
+
+	border-left: 3px solid #FFFFFF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-CCCCCC, subjectCol) {
+
+	border-left: 3px solid #CCCCCC !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-C0C0C0, subjectCol) {
+
+	border-left: 3px solid #C0C0C0 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-999999, subjectCol) {
+
+	border-left: 3px solid #999999 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-666666, subjectCol) {
+
+	border-left: 3px solid #666666 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-333333, subjectCol) {
+
+	border-left: 3px solid #333333 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-000000, subjectCol) {
+
+	border-left: 3px solid #000000 !important;
+	padding-left: 0px !important;
+}
+
+/*************** Column 2 *****************/
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFCCCC, subjectCol) {
+
+	border-left: 3px solid #FFCCCC !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FF6666, subjectCol) {
+
+	border-left: 3px solid #FF6666 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FF0000, subjectCol) {
+
+	border-left: 3px solid #FF0000 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-CC0000, subjectCol) {
+
+	border-left: 3px solid #CC0000 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-990000, subjectCol) {
+
+	border-left: 3px solid #990000 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-660000, subjectCol) {
+
+	border-left: 3px solid #660000 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-330000, subjectCol) {
+
+	border-left: 3px solid #330000 !important;
+	padding-left: 0px !important;
+}
+
+/*************** Column 3 *****************/
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFCC99, subjectCol) {
+
+	border-left: 3px solid #FFCC99 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FF9966, subjectCol) {
+
+	border-left: 3px solid #FF9966 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FF9900, subjectCol) {
+
+	border-left: 3px solid #FF9900 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FF6600, subjectCol) {
+
+	border-left: 3px solid #FF6600 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-CC6600, subjectCol) {
+
+	border-left: 3px solid #CC6600 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-993300, subjectCol) {
+
+	border-left: 3px solid #993300 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-663300, subjectCol) {
+
+	border-left: 3px solid #663300 !important;
+	padding-left: 0px !important;
+}
+
+/*************** Column 4 *****************/
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFFF99, subjectCol) {
+
+	border-left: 3px solid #FFFF99 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FFFF66, subjectCol) {
+
+	border-left: 3px solid #FFFF66 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FFCC66, subjectCol) {
+
+	border-left: 3px solid #FFCC66 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FFCC33, subjectCol) {
+
+	border-left: 3px solid #FFCC33 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-CC9933, subjectCol) {
+
+	border-left: 3px solid #CC9933 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-996633, subjectCol) {
+
+	border-left: 3px solid #996633 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-663333, subjectCol) {
+
+	border-left: 3px solid #663333 !important;
+	padding-left: 0px !important;
+}
+
+/*************** Column 5 *****************/
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFFFCC, subjectCol) {
+
+	border-left: 3px solid #FFFFCC !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FFFF33, subjectCol) {
+
+	border-left: 3px solid #FFFF33 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FFFF00, subjectCol) {
+
+	border-left: 3px solid #FFFF00 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FFCC00, subjectCol) {
+
+	border-left: 3px solid #FFCC00 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-999900, subjectCol) {
+
+	border-left: 3px solid #999900 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-666600, subjectCol) {
+
+	border-left: 3px solid #666600 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-333300, subjectCol) {
+
+	border-left: 3px solid #333300 !important;
+	padding-left: 0px !important;
+}
+
+/*************** Column 6 *****************/
+
+#threadTree > treechildren::-moz-tree-cell(lc-99FF99, subjectCol) {
+
+	border-left: 3px solid #99FF99 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-66FF99, subjectCol) {
+
+	border-left: 3px solid #66FF99 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-33FF33, subjectCol) {
+
+	border-left: 3px solid #33FF33 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-33CC00, subjectCol) {
+
+	border-left: 3px solid #33CC00 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-009900, subjectCol) {
+
+	border-left: 3px solid #009900 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-006600, subjectCol) {
+
+	border-left: 3px solid #006600 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-003300, subjectCol) {
+
+	border-left: 3px solid #003300 !important;
+	padding-left: 0px !important;
+}
+
+/*************** Column 7 *****************/
+
+#threadTree > treechildren::-moz-tree-cell(lc-99FFFF, subjectCol) {
+
+	border-left: 3px solid #99FFFF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-33FFFF, subjectCol) {
+
+	border-left: 3px solid #33FFFF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-66CCCC, subjectCol) {
+
+	border-left: 3px solid #66CCCC !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-00CCCC, subjectCol) {
+
+	border-left: 3px solid #00CCCC !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-339999, subjectCol) {
+
+	border-left: 3px solid #339999 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-336666, subjectCol) {
+
+	border-left: 3px solid #336666 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-003333, subjectCol) {
+
+	border-left: 3px solid #003333 !important;
+	padding-left: 0px !important;
+}
+
+/*************** Column 8 *****************/
+
+#threadTree > treechildren::-moz-tree-cell(lc-CCFFFF, subjectCol) {
+
+	border-left: 3px solid #CCFFFF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-66FFFF, subjectCol) {
+
+	border-left: 3px solid #66FFFF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-33CCFF, subjectCol) {
+
+	border-left: 3px solid #33CCFF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-3366FF, subjectCol) {
+
+	border-left: 3px solid #3366FF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-3333FF, subjectCol) {
+
+	border-left: 3px solid #3333FF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-000099, subjectCol) {
+
+	border-left: 3px solid #000099 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-000066, subjectCol) {
+
+	border-left: 3px solid #000066 !important;
+	padding-left: 0px !important;
+}
+
+/*************** Column 9 *****************/
+
+#threadTree > treechildren::-moz-tree-cell(lc-CCCCFF, subjectCol) {
+
+	border-left: 3px solid #CCCCFF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-9999FF, subjectCol) {
+
+	border-left: 3px solid #9999FF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-6666CC, subjectCol) {
+
+	border-left: 3px solid #6666CC !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-6633FF, subjectCol) {
+
+	border-left: 3px solid #6633FF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-6600CC, subjectCol) {
+
+	border-left: 3px solid #6600CC !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-333399, subjectCol) {
+
+	border-left: 3px solid #333399 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-330099, subjectCol) {
+
+	border-left: 3px solid #330099 !important;
+	padding-left: 0px !important;
+}
+
+/*************** Column 10 ****************/
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFCCFF, subjectCol) {
+
+	border-left: 3px solid #FFCCFF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-FF99FF, subjectCol) {
+
+	border-left: 3px solid #FF99FF !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-CC66CC, subjectCol) {
+
+	border-left: 3px solid #CC66CC !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-CC33CC, subjectCol) {
+
+	border-left: 3px solid #CC33CC !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-993399, subjectCol) {
+
+	border-left: 3px solid #993399 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-663366, subjectCol) {
+
+	border-left: 3px solid #663399 !important;
+	padding-left: 0px !important;
+}
+#threadTree > treechildren::-moz-tree-cell(lc-330033, subjectCol) {
+
+	border-left: 3px solid #330033 !important;
+	padding-left: 0px !important;
 }
