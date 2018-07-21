@@ -2254,7 +2254,7 @@ menu,
 .menu {
 
 	margin: 3px;
-	padding: 5px;
+	padding: 0;
 	background-color: @menu_bg;
 	box-shadow: none;
 	border-radius: 0;
