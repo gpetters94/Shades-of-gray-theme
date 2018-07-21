@@ -14,6 +14,8 @@ Shades-of-gray is available in seven color variants:
 
 ![Screenshot](preview_01.png)
 
+(*More screenshots at [opendesktop.org](https://www.opendesktop.org/p/1244058)*)
+
 ## Installation
 **Arch Linux:** You can install the AUR package [gtk-theme-shades-of-gray](https://aur.archlinux.org/packages/gtk-theme-shades-of-gray)
 
@@ -36,7 +38,7 @@ The file `userChrome.css` in folder `Firefox-Shades-of-gray` contains some custo
 
 `~/.mozilla/firefox/<name-of-your-profile>/chrome/userChrome.css`
 
-Firefox uses the widgets of the current GTK3 theme in websites that have not designed their own widgets for forms.
+Firefox uses widgets of the current GTK3 theme in websites that have not designed their own widgets for forms.
 With dark themes this is ugly and input fields, checkboxes etc. are difficult to use (e.g. black font in dark input fields).
 To fix this behavior the file `userContent.css` contains color-neutral form widgets. Copy the file or its contents to this location for enabling:
 
