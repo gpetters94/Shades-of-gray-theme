@@ -105,7 +105,7 @@ you're on your own... */
 @define-color menu_borders                #313131;                     /* #292929 */
 
 /* Border */
-@define-color borders                     #181818;
+@define-color borders                     #232323;
 @define-color borders_insens              @unfocused_borders;          /* #262626 */
 @define-color borders_active              #787878;
 
@@ -244,7 +244,7 @@ you're on your own... */
 @define-color colorswatch_bg_hover          #535353;
 
 /* Separator */
-@define-color separator_fg                  rgba(0, 0, 0, 0.5);
+@define-color separator_fg                  rgba(0, 0, 0, 0.4);
 
 /* Drop */
 @define-color drop_color                    @theme_selected_bg_color;    /* Theme color */
