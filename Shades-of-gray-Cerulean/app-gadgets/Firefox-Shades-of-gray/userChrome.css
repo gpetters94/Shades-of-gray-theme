@@ -59,6 +59,11 @@
 
 	/* Entry */
 	--entry_bg_focus:                #3a3a3a;
+
+	/* Popup menues */
+	--arrowpanel-dimmed: var(--base_bg_selected) !important;
+	--arrowpanel-dimmed-further: var(--base_bg_selected) !important;
+	--panel-separator-color: #292929 !important;
 }
 
 
@@ -149,6 +154,21 @@
 
 	background-color: var(--base_dark_color) !important;
 }
+.panel-arrowcontent,
+#BMB_bookmarksPopup menupopup[placespopup=true] > hbox,
+menupopup#BMB_bookmarksPopup > menu > menupopup > hbox {
+
+	border: 1px solid  var(--borders) !important;
+	color: var(--base_fg) !important;
+	background: var(--base_bg) !important;
+}
+
+.panel-subview-footer,[class^="PanelUI-"],
+#PopupAutoCompleteRichResult .autocomplete-richlistbox {
+
+	color: var(--base_fg) !important;
+	background: var(--base_bg) !important;
+}
 
 /******************************************/
 /********* Searchbar in list form *********/
@@ -226,6 +246,25 @@
 
 	color: var(--base_fg_selected) !important;
 	background-color: var(--button_bg_active) !important;
+}
+.autocomplete-richlistbox {
+
+	padding: 0 !important;
+	margin: 0 !important;
+	min-height: 120px !important;
+	max-height: 160px !important;
+	border-bottom: 1px solid  var(--borders) !important;
+}
+.autocomplete-richlistbox,
+.autocomplete-richlistitem {
+
+	background-color: var(--base_color) !important;
+}
+.autocomplete-richlistitem:hover,
+.autocomplete-richlistitem[selected] {
+
+	background-color: var(--base_bg_selected) !important;
+
 }
 /* Adjust vertical center of font if necessary (default 6px): */
 .searchbar-engine-one-off-item[tooltiptext]::after {

@@ -94,9 +94,19 @@
 
 	body {
 
+		--newtab-contextmenu-background-color: #404040 !important;
+		--newtab-element-hover-color: #787878 !important;
+		--newtab-border-secondary-color: #292929 !important;
+		--newtab-search-dropdown-color: #575757 !important;
+		--newtab-search-dropdown-header-color: #313131 !important;
 		background-color: #323232 !important;
 		overflow: auto !important;
 		color: #d1d1d1 !important;
+
+	}
+	.collapsible-section.active {
+
+		background: rgba( 190, 190, 190, 0.1 ) !important;
 	}
 	#newtab-customize-overlay {
 
@@ -158,7 +168,7 @@
 	}
 	.tile {
 
-		background: #d1d1d1 !important;
+		background: rgba(255, 255, 255, 0.3) !important;
 	}
 	.actions button:not(.done) {
 
@@ -207,5 +217,21 @@
 	.actions button.dismiss {
 
 		background-color: transparent !important;
-    }
+	}
+	.contentSearchSuggestionsContainer {
+
+		background-color: #474747 !important;
+	}
+	.contentSearchSettingsButton {
+
+		background-color: #575757 !important;
+	}
+	.contentSearchSettingsButton.selected {
+
+		background-color: #696969 !important;
+	}
+	.contentSearchSettingsButton:active {
+
+		background-color: #757575 !important;
+	}
 }
