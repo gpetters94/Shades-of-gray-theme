@@ -31,7 +31,7 @@ cd Shades-of-gray-theme/
 rm -rf .git* *.md *.html *.png LICENSE
 sudo cp -ar $(find -type d -name "*") /usr/share/themes/
 ```
-Existing installations of Shades-of-gray are overwritten by the last command. If Shades-of-gray was previously installed through your distribution's package management, the package should be uninstalled first.
+Existing installations of Shades-of-gray are overwritten by the last command. If Shades-of-gray was previously installed using your distribution's package management, the package should be uninstalled first.
 
 ### Manual Installation
 Copy the chosen theme folders either for personal use into directory `~/.themes/` or for common use into `/usr/share/themes/`.
