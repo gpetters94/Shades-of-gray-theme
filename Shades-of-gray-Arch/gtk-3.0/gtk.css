@@ -5182,17 +5182,9 @@ headerbar .nautilus-canvas-item.subtitle:selected:focus,
 }
 
 /******************************************/
-/************* pluma * gedit **************/
+/********** pluma * gedit * xed ***********/
 /******************************************/
 
-.pluma-window treeview:hover  {
-
-background-color: @note_button_bg_hover;
-}
-.pluma-window treeview:selected  {
-
-background-color: @base_bg_selected;
-}
 .pluma-window notebook,
 .pluma-window notebook textview text  {
 
@@ -5212,17 +5204,20 @@ box-shadow: none;
 	border-radius: 0;
 }
 .pluma-window treeview,
+.xed-window treeview,
 .gedit-side-panel-paned treeview {
 
 	color: @sidebar_fg;
 	background-color: @sidebar_bg;
 }
 .pluma-window treeview:hover,
+.xed-window treeview:hover,
 .gedit-side-panel-paned treeview:hover  {
 
 	background-color: @sidebar_bg_hover;
 }
 .pluma-window treeview:selected,
+.xed-window treeview:selected,
 .gedit-side-panel-paned treeview:selected  {
 
 	background-color: @base_bg_selected;
