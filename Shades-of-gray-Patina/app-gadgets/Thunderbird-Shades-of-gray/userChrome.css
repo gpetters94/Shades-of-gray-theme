@@ -1,9 +1,9 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /*******************************************
-   Name: Shades of gray GTK3 Theme
-   Author: WernerFP
-   License: GPL-3.0+
+	 Name: Shades of gray GTK3 Theme
+	 Author: WernerFP
+	 License: GPL-3.0+
 *******************************************/
 
 :root {
@@ -91,6 +91,24 @@
 	--darkgreen:                    #468f46;
 }
 
+minimonth {
+/* Workaround Lightning accessibilty bug: system theme must be forced */
+	--mmMainBackground: -moz-field !important;
+	--mmBoxBackground: -moz-Dialog !important;
+	--mmBoxBorderColor: ThreeDShadow !important;
+	--mmDayColor: WindowText !important;
+	--mmDayBorderColor: Window !important;
+	--mmDayOtherColor: GrayText !important;
+	--mmDayOtherBackground: ButtonFace !important;
+	--mmDayOtherBorderColor: Transparent !important;
+	--mmDayTodayBackground: -moz-field !important;
+	--mmDayTodayBorderColor: Highlight !important;
+	--mmDaySelectedColor: HighlightText !important;
+	--mmDaySelectedBackground: Highlight !important;
+	--mmDaySelectedBorderColor: ButtonFace !important;
+	--mmDaySelectedTodayBackground: Highlight !important;
+	--mmDaySelectedTodayBorderColor: ButtonFace !important;
+}
 
 /******************************************/
 /*************** Decoration ***************/
@@ -206,7 +224,6 @@ toolbarseparator {
 .tabmail-tab .tab-content {
 
 	padding-bottom: 3px !important;
-	/*margin-top: 0px !important;*/
 }
 .tabmail-tab .tab-content label {
 
@@ -228,8 +245,6 @@ color: var(--base_fg_selected) !important;
 	-moz-appearance: none !important;
 	background-color: rgba(128, 128, 128, 0.2)!important;
 	border: none !important;
-	/*border-top-left-radius: 0px !important;*/
-	/*border-top-right-radius: 0px !important;*/
 }
 .tabmail-tab[selected="true"] .tab-content,
 .tabmail-tab[selected="true"]:hover .tab-content {
@@ -743,6 +758,15 @@ font-size: 1em !important;
 	color: var(--base_fg_selected) !important;
 }
 
+calendar-month-day-box-item[selected="true"] .calendar-color-box,
+calendar-event-box[selected="true"] .calendar-color-box,
+calendar-editable-item[selected="true"] .calendar-color-box {
+
+	color: var(--viewColor) !important;
+	background-color: transparent !important;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4) !important;
+}
+
 /*****************************************/
 /*** More legible colors on dark theme ***/
 /*****************************************/
@@ -765,7 +789,7 @@ font-size: 1em !important;
 .folderSummaryMessage:hover > .folderSummary-message-row,
 .folderSummaryMessage:hover:active > .folderSummary-message-row {
 
-  color: var(--tree-link-color) !important;
+	color: var(--tree-link-color) !important;
 }
 #quick-filter-bar[filterActive="nomatches"] #qfb-results-label {
 
