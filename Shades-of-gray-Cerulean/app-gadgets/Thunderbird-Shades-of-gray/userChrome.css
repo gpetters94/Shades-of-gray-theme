@@ -91,6 +91,7 @@
 	--darkgreen:                    #468f46;
 }
 
+
 /******************************************/
 /*************** Decoration ***************/
 /******************************************/
@@ -205,7 +206,7 @@ toolbarseparator {
 .tabmail-tab .tab-content {
 
 	padding-bottom: 3px !important;
-	margin-top: 5px !important;
+	/*margin-top: 0px !important;*/
 }
 .tabmail-tab .tab-content label {
 
@@ -227,17 +228,17 @@ color: var(--base_fg_selected) !important;
 	-moz-appearance: none !important;
 	background-color: rgba(128, 128, 128, 0.2)!important;
 	border: none !important;
-	border-top-left-radius: 10px !important;
-	border-top-right-radius: 10px !important;
+	/*border-top-left-radius: 0px !important;*/
+	/*border-top-right-radius: 0px !important;*/
 }
 .tabmail-tab[selected="true"] .tab-content,
 .tabmail-tab[selected="true"]:hover .tab-content {
 
 	-moz-appearance: none !important;
 	background-color: #595959 !important;
-	border-top-left-radius: 10px !important;
-	border-top-right-radius: 10px !important;
-	border-top: 1px solid var(--borders) !important;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+	border-top: 2px solid var(--base_bg_selected) !important;
 	border-left: 1px solid var(--borders) !important;
 	border-right: 1px solid var(--borders) !important;
 	border-bottom: 1px solid #595959 !important;
@@ -720,6 +721,26 @@ background-color: var(--base_color) !important;
 	font-family: sans !important;
 	font-size: inherit !important;
 	padding-top: 10px !important;
+}
+
+#calendar-month-view-button,
+#calendar-multiweek-view-button,
+#calendar-week-view-button,
+#calendar-day-view-button,
+#intervalDescription,
+#today-view-button,
+#calendarWeek {
+
+font-size: 1em !important;
+}
+.agenda-container-box[selected="true"],
+.agenda-allday-container-box[selected="true"],
+.agenda-checkbox[selected="true"], .agenda-container-box[selected="true"][current="true"],
+.agenda-allday-container-box[selected="true"][current="true"],
+.agenda-checkbox[selected="true"][current="true"] {
+
+	background-color: var(--base_bg_selected) !important;
+	color: var(--base_fg_selected) !important;
 }
 
 /*****************************************/
