@@ -1,6 +1,6 @@
 # Shades-of-gray
 
-Shades-of-gray is a flat dark GTK-theme with ergonomic contrasts. It supports Gnome, Xfce4, Mate and Openbox.
+Shades-of-gray is a flat dark GTK-theme with ergonomic contrasts. It supports Gnome, Cinnamon, Xfce4, Mate and Openbox.
 Theme customizations for Firefox, Thunderbird and Inkscape are additionally included.
 Shades-of-gray is available in seven color variants:
 
@@ -45,10 +45,12 @@ The file `userChrome.css` in folder `Thunderbird-Shades-of-gray` contains a Thun
 
 `~/.thunderbird/<name-of-your-profile>/chrome/userChrome.css`
 
+Lightning uses its own bright colors in default setting. The option for using the theme colors is hidden as *Accessibility*. Open the Thunderbird settings and activate the checkbox *Optimize colors for accesibility* in calendar area.
+
 If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment out the current theme color in `userChrome.css` (Thunderbird and Firefox) and comment in the new theme color value.
 
 #### Firefox
-The file `userChrome.css` in folder `Firefox-Shades-of-gray` contains some customizations to Shades-of-gray. To enable the customizations, copy the file or its content to this location:
+The file `userChrome.css` in folder `Firefox-Shades-of-gray` contains theme adaptation to Shades-of-gray. To enable the customizations, copy the file or its content to this location:
 
 `~/.mozilla/firefox/<name-of-your-profile>/chrome/userChrome.css`
 
