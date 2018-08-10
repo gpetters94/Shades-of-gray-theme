@@ -50,7 +50,7 @@ Patina green                 #3c7460
 Firebrick                    #c14e4e
 Harvest                      #AD8641
 
-*******************************************
+/*******************************************
 ************** Theme colors ***************
 ******************************************/
 
@@ -174,8 +174,8 @@ StEntry {
 }
 StEntry:focus,
 StEntry:hover {
-	color: #f5f5f5;
 
+	color: #f5f5f5;
 	background-color: #3a3a3a;
 	border: 1px solid #787878;
 	box-shadow: inset 0 2px 4px rgba(74, 74, 74, 0.05);
@@ -183,7 +183,7 @@ StEntry:hover {
 StEntry:insensitive {
 
 	color: rgba(219, 219, 219, 0.45);
-	background-color: #42444a;
+	background-color: #404040;
 	border-color: 1px solid #313440;
 	box-shadow: inset 0 2px 4px rgba(66, 68, 74, 0.05);
 }
@@ -2742,7 +2742,6 @@ StScrollBar StButton#hhandle:active {
 	font-size: 110%;
 	padding-top: 1em;
 }
-
 .login-dialog-session-list-button StIcon {
 	icon-size: 1.25em;
 }
@@ -2844,14 +2843,14 @@ StScrollBar StButton#hhandle:active {
 #screenShieldNotifications StButton#vhandle,
 #screenShieldNotifications StButton#hhandle {
 
-	background-color: rgba(56, 60, 74, 0.3);
+	background-color: rgba(60, 60, 60, 0.3);
 }
 #screenShieldNotifications StButton#vhandle:hover,
 #screenShieldNotifications StButton#vhandle:focus,
 #screenShieldNotifications StButton#hhandle:hover,
 #screenShieldNotifications StButton#hhandle:focus {
 
-	background-color: rgba(56, 60, 74, 0.5);
+	background-color: rgba(60, 60, 60, 0.5);
 }
 #screenShieldNotifications StButton#vhandle:active,
 #screenShieldNotifications StButton#hhandle:active {

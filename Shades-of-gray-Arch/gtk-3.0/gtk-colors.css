@@ -182,7 +182,7 @@ you're on your own... */
 @define-color rubberband_borders            #262626;
 
 /* Scrollbar */
-@define-color scrollbar_border              @borders;                 /* #181818 */
+@define-color scrollbar_border              @borders;                 /* #232323 */
 @define-color scrollbar_overlay             #eaeaea;
 @define-color scrollbar_slider              #898989;
 @define-color scrollbar_slider_hover        #999999;

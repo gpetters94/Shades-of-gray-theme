@@ -2035,6 +2035,16 @@ treeview.view {
 	border-left-color: @treeview_expander_fg;
 	border-top-color: @borders;
 }
+treeview.view:hover {
+
+	background-color: @button_bg_hover;
+}
+treeview.view:selected,
+treeview.view:selected:hover {
+
+	color: @base_fg_selected;
+	background-color: @base_bg_selected;
+}
 treeview.view:selected:focus,
 treeview.view:selected {
 
@@ -2092,6 +2102,17 @@ treeview.view.expander:selected:hover {
 treeview.view.expander:checked {
 
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}
+treeview.view:hover {
+
+	background-color: @button_bg_hover;
+
+ }
+treeview.view:selected,
+treeview.view:selected:hover {
+
+	color: @base_fg_selected;
+	background-color: @base_bg_selected;
 }
 
 /*************** treeview progressbar ***************/
@@ -5422,6 +5443,17 @@ PanelApplet.wnck-applet .wnck-pager:selected {
 
 	background: @progressbar_bg;
 	border-radius: 10px;
+}
+
+/***************************************************/
+/********************* Cinnamon ********************/
+/***************************************************/
+
+.cs-header {
+
+	padding: 6px;
+	background-color: #373737;
+	border-bottom: 1px solid #232323;
 }
 
 /****************************************/
