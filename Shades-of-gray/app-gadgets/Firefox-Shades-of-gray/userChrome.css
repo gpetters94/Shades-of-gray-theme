@@ -1,9 +1,9 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /***********************************************
-   Name: Shades of gray Firefox userChrome.css
-   Author: WernerFP
-   License: GPL-3.0+
+	 Name: Shades of gray Firefox userChrome.css
+	 Author: WernerFP
+	 License: GPL-3.0+
 ***********************************************/
 
 :root {
@@ -60,13 +60,69 @@
 	/* Entry */
 	--entry_bg_focus:                #3a3a3a;
 
-	/* Popup menues */
-	--arrowpanel-dimmed: var(--base_bg_selected) !important;
-	--arrowpanel-dimmed-further: var(--base_bg_selected) !important;
+	/* Treeview */
+	--treeview_row_bg:               #535353;
+	--treeview_row_bg_even:          #474747;
+
+	/* Panel */
 	--panel-separator-color: #292929 !important;
+
+	/* Popup menus */
+	--arrowpanel-dimmed: var(--base_bg_selected) !important;
+	--arrowpanel-dimmed-further: var(--button_bg_hover) !important;
+	--arrowpanel-dimmed-even-further: var(--button_bg_active) !important;
+
+	/* Not blue */
+	--preference-selected-color: var(--button_bg) !important;
+	--preference-unselected-color: var(--button_bg_hover) !important;
+	--preference-active-color: var(--button_bg_active) !important;
+	--selected-fill-color: var(--button_bg) !important;
+	--chrome-selection-background-color: var(--base_bg_selected) !important;
+
+	/* Clean gray without bluish */
+	--grey-10: #f9f9f9 !important;
+	--grey-20: #ededed !important;
+	--grey-30: #d7d7d7 !important;
+	--grey-40: #b1b1b1 !important;
+	--grey-50: #737373 !important;
+	--grey-60: #4a4a4a !important;
+	--grey-70: #383838 !important;
+	--grey-80: #2a2a2a !important;
+	--grey-90: #0c0c0c !important;
 }
 
+/******************************************/
+/************** Button base ***************/
+/******************************************/
 
+button.browser-style.default {
+
+	background-color: var(--button_bg) !important;
+	border: 1px solid var(--borders) !important;
+}
+button.browser-style.default.hover {
+
+	background-color: var(--button_bg_hover) !important;
+	border: 1px solid var(--borders) !important;
+}
+button.browser-style.default.pressed {
+
+	background-color: var(--button_bg_active) !important;
+	border: 1px solid var(--borders) !important;
+}
+
+/******************************************/
+/**************** urlbar ******************/
+/******************************************/
+html|*.textbox-input:selected, 
+html|*.textbox-textarea:selected {
+  margin: 0px !important;
+  border: none !important;
+  padding: 0px 1px !important;
+  background-color: green !important;
+  color: inherit;
+  font: inherit;
+}
 #urlbar,
 .searchbar-textbox {
 
@@ -94,6 +150,29 @@
 		inset 0 -1px var(--borders_active) !important;
 	outline: none;
 }
+
+#identity-popup-mainView {
+
+	background-color: var(--base_bg) !important;
+}
+#identity-popup-securityView-footer {
+
+	background-color: var(--button_bg) !important;
+}
+#identity-popup-securityView-footer > button:hover,
+#identity-popup-securityView-footer > button:focus {
+
+	background-color: var(--button_bg_hover) !important;
+}
+#identity-popup-securityView-footer > button:hover:active {
+
+	background-color: var(--button_bg_active) !important;
+}
+
+/******************************************/
+/**************** sidebar *****************/
+/******************************************/
+
 #sidebar,
 #sidebar-header,
 #bookmarksPanel,
@@ -129,13 +208,18 @@
 }
 #sidebar-switcher-target:hover {
 
-  background-color: var(--button_bg_hover) !important;
+	background-color: var(--button_bg_hover) !important;
 }
 #sidebar-switcher-target:hover:active,
 #sidebar-switcher-target.active {
 
-  background-color: var(--button_bg_active) !important;
+	background-color: var(--button_bg_active) !important;
 }
+
+/******************************************/
+/*************** titlebar *****************/
+/******************************************/
+
 #titlebar,
 #tabbrowser-tabs {
 
@@ -144,7 +228,6 @@
 #tabbrowser-tabs {
 
 	--tab-line-color: var(--base_bg_selected) !important;
-
 }
 #TabsToolbar {
 
@@ -154,6 +237,31 @@
 
 	background-color: var(--base_dark_color) !important;
 }
+
+/******************************************/
+/**************** appMenu *****************/
+/******************************************/
+
+#appMenu-tp-toggle {
+/* tracking protection switch (Firefox 63+) */
+	border: 1px solid var(--borders) !important;
+}
+#appMenu-tp-toggle:hover,
+#appMenu-tp-toggle:-moz-focusring,
+#appMenu-tp-toggle[enabled=true]:hover {
+
+	border: 1px solid #636363 !important;
+}
+#appMenu-tp-toggle[enabled=true] {
+
+	background-color: #5aa411 !important;
+	border: 1px solid var(--borders) !important;
+}
+
+/******************************************/
+/***************** Popup ******************/
+/******************************************/
+
 .panel-arrowcontent,
 #BMB_bookmarksPopup menupopup[placespopup=true] > hbox,
 menupopup#BMB_bookmarksPopup > menu > menupopup > hbox {
@@ -162,12 +270,153 @@ menupopup#BMB_bookmarksPopup > menu > menupopup > hbox {
 	color: var(--base_fg) !important;
 	background: var(--base_bg) !important;
 }
-
 .panel-subview-footer,[class^="PanelUI-"],
 #PopupAutoCompleteRichResult .autocomplete-richlistbox {
 
 	color: var(--base_fg) !important;
 	background: var(--base_bg) !important;
+}
+
+.popup-notification-button[default][highlight="true"]:not([disabled]) {
+
+	background-color: var(--button_bg) !important;
+	box-shadow: inset 0px 0px 1px 1px rgba(255 ,255, 255, 0.5) !important;
+}
+.popup-notification-button[default][highlight="true"]:hover:not([disabled]) {
+
+	background-color: var(--button_bg_hover) !important;
+	box-shadow: inset 0px 0px 1px 1px rgba(255 ,255, 255, 0.5) !important;
+}
+.popup-notification-button[default][highlight="true"]:hover:active:not([disabled]) {
+
+	background-color: var(--button_bg_active) !important;
+	box-shadow: inset 0px 0px 1px 1px rgba(255 ,255, 255, 0.5) !important;
+}
+
+.panel-subview-footer:hover,
+.downloadsPanelFooterButton:hover,
+.downloadsPanelFooterButton[default]:hover,
+#BMB_bookmarksPopup .subviewbutton.panel-subview-footer:hover {
+
+	background-color: var(--button_bg_hover) !important;
+}
+.panel-subview-footer:hover:active,
+.downloadsPanelFooterButton:hover:active,
+.downloadsPanelFooterButton[default]:hover:active,
+#BMB_bookmarksPopup .subviewbutton.panel-subview-footer:hover:active {
+
+	background-color: var(--button_bg_active) !important;
+}
+/* Default at least! */
+.panel-subview-footer,
+.downloadsPanelFooterButton,
+.downloadsPanelFooterButton[default],
+#BMB_bookmarksPopup .subviewbutton.panel-subview-footer {
+
+	background-color: var(--button_bg) !important;
+}
+
+#emptyDownloads {
+
+	color: var(--base_fg_insens) !important;
+	background: var(--base_bg) !important;
+
+}
+.downloadsPanelFooterButton:hover,
+.downloadsPanelFooterButton[open="true"] {
+
+	outline: 1px solid transparent !important;
+	box-shadow: 0 1px 0 transparent inset !important;
+}
+
+#widget-overflow-mainView {
+
+	background-color: var(--base_bg) !important;
+}
+#overflowMenu-customize-button {
+
+	background-color: var(--button_bg) !important;
+}
+#overflowMenu-customize-button:hover {
+
+	background-color: var(--button_bg_hover) !important;
+}
+
+#downloadsListBox {
+
+	background: var(--base_bg) !important;
+}
+richlistitem[type="download"][state="1"][exists] .downloadMainArea:hover,
+richlistitem[type="download"]:not([verdict]) > .downloadButtonArea:hover,
+richlistitem[type="download"][verdict]:hover {
+
+	background: var(--button_bg_hover) !important;
+}
+richlistitem[type="download"][state="1"][exists] > .downloadMainArea:hover:active,
+richlistitem[type="download"]:not([verdict]) > .downloadButtonArea:hover:active,
+richlistitem[type="download"][verdict]:hover:active {
+
+	background: var(--button_bg_active) !important;
+}
+
+/******************************************/
+/************* Places window **************/
+/******************************************/
+
+#placesList {
+
+	-moz-appearance: none !important;
+	background-color: var(--sidebar_bg) !important;
+
+}
+#placesList treechildren::-moz-tree-row {
+
+	min-height: 24px !important;
+	padding-bottom: 0px !important;
+}
+#placesList treechildren::-moz-tree-cell-text {
+
+	font-size: 1em !important;
+
+}
+#placesList treechildren::-moz-tree-cell {
+
+}
+#placesList treechildren::-moz-tree-cell(hover) {
+
+	background-color: var(--button_bg_hover) !important;
+}
+#placesList treechildren::-moz-tree-cell(selected) {
+
+	color: var(--base_fg_selected) !important;
+	background-color: var(--base_bg_selected) !important;
+	outline: 1px solid var(--base_bg_selected) !important;
+}
+#placeContent {
+
+	-moz-appearance: none !important;
+	background-color: var(--base_bg) !important;
+	border-bottom: 1px solid var(--borders) !important;
+}
+#placeContent treechildren::-moz-tree-row {
+
+	min-height: 24px !important;
+	padding-bottom: 0px !important;
+}
+
+#placeContent > treechildren:-moz-tree-row(even) {
+
+	background-color: var(--treeview_row_bg_even) !important;
+}
+#placeContent > treechildren:-moz-tree-row(hover) {
+	background-color: var(--button_bg_hover) !important;
+
+}
+#placeContent > treechildren::-moz-tree-cell(selected) {
+
+	color: var(--base_fg_selected) !important;
+	background-color: var(--base_bg_selected) !important;
+	outline: 1px solid var(--base_bg_selected) !important;
 }
 
 /******************************************/
