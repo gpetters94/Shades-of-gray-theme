@@ -89,6 +89,15 @@
 	--theme-highlight-pink:         #ebb2ff !important;
 	--theme-highlight-gray:         #e9f4fe !important;
 	--darkgreen:                    #468f46;
+
+ 	--toolbarbutton-hover-background: rgba(200, 200, 200, .2) linear-gradient(rgba(200, 200, 200, .2), rgba(200, 200, 200, .1)) !important;
+	--toolbarbutton-hover-bordercolor: rgba(200, 200, 200, .5) !important;
+	--toolbarbutton-header-bordercolor: rgba(0, 0, 0, .25);
+	--toolbarbutton-hover-boxshadow: none !important;
+
+	--toolbarbutton-active-background: rgba(200, 200, 200, .3) linear-gradient(rgba(200, 200, 200, .2), rgba(200, 200, 200, .15)) !important;
+	--toolbarbutton-active-bordercolor:  rgba(200, 200, 200, .6) !important;
+	--toolbarbutton-active-boxshadow: none !important;
 }
 
 minimonth {
@@ -257,7 +266,7 @@ color: var(--base_fg_selected) !important;
 	border-left: 1px solid var(--borders) !important;
 	border-right: 1px solid var(--borders) !important;
 	border-bottom: 1px solid #595959 !important;
-	margin-bottom: 1px !important;
+	margin-bottom: 0 !important;
 }
 
 /******************************************/
@@ -748,6 +757,14 @@ background-color: var(--base_color) !important;
 
 font-size: 1em !important;
 }
+.agenda-container-box,
+.agenda-allday-container-box,
+.agenda-checkbox,
+.agenda-container-box,
+.agenda-allday-container-box,
+.agenda-checkbox {
+    background-color: transparent !important;
+}
 .agenda-container-box[selected="true"],
 .agenda-allday-container-box[selected="true"],
 .agenda-checkbox[selected="true"], .agenda-container-box[selected="true"][current="true"],
@@ -765,6 +782,23 @@ calendar-editable-item[selected="true"] .calendar-color-box {
 	color: var(--viewColor) !important;
 	background-color: transparent !important;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4) !important;
+}
+.calendar-task-tree > treechildren::-moz-tree-cell-text(inprogress) {
+
+	color: HighlightText !important;
+	background-color: transparent !important;
+	border-left: 5px solid #33CC00 !important;
+}
+.calendar-task-tree > treechildren::-moz-tree-cell-text(overdue) {
+
+	color: HighlightText !important;
+	background-color: transparent !important;
+	border-left: 5px solid #DD0000 !important;
+}
+.calendar-task-tree > treechildren::-moz-tree-row(inprogress, selected, focus),
+.calendar-task-tree > treechildren::-moz-tree-row(overdue, selected, focus) {
+
+	background-color: var(--base_bg_selected) !important;
 }
 
 /*****************************************/
