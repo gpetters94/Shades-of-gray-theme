@@ -28,7 +28,7 @@ mkdir ~/Shades-of-gray-git
 cd ~/Shades-of-gray-git/
 git clone https://github.com/WernerFP/Shades-of-gray-theme.git
 cd Shades-of-gray-theme/
-rm -rf .git* *.md *.html *.png LICENSE
+rm -rf *.md *.png LICENSE
 sudo cp -r * /usr/share/themes/
 ```
 Existing installations of Shades-of-gray are overwritten by the last command. If Shades-of-gray was previously installed using your distribution's package management, the package should be uninstalled first.
