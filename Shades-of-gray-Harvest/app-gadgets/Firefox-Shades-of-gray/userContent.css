@@ -9,7 +9,7 @@
 /************* Firefox forms **************/
 /******************************************/
 
-@-moz-document url-prefix("http") {
+@-moz-document url-prefix("http"), url-prefix("moz-extension") {
 
 	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]),textarea,select {
 
