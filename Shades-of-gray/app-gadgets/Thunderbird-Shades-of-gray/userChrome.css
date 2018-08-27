@@ -563,6 +563,7 @@ treechildren::-moz-tree-cell-text(selected) {
 
 	-moz-appearance: none !important;
 	min-height: 22px !important;
+	min-width: 24px !important;
 	background-color: var(--treeview_header_bg) !important;
 	border: none !important;
 	border-bottom: 1px solid var(--borders) !important;
