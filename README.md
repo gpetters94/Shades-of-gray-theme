@@ -4,17 +4,9 @@ Shades-of-gray is a flat dark GTK-theme with ergonomic contrasts. It supports Gn
 Theme customizations for Firefox, Thunderbird and Inkscape are additionally included.
 Shades-of-gray is available in seven color variants:
 
-* Gray
-* Arch
-* Cerulean
-* Firebrick
-* Harvest
-* Orient
-* Patina
-
-![Screenshot](preview_01.png)
-
-(*More screenshots at [opendesktop.org](https://www.opendesktop.org/p/1244058)*)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/22373662/46028563-3db93780-c0f1-11e8-85e5-e04d68cb615b.png" width="60%"></img></br><i>Gray, Arch, Cerulean, Firebrick, Harvest, Orient, Patina</i>
+</p>
 
 ## Installation
 **Arch Linux:** You can install the AUR package [gtk-theme-shades-of-gray](https://aur.archlinux.org/packages/gtk-theme-shades-of-gray)
@@ -75,3 +67,10 @@ To use them in Inkscape, the file must be stored in this directory:
 
 ## License:
 GPL-3.0+
+
+## Screenshots
+Cinnamon Patina, Gnome Gray,</br>
+Openbox Arch, Xfce4 Cerulean
+<p align="center">
+<img src="https://user-images.githubusercontent.com/22373662/46028566-414cbe80-c0f1-11e8-96d5-0525cfe93555.png" width="45%"></img>  <img src="https://user-images.githubusercontent.com/22373662/46028571-44e04580-c0f1-11e8-87f9-43d35967a6df.png" width="45%"></img>  <img src="https://user-images.githubusercontent.com/22373662/46028577-4873cc80-c0f1-11e8-9eb2-25f41528bc9b.png" width="45%"></img>  <img src="https://user-images.githubusercontent.com/22373662/46028583-4d388080-c0f1-11e8-8fbe-77b6744ce813.png" width="45%"></img>
+</p>
