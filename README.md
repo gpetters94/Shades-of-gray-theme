@@ -33,10 +33,11 @@ Copy the chosen theme folders either for personal use into directory `~/.themes/
 Each theme folder contains an `app-gadgets` directory with additional theme files for Thunderbird, Firefox and Inkspape.
 
 #### Thunderbird
-The file `userChrome.css` in folder `Thunderbird-Shades-of-gray` contains a Thunderbird theme adapted to Shades-of-gray. Copy the file or its content to this location:
-
-`~/.thunderbird/<name-of-your-profile>/chrome/userChrome.css`
-
+The folder `assets` and the file `userChrome.css` in folder `Thunderbird-Shades-of-gray` contain a Thunderbird theme adapted to Shades of gray. Copy both to this location:
+```
+~/.thunderbird/<name-of-your-profile>/chrome/userChrome.css
+~/.thunderbird/<name-of-your-profile>/chrome/assets
+```
 Lightning uses its own bright colors in default setting. The option for using the theme colors is hidden as *Accessibility*. Open the Thunderbird settings and activate the checkbox *Optimize colors for accesibility* in calendar area.
 
 If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment out the current theme color in `userChrome.css` (Thunderbird and Firefox) and comment in the new theme color value.
