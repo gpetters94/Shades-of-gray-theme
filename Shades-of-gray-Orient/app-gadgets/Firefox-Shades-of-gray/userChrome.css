@@ -413,12 +413,8 @@ richlistitem[type="download"][verdict]:hover:active {
 
 	background-color: var(--treeview_row_bg_even) !important;
 }
-/*#placeContent > treechildren:-moz-tree-row(odd) {
-
-	background-color: var(--treeview_row_bg) !important;
-}*/
 #placeContent > treechildren:-moz-tree-row(hover) {
-	/*background-color: var(--button_bg_hover) !important;					*/
+
 	border-bottom: 1px solid var(--treeview_row_hover_line) !important;
 
 }
