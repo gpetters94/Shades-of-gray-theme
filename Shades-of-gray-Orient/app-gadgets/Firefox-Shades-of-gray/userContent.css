@@ -235,3 +235,38 @@
 		background-color: #757575 !important;
 	}
 }
+
+/******************************************/
+/******** Corrections Firefox css *********/
+/******************************************/
+
+@-moz-document url-prefix(about) {
+
+/********* Fix common.css FF 57+ **********/
+	.menulist-dropmarker {
+
+		-moz-context-properties: none !important;
+	}
+/********* Fix menulist.css FF 63+ ********/
+	menulist:hover,
+	menulist:hover:active,
+	menulist[open="true"] {
+
+		color: black !important;
+	}
+}
+/* url-prefix is not recognized in dialogs */
+hbox menulist:hover,
+vbox menulist:hover,
+hbox menulist:hover:active,
+vbox menulist:hover:active,
+hbox menulist[open="true"],
+vbox menulist[open="true"] {
+
+	color: black !important;
+}
+vbox > #sanitizeEverythingWarningBox {
+
+	background-color: #ededed !important;
+	border: none !important;
+}

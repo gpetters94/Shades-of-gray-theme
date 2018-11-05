@@ -63,6 +63,7 @@
 	/* Treeview */
 	--treeview_row_bg:               #535353;
 	--treeview_row_bg_even:          #474747;
+	--treeview_row_hover_line:       #929292;
 
 	/* Panel */
 	--panel-separator-color: #292929 !important;
@@ -114,7 +115,8 @@ button.browser-style.default.pressed {
 /******************************************/
 /**************** urlbar ******************/
 /******************************************/
-html|*.textbox-input:selected, 
+
+html|*.textbox-input:selected,
 html|*.textbox-textarea:selected {
   margin: 0px !important;
   border: none !important;
@@ -167,6 +169,10 @@ html|*.textbox-textarea:selected {
 #identity-popup-securityView-footer > button:hover:active {
 
 	background-color: var(--button_bg_active) !important;
+}
+#identity-box.extensionPage {
+
+	max-width: 160px !important;
 }
 
 /******************************************/
@@ -400,16 +406,20 @@ richlistitem[type="download"][verdict]:hover:active {
 }
 #placeContent treechildren::-moz-tree-row {
 
-	min-height: 24px !important;
+	min-height: 26px !important;
 	padding-bottom: 0px !important;
 }
-
 #placeContent > treechildren:-moz-tree-row(even) {
 
 	background-color: var(--treeview_row_bg_even) !important;
 }
+/*#placeContent > treechildren:-moz-tree-row(odd) {
+
+	background-color: var(--treeview_row_bg) !important;
+}*/
 #placeContent > treechildren:-moz-tree-row(hover) {
-	background-color: var(--button_bg_hover) !important;
+	/*background-color: var(--button_bg_hover) !important;					*/
+	border-bottom: 1px solid var(--treeview_row_hover_line) !important;
 
 }
 #placeContent > treechildren::-moz-tree-cell(selected) {
