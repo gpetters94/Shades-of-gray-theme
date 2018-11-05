@@ -2103,6 +2103,17 @@ treeview.view.expander:checked {
 
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
+treeview.view:hover {
+
+	background-color: @button_bg_hover;
+
+ }
+treeview.view:selected,
+treeview.view:selected:hover {
+
+	color: @base_fg_selected;
+	background-color: @base_bg_selected;
+}
 
 /*************** treeview progressbar ***************/
 
@@ -5326,53 +5337,95 @@ PanelApplet.wnck-applet .wnck-pager:selected {
 
 /************** Xfce4 panel ****************/
 
-.xfce4-panel.panel {
+.xfce4-panel {
 
 	background-color: @panel_bg;
+	color: @base_fg;
+	font-weight: 400;
 	text-shadow: none;
 	-gtk-icon-shadow: none;
 }
+.xfce4-panel,
+.xfce4-panel frame > border,
+.xfce4-panel#XfcePanelWindow {
 
-.xfce4-panel.panel button.flat,
-.xfce4-panel.panel button.sidebar-button {
+	border: none;
+}
+
+.xfce4-panel#XfcePanelWindow,
+.xfce4-panel#XfcePanelWindow.marching-ants {
+
+	transition: none;
+}
+.xfce4-panel button:not(:selected) {
+
+	all: unset;
+}
+.xfce4-panel button {
 
 	color: @base_fg;
-	border-radius: 0;
-	border: none;
 	background-color: @panel_button_bg;
 }
+.xfce4-panel button:hover:not(:active):not(:checked) {
 
-.xfce4-panel.panel button.flat:hover,
-.xfce4-panel.panel button.sidebar-button:hover {
-
-	border: none;
+	color: @base_fg;
 	background-color: @panel_button_bg_hover;
 }
-
-.xfce4-panel.panel button.flat:active,
-.xfce4-panel.panel button.sidebar-button:active,
-.xfce4-panel.panel button.flat:checked,
-.xfce4-panel.panel button.sidebar-button:checked {
+.xfce4-panel button:active,
+.xfce4-panel button:checked {
 
 	color: @base_fg_selected;
-	border: none;
-	background-color: @panel_button_bg_selected;
+	background-color:  @panel_button_bg_selected;
 }
-.xfce4-panel.panel button.flat:active label,
-.xfce4-panel.panel button.sidebar-button:active label,
-.xfce4-panel.panel button.flat:active image,
-.xfce4-panel.panel button.sidebar-button:active image,
-.xfce4-panel.panel button.flat:checked label,
-.xfce4-panel.panel button.sidebar-button:checked label,
-.xfce4-panel.panel button.flat:checked image,
-.xfce4-panel.panel button.sidebar-button:checked image {
+.xfce4-panel button#launcher-arrow:hover,
+.xfce4-panel button#launcher-arrow + button.toggle:hover {
 
-	color: inherit;
+	box-shadow: none;
+}
+.xfce4-panel button#launcher-arrow + button.toggle:checked {
+
+	color: @base_fg;
+	box-shadow: none;
+}
+.xfce4-panel button#xfce4-notification-plugin {
+
+	padding: 0 1px;
+}
+.xfce4-panel menu {
+
+	font-weight: 400;
+	text-shadow: none;
+	-gtk-icon-effect: none;
+}
+.xfce4-panel widget.tasklist > button.toggle {
+
+	font-weight: 400;
+}
+
+wnck-pager {
+
+	color: @borders_active;
+	background-color: transparent;
+	box-shadow: inset 0 0 0 1px @borders_active;
+}
+wnck-pager:hover,
+wnck-pager:selected {
+
+	color: #626262;
+	background-color: alpha(currentColor, 0.5);
+	box-shadow: inset 0 0 0 1px #868686;
 }
 
 /***************************************************/
 /********************** xfce4 **********************/
 /***************************************************/
+
+.XfceHeading {
+
+	border: 0 none transparent;
+	background-color: @base_color;
+	color: @base_fg_selected;
+}
 
 #XfceNotifyWindow .osd {
 
