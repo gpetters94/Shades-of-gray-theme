@@ -25,8 +25,8 @@
 	-GtkWidget-text-handle-height: 20;
 	-GtkDialog-button-spacing: 4;
 	-GtkDialog-action-area-border: 0;
-	-GtkHTML-link-color: @link_fg_color;
-	-GtkIMHtml-hyperlink-color: @link_fg_color;
+	-GtkHTML-link-color: @link_fg;
+	-GtkIMHtml-hyperlink-color: @link_fg;
 	outline-color: alpha(currentColor,0.3);
 	outline-style: dashed;
 	outline-offset: -3px;
@@ -501,7 +501,8 @@ entry progress > trough > progress {
 }
 .linked.vertical > spinbutton:disabled:not(.vertical) + spinbutton:disabled:not(.vertical),
 .linked.vertical > spinbutton:disabled:not(.vertical) + entry:disabled,
-.linked.vertical > entry:disabled + spinbutton:disabled:not(.vertical),.linked.vertical > entry:disabled + entry:disabled {
+.linked.vertical > entry:disabled + spinbutton:disabled:not(.vertical),
+.linked.vertical > entry:disabled + entry:disabled {
 
 	border-top-color: @borders_insens;
 }
@@ -2676,18 +2677,22 @@ switch slider {
 	box-shadow: none;
 }
 switch {
-	background-image: -gtk-scaled(url("assets/switch-off.png"), url("assets/switch-off@2.png"));
+	background-image: -gtk-scaled(url("assets/switch-off.png"),
+		url("assets/switch-off@2.png"));
 }
 switch:checked {
-	background-image: -gtk-scaled(url("assets/switch-on.png"), url("assets/switch-on@2.png"));
+	background-image: -gtk-scaled(url("assets/switch-on.png"),
+		url("assets/switch-on@2.png"));
 }
 switch:disabled {
 
-	background-image: -gtk-scaled(url("assets/switch-off-disabled.png"), url("assets/switch-off-disabled@2.png"));
+	background-image: -gtk-scaled(url("assets/switch-off-disabled.png"),
+		url("assets/switch-off-disabled@2.png"));
 }
 switch:checked:disabled {
 
-	background-image: -gtk-scaled(url("assets/switch-on-disabled.png"), url("assets/switch-on-disabled@2.png"));
+	background-image: -gtk-scaled(url("assets/switch-on-disabled.png"),
+		url("assets/switch-on-disabled@2.png"));
 }
 
 /******************************************************/
@@ -3179,10 +3184,6 @@ scale fill:disabled {
 
 /****************** scale slider ****************/
 
-scale slider {
-
-
-}
 scale.fine-tune slider {
 
 	margin: -4px;
@@ -4424,62 +4425,74 @@ headerbar button.titlebutton.minimize:backdrop,
 headerbar button.titlebutton.close,
 .titlebar button.titlebutton.close {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-close.png"), url("assets/titlebutton-close@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-close.png"),
+		url("assets/titlebutton-close@2.png"));
 }
 headerbar button.titlebutton.close:backdrop,
 .titlebar button.titlebutton.close:backdrop {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-close-backdrop.png"), url("assets/titlebutton-close-backdrop@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-close-backdrop.png"),
+		url("assets/titlebutton-close-backdrop@2.png"));
 }
 headerbar button.titlebutton.close:hover,
 .titlebar button.titlebutton.close:hover {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-close-hover.png"), url("assets/titlebutton-close-hover@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-close-hover.png"),
+		url("assets/titlebutton-close-hover@2.png"));
 }
 headerbar button.titlebutton.close:active,
 .titlebar button.titlebutton.close:active {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-close-active.png"), url("assets/titlebutton-close-active@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-close-active.png"),
+		url("assets/titlebutton-close-active@2.png"));
 }
 headerbar button.titlebutton.maximize,
 .titlebar button.titlebutton.maximize {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-maximize.png"), url("assets/titlebutton-maximize@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-maximize.png"),
+		url("assets/titlebutton-maximize@2.png"));
 }
 headerbar button.titlebutton.maximize:backdrop,
 .titlebar button.titlebutton.maximize:backdrop {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-maximize-backdrop.png"), url("assets/titlebutton-maximize-backdrop@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-maximize-backdrop.png"),
+		url("assets/titlebutton-maximize-backdrop@2.png"));
 }
 headerbar button.titlebutton.maximize:hover,
 .titlebar button.titlebutton.maximize:hover {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover.png"), url("assets/titlebutton-maximize-hover@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover.png"),
+		url("assets/titlebutton-maximize-hover@2.png"));
 }
 headerbar button.titlebutton.maximize:active,
 .titlebar button.titlebutton.maximize:active {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-maximize-active.png"), url("assets/titlebutton-maximize-active@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-maximize-active.png"),
+		url("assets/titlebutton-maximize-active@2.png"));
 }
 headerbar button.titlebutton.minimize,
 .titlebar button.titlebutton.minimize {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-minimize.png"), url("assets/titlebutton-minimize@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-minimize.png"),
+		url("assets/titlebutton-minimize@2.png"));
 }
 headerbar button.titlebutton.minimize:backdrop,
 .titlebar button.titlebutton.minimize:backdrop {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-minimize-backdrop.png"), url("assets/titlebutton-minimize-backdrop@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-minimize-backdrop.png"),
+		url("assets/titlebutton-minimize-backdrop@2.png"));
 }
 headerbar button.titlebutton.minimize:hover,
 .titlebar button.titlebutton.minimize:hover {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover.png"), url("assets/titlebutton-minimize-hover@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover.png"),
+		url("assets/titlebutton-minimize-hover@2.png"));
 }
 headerbar button.titlebutton.minimize:active,
 .titlebar button.titlebutton.minimize:active {
 
-	background-image: -gtk-scaled(url("assets/titlebutton-minimize-active.png"), url("assets/titlebutton-minimize-active@2.png"));
+	background-image: -gtk-scaled(url("assets/titlebutton-minimize-active.png"),
+		url("assets/titlebutton-minimize-active@2.png"));
 }
 
 /***************** selected colors ******************/
@@ -4497,7 +4510,13 @@ iconview text selection,
 textview text selection:focus,
 textview text selection,
 flowbox flowboxchild:selected,
-spinbutton:not(.vertical) selection,entry selection,modelbutton.flat:selected,.menuitem.button.flat:selected,treeview.view:selected:focus,treeview.view:selected,row:selected,calendar:selected {
+spinbutton:not(.vertical) selection,
+entry selection,
+modelbutton.flat:selected,
+menuitem.button.flat:selected,
+treeview.view:selected:focus,
+treeview.view:selected,row:selected,
+calendar:selected {
 
 	background-color: @base_bg_selected;
 }
@@ -4517,7 +4536,14 @@ iconview text selection,
 textview text selection:focus,
 textview text selection,
 flowbox flowboxchild:selected,
-spinbutton:not(.vertical) selection,entry selection,modelbutton.flat:selected,.menuitem.button.flat:selected,treeview.view:selected:focus,treeview.view:selected,row:selected,calendar:selected {
+spinbutton:not(.vertical) selection,
+entry selection,
+modelbutton.flat:selected,
+.menuitem.button.flat:selected,
+treeview.view:selected:focus,
+treeview.view:selected,
+row:selected,
+calendar:selected {
 
 	color: @base_fg_selected;
 }
@@ -4538,7 +4564,12 @@ iconview text selection:disabled,
 textview text selection:disabled,
 flowbox flowboxchild:disabled:selected,
 label:disabled selection,
-spinbutton:not(.vertical) selection:disabled,entry selection:disabled,modelbutton.flat:disabled:selected,.menuitem.button.flat:disabled:selected,row:disabled:selected,calendar:disabled:selected {
+spinbutton:not(.vertical) selection:disabled,
+entry selection:disabled,
+modelbutton.flat:disabled:selected,
+.menuitem.button.flat:disabled:selected,
+row:disabled:selected,
+calendar:disabled:selected {
 
 	color: @base_fg_insens_selected;
 }
@@ -4554,7 +4585,7 @@ notebook button,
 viewport button,
 scrolledwindow button {
 
-background-color: @note_button_bg;
+	background-color: @note_button_bg;
 }
 notebook combobox button:hover,
 notebook spinbutton button:hover,
@@ -4562,7 +4593,7 @@ notebook button:hover,
 viewport button:hover,
 scrolledwindow button:hover {
 
-background-color: @note_button_bg_hover;
+	background-color: @note_button_bg_hover;
 }
 notebook combobox button:active,
 notebook spinbutton button:active,
@@ -4570,7 +4601,7 @@ notebook button:active,
 viewport button:active,
 scrolledwindow button:active {
 
-background-color: @note_button_bg_active;
+	background-color: @note_button_bg_active;
 }
 notebook entry:disabled,
 notebook combobox button:disabled,
@@ -4579,7 +4610,7 @@ notebook button:disabled,
 viewport button:disabled,
 scrolledwindow button:disabled {
 
-background-color: @note_button_bg_disabled;
+	background-color: @note_button_bg_disabled;
 }
 
 /**************** These and the rest ***************/
@@ -5246,6 +5277,72 @@ box-shadow: none;
 .pluma-window treeview.separator {
 
 	color: @sidebar_bg;
+}
+
+/******************************************/
+/*************** evolution ****************/
+/******************************************/
+
+box > paned notebook stack scrolledwindow treeview.view {
+
+	color: @sidebar_fg;
+	background-color: @sidebar_bg;
+}
+box > paned notebook stack scrolledwindow treeview.view:hover {
+
+	color: @base_fg_selected;
+	background-color: @sidebar_bg_hover;
+}
+box > paned notebook stack scrolledwindow treeview.view:selected,
+box > paned notebook stack scrolledwindow treeview.view:selected:hover {
+
+	color: @base_fg_selected;
+	background-color: @base_bg_selected;
+}
+scrolledwindow .table-header {
+
+	color: @treeview_header_fg;
+	background-color: @treeview_header_bg;
+}
+
+/******************************************/
+/***************** gthumb *****************/
+/******************************************/
+
+overlay > grid > stack paned box scrolledwindow treeview.view {
+
+	color: @sidebar_fg;
+	background-color: @sidebar_bg;
+}
+overlay > grid > stack paned box scrolledwindow treeview.view:hover {
+
+	color: @base_fg_selected;
+	background-color: @sidebar_bg_hover;
+}
+overlay > grid > stack paned box scrolledwindow treeview.view:selected,
+overlay > grid > stack paned box scrolledwindow treeview.view:selected:hover {
+
+	color: @base_fg_selected;
+	background-color: @base_bg_selected;
+}
+overlay > grid > stack paned box scrolledwindow > .view {
+
+	background-color: rgba(80, 80, 80, 0.4);
+}
+
+/******************************************/
+/************ gnome-calendar **************/
+/******************************************/
+
+calendar-view scrolledwindow {
+
+	background-color: rgba(0, 0, 0, 0.2);
+}
+calendar-view .year-navigator,
+calendar-view .year-navigator.header {
+
+	font-size: 115%;
+	font-weight: bold;
 }
 
 /******************************************/
