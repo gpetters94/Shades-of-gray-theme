@@ -1465,6 +1465,24 @@ treechildren::-moz-tree-image(subjectCol, replied, forwarded) {
 /*********** Lightning ***********/
 /*********************************/
 
+#task-tree-filter-header,
+#calendar-list-header {
+
+	background-color: #3c3c3c !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+#today-header,
+#tomorrow-header,
+#nextweek-header {
+
+	background-color: #3c3c3c !important;
+}
+treenode-checkbox {
+
+	padding-bottom: 4px !important;
+}
+
 treenode-checkbox > .checkbox-check {
 
 	background: url("assets/twisty.svg") center no-repeat !important;
