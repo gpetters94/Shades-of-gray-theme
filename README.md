@@ -20,7 +20,7 @@ mkdir ~/Shades-of-gray-git
 cd ~/Shades-of-gray-git/
 git clone https://github.com/WernerFP/Shades-of-gray-theme.git
 cd Shades-of-gray-theme/
-rm -rf *.md *.png LICENSE
+rm -rf README.md LICENSE
 sudo cp -r * /usr/share/themes/
 ```
 Existing installations of Shades-of-gray are overwritten by the last command. If Shades-of-gray was previously installed using your distribution's package management, the package should be uninstalled first.
@@ -35,8 +35,8 @@ Each theme folder contains an `app-gadgets` directory with additional theme file
 #### Thunderbird
 The folder `assets` and the file `userChrome.css` in folder `Thunderbird-Shades-of-gray` contain a Thunderbird theme adapted to Shades of gray. Copy both to this location:
 ```
-~/.thunderbird/<name-of-your-profile>/chrome/userChrome.css
 ~/.thunderbird/<name-of-your-profile>/chrome/assets
+~/.thunderbird/<name-of-your-profile>/chrome/userChrome.css
 ```
 Lightning uses its own bright colors in default setting. The option for using the theme colors is hidden as *Accessibility*. Open the Thunderbird settings and activate the checkbox *Optimize colors for accesibility* in calendar area.
 
