@@ -38,7 +38,7 @@ The folder `assets` and the file `userChrome.css` in folder `Thunderbird-Shades-
 ~/.thunderbird/<name-of-your-profile>/chrome/assets
 ~/.thunderbird/<name-of-your-profile>/chrome/userChrome.css
 ```
-Lightning uses its own bright colors in default setting. The option for using the theme colors is hidden as *Accessibility*. Open the Thunderbird settings and activate the checkbox *Optimize colors for accesibility* in calendar area.
+Lightning uses its own bright colors in default setting. The option for using theme colors is hidden as *Accessibility*. Open the Thunderbird settings and activate the checkbox *Optimize colors for accessibility* in calendar area.
 
 If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment out the current theme color in `userChrome.css` (Thunderbird and Firefox) and comment in the new theme color value.
 
@@ -47,13 +47,21 @@ The file `userChrome.css` in folder `Firefox-Shades-of-gray` contains a theme ad
 
 `~/.mozilla/firefox/<name-of-your-profile>/chrome/userChrome.css`
 
-Firefox uses widgets of the current GTK3 theme in websites that have not designed their own widgets for forms.
-With dark themes this is ugly and input fields, checkboxes etc. are difficult to use (e.g. black font in dark input fields).
-To fix this behavior the file `userContent.css` contains color-neutral form widgets. Copy the file or its contents to this location for enabling:
+Firefox uses widgets of the current GTK3 theme in websites that have not designed their own widgets for forms. With dark themes this is ugly and input fields, checkboxes etc. are difficult to use (e.g. black font in dark input fields). To fix this behavior the file `userContent.css` contains color-neutral form widgets.
+
+This file also contains theme customizations for the New Tab page (*about:newtab*).
+
+Copy the file or its contents to this location for enabling:
 
 `~/.mozilla/firefox/<name-of-your-profile>/chrome/userContent.css`
 
-You should choose the dark style in Firefox to get a consistent dark appearance.
+The file `bookmark-search-plus-2.css` contains theme customizations for the very useful add-on *Bookmark search plus 2* ([AMO](https://addons.mozilla.org/firefox/addon/bookmark-search-plus-2) | [Github](https://github.com/aaFn/Bookmark-search-plus-2)).
+
+Copy this file into your *chrome* directory:
+
+`~/.mozilla/firefox/<name-of-your-profile>/chrome/bookmark-search-plus-2.css`
+
+Note: You should choose the dark style in Firefox to get a consistent dark appearance.
 
 #### Inkscape
 Original colored icons in Inkscape are hard to identify in dark themes. The file `icon.svg` in folder `Inkscape-icons` contains bright icons.
