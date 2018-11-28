@@ -4,6 +4,39 @@
    License: GPL-3.0+
 ************************************************/
 
+/******************************************/
+/*********** Import add-on CSS ************/
+/******************************************/
+
+@import url("bookmark-search-plus-2.css");
+
+/******************************************/
+/****** Shades of gray theme colors *******/
+/******************************************/
+
+:root {
+
+	/* Shades of gray: */
+	/*--base_bg_selected: #787878;*/
+
+	/* Orient blue: */
+	/*--base_bg_selected: #1B779E;*/
+
+	/* Cerulean blue:; */
+	/*--base_bg_selected: #6484a4;*/
+
+	/* Arch blue: */
+	/*--base_bg_selected: #1F77B7;*/
+
+	/* Patina green: */
+	/*--base_bg_selected: #3c7460;*/
+
+	/* Firebrick: */
+	/*--base_bg_selected: #c14e4e;*/
+
+	/* Harvest: */
+	--base_bg_selected: #AD8641;
+}
 
 /******************************************/
 /************* Firefox forms **************/
@@ -11,13 +44,17 @@
 
 @-moz-document url-prefix("http"), url-prefix("moz-extension") {
 
-	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]),textarea,select {
+	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]),
+	textarea,
+	select {
 
 		-moz-appearance: none;
 		color: black;
 		background-color: white;
 		border: 1px solid rgba(0, 0, 0, 0.3);
 		border-radius: 3px;
+		min-height: 1.5em;
+		padding-left: 3px;
 	}
 	select {
 
@@ -35,11 +72,15 @@
 		border-radius: 3px;
 		border: 1px solid rgba(0, 0, 0, 0.3);
 	}
-	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]):hover,textarea:hover,select:hover {
+	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]):hover,
+	textarea:hover,
+	select:hover {
 
 		border: 1px solid rgba(0, 0, 0, 0.5);
 	}
-	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]):focus,textarea:focus,select:focus {
+	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]):focus,
+	textarea:focus,
+	select:focus {
 
 		border: 1px solid rgba(0, 0, 0, 1);
 	}
@@ -54,7 +95,6 @@
 	input[type="submit"] {
 
 		-moz-appearance: none;
-		padding: 0 2.7em;
 		color: black;
 		background-color: #dfdfdf;
 		display: inline-block;

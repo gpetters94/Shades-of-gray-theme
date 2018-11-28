@@ -16,12 +16,22 @@ If you change a Shades-of-gray theme color, it is not necessary to copy the file
 * userContent.css *
 *******************
 
-Firefox uses the widgets of the current GTK3 theme in websites that have not designed their own widgets for forms.
-With dark themes this is ugly and input fields, checkboxes etc. are difficult to use (e.g. black font in dark input fields).
-To fix this behavior the file "userContent.css" contains color-neutral form widgets.
-The file also contains theme customizations for the New Tab page.
+Firefox uses the widgets of the current GTK3 theme in websites that have not designed their own widgets for forms. With dark themes this is ugly and input fields, checkboxes etc. are difficult to use (e.g. black font in dark input fields). To fix this behavior the file "userContent.css" contains color-neutral form widgets.
+
+The file also contains theme customizations for the New Tab page (about:newtab).
 
 Copy the file or its content to this location for enabling:
 
 ~/.mozilla/firefox//<name-of-your-profile>/chrome/userContent.css
 
+
+******************************
+* bookmark-search-plus-2.css *
+******************************
+
+This file contains theme customizations for the highly recommended add-on "Bookmark search plus 2":
+https://addons.mozilla.org/firefox/addon/bookmark-search-plus-2
+
+Copy the file into your chrome directory:
+
+~/.mozilla/firefox/<name-of-your-profile>/chrome/bookmark-search-plus-2.css
