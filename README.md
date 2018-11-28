@@ -55,9 +55,7 @@ Copy the file or its contents to this location for enabling:
 
 `~/.mozilla/firefox/<name-of-your-profile>/chrome/userContent.css`
 
-The file `bookmark-search-plus-2.css` contains theme customizations for the very useful add-on *Bookmark search plus 2* ([AMO](https://addons.mozilla.org/firefox/addon/bookmark-search-plus-2) | [Github](https://github.com/aaFn/Bookmark-search-plus-2)).
-
-Copy this file into your *chrome* directory:
+The file `bookmark-search-plus-2.css` contains theme customizations for the very useful add-on *Bookmark search plus 2* ([AMO](https://addons.mozilla.org/firefox/addon/bookmark-search-plus-2) | [Github](https://github.com/aaFn/Bookmark-search-plus-2)). Copy this file into your *chrome* directory:
 
 `~/.mozilla/firefox/<name-of-your-profile>/chrome/bookmark-search-plus-2.css`
 
