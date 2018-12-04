@@ -7,7 +7,7 @@
 
 /* Random UUID token: moz-extension://[random-UUID]/[path] */
 
-@-moz-document regexp("moz-extension://.*/sidebar/popup.html?*") {
+@-moz-document regexp("^moz-extension://.*/sidebar/popup.html.*") {
 
 	#ack,
 	#cancel {
@@ -26,7 +26,7 @@
 		padding-left: 3px !important;
 	}
 }
-@-moz-document regexp("moz-extension://.*/sidebar/panel.html")  {
+@-moz-document regexp("^moz-extension://.*/sidebar/panel.html")  {
 
 	#body {
 
