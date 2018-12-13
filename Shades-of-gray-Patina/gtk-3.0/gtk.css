@@ -5036,6 +5036,21 @@ filechooser placessidebar.sidebar scrollbar trough,
 
 	background-color: @entry_bg_focus;
 }
+.nemo-window notebook scrolledwindow treeview.view {
+
+	background-color: shade(@base_color, 0.92);
+}
+.nemo-window notebook scrolledwindow treeview.view:hover {
+
+	color: @base_fg_selected;
+	background-color: rgba(128, 128, 128, 0.1);
+}
+.nemo-window notebook scrolledwindow treeview.view:active,
+.nemo-window notebook scrolledwindow treeview.view:selected {
+
+	color: @base_fg_selected;
+	background-color: @base_bg_selected;
+}
 
 /******************************************/
 /***************** thunar *****************/
@@ -5079,6 +5094,21 @@ filechooser placessidebar.sidebar scrollbar trough,
 .thunar toolbar .path-bar-button:nth-last-child(2):hover {
 
 	background-color: rgba(128, 128, 128, 0.45);
+}
+.thunar notebook scrolledwindow treeview.view {
+
+	background-color: shade(@base_color, 0.92);
+}
+.thunar notebook scrolledwindow treeview.view:hover {
+
+	color: @base_fg_selected;
+	background-color: rgba(128, 128, 128, 0.32);
+}
+.thunar notebook scrolledwindow treeview.view:selected,
+.thunar notebook scrolledwindow treeview.view:selected:hover {
+
+	color: @base_fg_selected;
+	background-color: @base_bg_selected;
 }
 
 /******************************************/
@@ -5129,6 +5159,21 @@ filechooser placessidebar.sidebar scrollbar trough,
 .caja-notebook .frame {
 
 	border-width: 0 0 1px;
+}
+.caja-notebook scrolledwindow treeview.view {
+
+	background-color: shade(@base_color, 0.92);
+}
+.caja-notebook scrolledwindow treeview.view:hover {
+
+	color: @base_fg_selected;
+	background-color: rgba(128, 128, 128, 0.32);
+}
+.caja-notebook treeview.view:selected,
+.caja-notebook treeview.view:selected:hover {
+
+	color: @base_fg_selected;
+	background-color: @base_bg_selected;
 }
 
 /******************************************/
@@ -5207,6 +5252,21 @@ headerbar .nautilus-canvas-item.subtitle:selected:focus,
 		border-color: transparent;
 		background-color: @base_bg_selected;
 	}
+}
+.nautilus-window notebook scrolledwindow treeview.view {
+
+	background-color: shade(@base_color, 0.92);
+}
+.nautilus-window notebook scrolledwindow treeview.view:hover {
+
+	color: @base_fg_selected;
+	background-color: rgba(128, 128, 128, 0.1);
+}
+.nautilus-window notebook scrolledwindow treeview.view:selected,
+.nautilus-window notebook scrolledwindow treeview.view:selected:hover {
+
+	color: @base_fg_selected;
+	background-color: @base_bg_selected;
 }
 .nautilus-operations-button-needs-attention {
 
