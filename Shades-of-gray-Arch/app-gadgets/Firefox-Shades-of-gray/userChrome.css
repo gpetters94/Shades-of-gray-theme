@@ -383,14 +383,10 @@ richlistitem[type="download"][verdict]:hover:active {
 #placesList treechildren::-moz-tree-cell-text {
 
 	font-size: 1em !important;
-
-}
-#placesList treechildren::-moz-tree-cell {
-
 }
 #placesList treechildren::-moz-tree-cell(hover) {
 
-	background-color: var(--button_bg_hover) !important;
+	background-color: rgba(128, 128, 128, 0.32) !important;
 }
 #placesList treechildren::-moz-tree-cell(selected) {
 
