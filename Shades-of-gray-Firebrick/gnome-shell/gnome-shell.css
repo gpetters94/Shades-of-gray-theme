@@ -240,17 +240,14 @@ StScrollBar StButton#hhandle:active {
 }
 .slider {
 
-	-slider-height: 5px;
+	height: 0.9em;
+	-slider-height: 0.2em;
 	-slider-background-color: #282828;
 	-slider-border-color:  #282828;
 	-slider-active-background-color: #a2a2a2;
 	-slider-active-border-color: #282828;
 	-slider-border-width: 1px;
-	-slider-handle-radius: 0px;
-	height: 18px;
-	border-right-width: 1px;
-	border-left-width: 5px;
-	color: transparent;
+	-slider-handle-radius: 0.45em;
 }
 .popup-menu-item.selected .slider {
 
