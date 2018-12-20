@@ -5343,18 +5343,19 @@ box-shadow: none;
 /*************** evolution ****************/
 /******************************************/
 
-box > paned notebook stack scrolledwindow treeview.view {
+/* In-depth declaration to avoid side effects (e.g. Rhythmbox) */
+box > paned > widget > notebook > stack > widget scrolledwindow treeview.view {
 
 	color: @sidebar_fg;
 	background-color: @sidebar_bg;
 }
-box > paned notebook stack scrolledwindow treeview.view:hover {
+box > paned > widget > notebook > stack > widget scrolledwindow treeview.view:hover {
 
 	color: @base_fg_selected;
 	background-color: @sidebar_bg_hover;
 }
-box > paned notebook stack scrolledwindow treeview.view:selected,
-box > paned notebook stack scrolledwindow treeview.view:selected:hover {
+box > paned > widget > notebook > stack > widget scrolledwindow treeview.view:selected,
+box > paned > widget > notebook > stack > widget scrolledwindow treeview.view:selected:hover {
 
 	color: @base_fg_selected;
 	background-color: @base_bg_selected;
@@ -5369,23 +5370,24 @@ scrolledwindow .table-header {
 /***************** gthumb *****************/
 /******************************************/
 
-overlay > grid > stack paned box scrolledwindow treeview.view {
+/* In-depth declaration to avoid side effects */
+overlay > grid > stack > box paned box scrolledwindow treeview.view {
 
 	color: @sidebar_fg;
 	background-color: @sidebar_bg;
 }
-overlay > grid > stack paned box scrolledwindow treeview.view:hover {
+overlay > grid > stack > box paned box scrolledwindow treeview.view:hover {
 
 	color: @base_fg_selected;
 	background-color: @sidebar_bg_hover;
 }
-overlay > grid > stack paned box scrolledwindow treeview.view:selected,
-overlay > grid > stack paned box scrolledwindow treeview.view:selected:hover {
+overlay > grid > stack > box paned box scrolledwindow treeview.view:selected,
+overlay > grid > stack > box paned box scrolledwindow treeview.view:selected:hover {
 
 	color: @base_fg_selected;
 	background-color: @base_bg_selected;
 }
-overlay > grid > stack paned box scrolledwindow > .view {
+overlay > grid > stack > box paned box scrolledwindow > .view {
 
 	background-color: rgba(80, 80, 80, 0.4);
 }
