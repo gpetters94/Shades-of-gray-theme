@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -15,7 +16,7 @@
    height="24"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
    sodipodi:docname="activities.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -29,9 +30,9 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="11.305916"
-     inkscape:cy="11.635941"
+     inkscape:zoom="45.254834"
+     inkscape:cx="14.485218"
+     inkscape:cy="13.072913"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -43,12 +44,12 @@
      inkscape:window-y="35"
      width="400px"
      height="300px"
-     inkscape:snap-nodes="true"
+     inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
      gridtolerance="10000"
      inkscape:object-nodes="true"
      inkscape:snap-grids="true"
-     showguides="false"
+     showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-maximized="1"
      inkscape:bbox-nodes="true"
@@ -62,7 +63,9 @@
      guidecolor="#ff0b00"
      guideopacity="1"
      guidehicolor="#001aff"
-     guidehiopacity="0.49803922">
+     guidehiopacity="0.49803922"
+     inkscape:snap-to-guides="true"
+     inkscape:snap-others="false">
     <inkscape:grid
        snapvisiblegridlinesonly="true"
        enabled="true"
@@ -73,10 +76,34 @@
     <sodipodi:guide
        id="guide4135"
        orientation="1,0"
-       position="12,12" />
+       position="12,12"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-24,-10"
+       orientation="1,0"
+       id="guide8492"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
-     id="defs3" />
+     id="defs3">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lightness-Contrast"
+       id="filter11378">
+      <feColorMatrix
+         values="0 0 0 0.4 0.5 0 0 0 0.4 0.5 0 0 0 0.4 0.5 0 0 0 1 0"
+         id="feColorMatrix11376" />
+    </filter>
+    <linearGradient
+       id="linearGradient19282"
+       osb:paint="solid"
+       gradientTransform="matrix(1.166667,0,0,1,-18949.39,3260.856)">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop19284" />
+    </linearGradient>
+  </defs>
   <metadata
      id="metadata4">
     <rdf:RDF>
@@ -93,7 +120,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -134,25 +161,22 @@
      inkscape:groupmode="layer"
      style="display:inline">
     <rect
-       y="287"
-       x="5"
-       height="2"
-       width="2"
-       id="rect4138"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <rect
-       y="287"
-       x="11"
-       height="2"
-       width="2"
-       id="rect4138-6"
-       style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new" />
-    <rect
-       y="287"
-       x="17"
-       height="2"
-       width="2"
-       id="rect4138-9"
-       style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new" />
+       y="274.5"
+       x="-21.5"
+       height="16"
+       width="16"
+       id="rect48553"
+       style="fill:none;filter:url(#filter11378)" />
+    <g
+       aria-label=""
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+       id="text8612">
+      <path
+         d="m 18,284 v -2.95017 l -14.9280777,-0.0442 -0.022097,10.0221 2.9943689,-0.0221 L 6,294 h 14 v -10 z m -11.9337088,6.05315 -2.0418943,-0.0221 -0.044194,-7.99103 13.0231281,-0.0221 0.0221,2.04837 L 6,284 Z m 12.8265548,2.86179 -11.829886,0.15468 -0.088388,-8.07942 12.028759,0.0442 z"
+         style="font-size:16px;fill:#ffffff"
+         id="path8617"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccccccccccccccccc" />
+    </g>
   </g>
 </svg>
