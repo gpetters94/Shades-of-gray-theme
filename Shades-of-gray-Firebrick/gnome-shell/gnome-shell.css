@@ -238,21 +238,31 @@ StScrollBar StButton#hhandle:active {
 
 	background-color: #b1b1b1;
 }
+/* 3.29+ */
 .slider {
 
-	height: 0.9em;
-	-slider-height: 0.2em;
+	height: 1em;
+	color: #e0e0e0;
+	-barlevel-height: 0.35em;
+	-barlevel-background-color: #282828;
+	-barlevel-border-color: transparent;
+	-barlevel-border-width: 1px;
+	-barlevel-active-background-color: #999999;
+	-barlevel-active-border-color: #282828;
+	-barlevel-handle-radius: 6px;
+	-barlevel-overdrive-color: #d41835;
+	-barlevel-overdrive-border-color: #282828;
+	-barlevel-overdrive-separator-width: 0px;
+	-slider-handle-radius: 6px;
+}
+/* obsolete since 3.29 (only for backward compatibility) */
+.slider {
+
 	-slider-background-color: #282828;
 	-slider-border-color:  #282828;
 	-slider-active-background-color: #a2a2a2;
 	-slider-active-border-color: #282828;
 	-slider-border-width: 1px;
-	-slider-handle-radius: 0.45em;
-}
-.popup-menu-item.selected .slider {
-
-	-slider-background-color: #282828;
-	-slider-active-background-color: #a2a2a2;
 }
 
 /******************************************/
@@ -1180,7 +1190,6 @@ StScrollBar StButton#hhandle:active {
 #panel #panelActivities.panel-button:focus,
 #panel #panelActivities.panel-button:checked {
 
-	background-color: transparent;
 	box-shadow: none;
 	border-bottom-width: 1px;
 	border-color: transparent;
