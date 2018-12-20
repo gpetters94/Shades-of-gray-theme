@@ -9,7 +9,11 @@ Shades-of-gray is available in seven color variants:
 </p>
 
 ## Installation
-**Arch Linux:** You can install the AUR package [gtk-theme-shades-of-gray](https://aur.archlinux.org/packages/gtk-theme-shades-of-gray)
+
+#### Arch Linux
+You can install the AUR package:
+* Last release: [gtk-theme-shades-of-gray](https://aur.archlinux.org/packages/gtk-theme-shades-of-gray)
+* Git version: [gtk-theme-shades-of-gray-git](https://aur.archlinux.org/packages/gtk-theme-shades-of-gray-git)
 
 ### Installation via terminal
 
