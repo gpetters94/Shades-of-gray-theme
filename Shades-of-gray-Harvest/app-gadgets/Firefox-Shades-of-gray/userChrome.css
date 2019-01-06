@@ -527,8 +527,8 @@ richlistitem[type="download"][verdict]:hover:active {
 	margin-top: 6px !important;
 }
 /* Wider overflow submenu (default 29em is too small for many addons) */
-panelview[id^="PanelUI-webext-"] {
+multiview #appMenu-libraryView, #pageActionPanel panelview[id^="PanelUI-webext-"],
+#widget-overflow panelview[id^="PanelUI-webext-"] {
 
-	overflow: hidden;
-	min-width: 42em !important;
+	min-width: 44em !important;
 }
