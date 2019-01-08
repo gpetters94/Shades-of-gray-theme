@@ -250,7 +250,7 @@ popover.background {
 popover separator,
 popover.background separator {
 
-	background-color: transparent;
+	background-color: @menu_borders;
 }
 popover > list,
 popover > .view,
@@ -2287,17 +2287,8 @@ menu separator,
 .menu separator,
 .csd .menu separator {
 
-	padding: 3px 0;
-	color: @menu_bg;
-	background-color: @menu_bg;
-}
-menu .separator:not(label),
-.csd menu .separator:not(label),
-.menu .separator:not(label),
-.csd .menu .separator:not(label) {
-
-	padding: 3px 0;
-	color: @menu_bg;
+	margin: 3px 0;
+	background-color: @menu_borders;
 }
 menu menuitem,
 .menu menuitem {

@@ -102,7 +102,7 @@ you're on your own... */
 @define-color menu_bg                     @theme_bg_color;             /* #404040 */
 @define-color menu_bg_hover               @theme_selected_bg_color;    /* Theme color */
 @define-color menu_arrow                  #595959;
-@define-color menu_borders                #313131;                     /* #292929 */
+@define-color menu_borders                #323232;
 
 /* Border */
 @define-color borders                     #232323;
