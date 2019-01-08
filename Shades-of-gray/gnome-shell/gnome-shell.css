@@ -839,7 +839,7 @@ StScrollBar StButton#hhandle:active {
 }
 .popup-separator-menu-item {
 
-	height: 2px;
+	height: 1px;
 	margin: 0;
 	background-color: transparent;
 	border: none;

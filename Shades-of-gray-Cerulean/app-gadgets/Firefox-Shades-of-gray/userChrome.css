@@ -66,7 +66,7 @@
 	--treeview_row_hover_line:       #929292;
 
 	/* Panel */
-	--panel-separator-color: #292929 !important;
+	--panel-separator-color: #323232 !important;
 
 	/* Popup menus */
 	--arrowpanel-dimmed: var(--base_bg_selected) !important;
@@ -262,6 +262,19 @@ html|*.textbox-textarea:selected {
 
 	background-color: #5aa411 !important;
 	border: 1px solid var(--borders) !important;
+}
+
+/******************************************/
+/***************** Menus ******************/
+/******************************************/
+
+menuseparator {
+
+	-moz-appearance: none !important;
+	background: #323232 !important;
+	height: 1px !important;
+	margin: 4px 0 4px 0 !important;
+	padding: 0px !important;
 }
 
 /******************************************/
@@ -525,10 +538,4 @@ richlistitem[type="download"][verdict]:hover:active {
 .searchbar-engine-one-off-item[tooltiptext]::after {
 
 	margin-top: 6px !important;
-}
-/* Wider overflow submenu (default 29em is too small for many addons) */
-multiview #appMenu-libraryView, #pageActionPanel panelview[id^="PanelUI-webext-"],
-#widget-overflow panelview[id^="PanelUI-webext-"] {
-
-	min-width: 44em !important;
 }

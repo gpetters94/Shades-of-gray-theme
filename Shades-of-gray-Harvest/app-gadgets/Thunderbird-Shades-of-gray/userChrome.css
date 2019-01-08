@@ -158,7 +158,10 @@ rezsizer {
 menuseparator {
 
 	-moz-appearance: none !important;
-	background-color: transparent !important;
+	background: #323232 !important;
+	height: 1px !important;
+	margin: 4px 0 4px 0 !important;
+	padding: 0px !important;
 }
 listbox {
 

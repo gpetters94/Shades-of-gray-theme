@@ -310,14 +310,6 @@ StScrollBar StButton#hhandle:active {
 	background-color: #b1b1b1;
 }
 
-.separator {
-	-gradient-height: 1px;
-	-gradient-start: transparent;
-	-gradient-end: transparent;
-	-margin-horizontal: 1.5em;
-	height: 1em;
-}
-
 .popup-slider-menu-item,
 .slider {
 
@@ -458,6 +450,13 @@ StScrollBar StButton#hhandle:active {
 	border: 1px solid #232323;
 	border-radius: 3px;
 	background-color: #383838;
+}
+.separator {
+	-gradient-height: 1px;
+	-gradient-start: transparent;
+	-gradient-end: transparent;
+	-margin-horizontal: 1.5em;
+	height: 1em;
 }
 .menu.top {
 
@@ -626,10 +625,10 @@ StScrollBar StButton#hhandle:active {
 }
 .popup-separator-menu-item {
 
-	-gradient-height: 2px;
-	-gradient-start: transparent;
-	-gradient-end: transparent;
-	-margin-horizontal: 1.5em;
+	-gradient-height: 1px;
+	-gradient-start: #262626;
+	-gradient-end: #323232;
+	-margin-horizontal: 0.5em;
 	height: 1em;
 }
 .popup-alternating-menu-item:alternate {
@@ -668,6 +667,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 /*************** panel left ***************/
+
 #panelLeft {
 
 	spacing: 4px;
@@ -700,6 +700,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 /************** panel right ***************/
+
 #panelRight:dnd {
 
 	background-gradient-direction: vertical;
@@ -731,6 +732,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 /************** panel center **************/
+
 #panelCenter {
 
 	spacing: 4px;
@@ -741,7 +743,6 @@ StScrollBar StButton#hhandle:active {
 	background-gradient-start: rgba(0, 255, 0, 0.05);
 	background-gradient-end: rgba(0, 255, 0, 0.2);
 }
-
 .panelCenter {
 
 	spacing: 4px;
@@ -757,8 +758,6 @@ StScrollBar StButton#hhandle:active {
 	background-gradient-start: rgba(0, 255, 0, 0.05);
 	background-gradient-end: rgba(0, 255, 0, 0.2);
 }
-
-
 .panel-top,
 .panel-bottom,
 .panel-left,
@@ -774,7 +773,6 @@ StScrollBar StButton#hhandle:active {
 
 	box-shadow: 0 1px #202020;
 }
-
 .panel-bottom {
 
 	box-shadow: 0 -1px #202020;
@@ -1741,7 +1739,6 @@ background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
 	background-color: #404040;
 }
-
 .osd-window {
 	text-align: center;
 	font-weight: bold;
@@ -1752,18 +1749,15 @@ background-color: rgba(0, 0, 0, 0.1);
 	border: 1px solid #232323;
 	border-radius: 5px;
 }
-
 .osd-window .osd-monitor-label {
 	font-size: 3em;
 }
-
 .osd-window .level {
 	padding: 0;
 	height: 0.7em;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 2px;
 }
-
 .osd-window .level-bar {
 	border-radius: 2px;
 	background-color: #8fa876;
@@ -1791,14 +1785,12 @@ background-color: rgba(0, 0, 0, 0.1);
 
 	background-color: rgba(252, 65, 56, 0.5);
 }
-
 .window-list-item-label {
 
 	font-weight: bold;
 	width: 15em;
 	min-width: 5px;
 }
-
 .window-list-item-box {
 
 	color: #cccccc;
