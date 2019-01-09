@@ -539,3 +539,45 @@ richlistitem[type="download"][verdict]:hover:active {
 
 	margin-top: 6px !important;
 }
+
+/******************************************/
+/********* Wider overflow submenu *********/
+/******************************************/
+
+/* (default 29em is too small for many add-ons) */
+multiview #appMenu-libraryView,
+#pageActionPanel panelview[id^="PanelUI-webext-"],
+#widget-overflow panelview[id^="PanelUI-webext-"] {
+
+	min-width: 44em !important;
+}
+
+/******************************************/
+/************* Context menus **************/
+/******************************************/
+
+/**************************************************************************
+You can use the following instruction to hide items in context menus.
+Uncomment selectors of your choice (remove /* at the beginning of a line).
+Please note: after the last entry comma is not allowed.
+---------------------------------------------------------------------------
+A complete list of context IDs can be found in Firefox using this URL:
+	view-source:chrome://browser/content/browser.xul
+**************************************************************************/
+
+/* #context-openlinkinusercontext-menu,    /* Open link in new container tab */
+/* #context-openlinkincontainertab,        /* Open link in new personal tab */
+/* #context_reopenInContainer,             /* Reopen tab in container */
+/* #context-setDesktopBackground,          /* Set as desktop background */
+/* #context-sendimage,                     /* Email image */
+/* #context-sendvideo,                     /* Email video */
+/* #context-sendaudio,                     /* Email audio */
+/* #context-sendlink,                      /* Email link */
+/* #context-sendlinktodevice,              /* Send link to device */
+/* #context-sep-sendlinktodevice,          /* Separator */
+/* #context-sendpagetodevice,              /* Send page to device */
+/* #context-sep-sendpagetodevice,          /* Separator */
+/* #context_selectAllTabs,                 /* Select all tabs */
+/* #context_sendTabToDevice                /* Send tab to device */
+
+{ display: none !important; }
