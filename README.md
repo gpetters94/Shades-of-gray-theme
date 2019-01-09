@@ -10,7 +10,8 @@ Shades-of-gray is available in seven color variants:
 
 ## Installation
 
-#### Arch Linux
+### Arch Linux
+
 You can install the AUR package:
 * Last release: [gtk-theme-shades-of-gray](https://aur.archlinux.org/packages/gtk-theme-shades-of-gray)
 * Git version: [gtk-theme-shades-of-gray-git](https://aur.archlinux.org/packages/gtk-theme-shades-of-gray-git)
@@ -27,16 +28,18 @@ cd Shades-of-gray-theme/
 rm -rf README.md LICENSE .git
 sudo cp -r * /usr/share/themes/
 ```
-Existing installations of Shades-of-gray are overwritten by the last command. If Shades-of-gray was previously installed using your distribution's package management, the package should be uninstalled first.
+Existing installations of Shades-of-gray are overwritten by the last command. If Shades-of-gray was previously installed using your distribution‘s package management, the package should be uninstalled first.
 
 ### Manual Installation
+
 Copy the chosen theme folders either for personal use into directory `~/.themes/` or for common use into `/usr/share/themes/`.
 
-### Gadgets
+## Gadgets
 
 Each theme folder contains an `app-gadgets` directory with additional theme files for Thunderbird, Firefox and Inkspape.
 
-#### Thunderbird
+### Thunderbird
+
 The folder `assets` and the file `userChrome.css` in folder `Thunderbird-Shades-of-gray` contain a Thunderbird theme adapted to Shades of gray. Copy both to this location:
 ```
 ~/.thunderbird/<name-of-your-profile>/chrome/assets
@@ -44,9 +47,10 @@ The folder `assets` and the file `userChrome.css` in folder `Thunderbird-Shades-
 ```
 Lightning uses its own bright colors in default setting. The option for using theme colors is hidden as *Accessibility*. Open the Thunderbird settings and activate the checkbox *Optimize colors for accessibility* in calendar area.
 
-If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment out the current theme color in `userChrome.css` (Thunderbird and Firefox) and comment in the new theme color value.
+If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment out the current theme color in `userChrome.css` (Thunderbird and/or Firefox) uncomment the new theme color value.
 
-#### Firefox
+### Firefox
+
 The file `userChrome.css` in folder `Firefox-Shades-of-gray` contains a theme adaptation to Shades-of-gray. To enable the customizations, copy the file or its content to this location:
 
 `~/.mozilla/firefox/<name-of-your-profile>/chrome/userChrome.css`
@@ -59,27 +63,41 @@ Copy the file or its contents to this location for enabling:
 
 `~/.mozilla/firefox/<name-of-your-profile>/chrome/userContent.css`
 
-The file `bookmark-search-plus-2.css` contains theme customizations for the very useful add-on *Bookmark search plus 2* ([AMO](https://addons.mozilla.org/firefox/addon/bookmark-search-plus-2) | [Github](https://github.com/aaFn/Bookmark-search-plus-2)). Copy this file into your *chrome* directory:
+Note: You should choose the dark style in Firefox to get a consistent dark appearance.
+
+#### Firefox add-ons
+
+##### Bookmark search plus 2
+The file `bookmark-search-plus-2.css` contains theme customizations for the very useful add-on *Bookmark search plus 2* ([AMO](https://addons.mozilla.org/firefox/addon/bookmark-search-plus-2) | [Github](https://github.com/aaFn/Bookmark-search-plus-2)). Copy this file in addition to `userContent.css` into your *chrome* directory:
 
 `~/.mozilla/firefox/<name-of-your-profile>/chrome/bookmark-search-plus-2.css`
 
-Note: You should choose the dark style in Firefox to get a consistent dark appearance.
+##### Panorama Tab Groups
+The file `panorama-tab-groups.css` contains theme customizations for the recommended add-on *Panorama Tab Groups* ([AMO](https://addons.mozilla.org/firefox/addon/panorama-tab-groups) | [Github](https://github.com/projectdelphai/panorama-tab-groups)). Copy this file in addition to `userContent.css` into your *chrome* directory:
 
-#### Inkscape
+`~/.mozilla/firefox/<name-of-your-profile>/chrome/panorama-tab-groups.css`
+
+Note: In *Panorama Tab Groups* you can toggle between light and dark theme. The Shades-of-gray customizations only take effect with the dark theme.
+
+### Inkscape
+
 Original colored icons in Inkscape are hard to identify in dark themes. The file `icon.svg` in folder `Inkscape-icons` contains bright icons.
 To use them in Inkscape, the file must be stored in this directory:
 
 `~/.config/inkscape/icons/icons.svg`
 
 ## Requirements
+
 * GTK+ 3.20 or above
 * Pixmap theme engine
 * Murrine theme engine
 
 ## License:
+
 GPL-3.0+
 
 ## Screenshots
+
 Cinnamon Patina, Gnome Gray,</br>
 Openbox Arch, Xfce4 Cerulean
 <p align="center">
