@@ -9,7 +9,7 @@ You can copy the file or its content to this location:
 
 The customizations are based on the dark theme of Firefox, which should be enabled in customize settings
 
-If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment out the current theme color and comment in the new theme color value.
+If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment the current theme color and uncomment the new theme color value.
 
 
 *******************
@@ -29,9 +29,23 @@ Copy the file or its content to this location for enabling:
 * bookmark-search-plus-2.css *
 ******************************
 
-This file contains theme customizations for the highly recommended add-on "Bookmark search plus 2":
+This file contains theme customizations for the very useful add-on "Bookmark search plus 2":
 https://addons.mozilla.org/firefox/addon/bookmark-search-plus-2
 
-Copy the file into your chrome directory:
+Copy this file in addition to userContent.css into your chrome directory:
 
 ~/.mozilla/firefox/<name-of-your-profile>/chrome/bookmark-search-plus-2.css
+
+
+***************************
+* panorama-tab-groups.css *
+***************************
+
+This file contains theme customizations for the recommended add-on "Panorama Tab Groups":
+https://addons.mozilla.org/firefox/addon/panorama-tab-groups
+
+Copy this file in addition to userContent.css into your chrome directory:
+
+~/.mozilla/firefox/<name-of-your-profile>/chrome/panorama-tab-groups.css
+
+Note: In Panorama Tab Groups you can toggle between light and dark theme. The Shades-of-gray customizations only take effect with the dark theme.

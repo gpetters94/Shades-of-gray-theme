@@ -9,6 +9,7 @@
 /******************************************/
 
 @import url("bookmark-search-plus-2.css");
+@import url("panorama-tab-groups.css");
 
 /******************************************/
 /****** Shades of gray theme colors *******/
@@ -273,6 +274,11 @@
 	.contentSearchSettingsButton:active {
 
 		background-color: #757575 !important;
+	}
+	/* Firefox branding logo */
+	.search-wrapper .logo-and-wordmark .logo {
+
+		-webkit-filter: grayscale(100%) !important;
 	}
 }
 
