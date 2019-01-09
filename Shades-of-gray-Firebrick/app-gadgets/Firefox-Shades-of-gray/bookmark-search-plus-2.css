@@ -185,7 +185,9 @@
 	}
 	.mymenu hr {
 
-		border: 2px solid transparent !important;
+		border: none !important;
+		border-bottom: 1px solid #323232 !important;
+		margin: 4px 0 4px 0 !important;
 	}
 	.menudisabled {
 
