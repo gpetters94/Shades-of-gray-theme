@@ -541,11 +541,23 @@ richlistitem[type="download"][verdict]:hover:active {
 }
 
 /******************************************/
-/********* Wider overflow submenu *********/
+/************* Overflow menu **************/
 /******************************************/
 
+.panel-header > label {
+
+    font-weight: 400 !important;
+    font-size: 1.075em !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+}
+/* (default 32px in panelUI.css -- IMHO botch) */
+.panel-header > .subviewbutton-back + label {
+
+    margin-inline-end: 0 !important;
+}
 /* (default 29em is too small for many add-ons) */
-multiview #appMenu-libraryView,
+#widget-overflow panelview[id^="PanelUI-webext-"] .panel-header,
 #pageActionPanel panelview[id^="PanelUI-webext-"],
 #widget-overflow panelview[id^="PanelUI-webext-"] {
 
