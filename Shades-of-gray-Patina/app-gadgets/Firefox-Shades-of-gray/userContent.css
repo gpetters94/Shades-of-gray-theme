@@ -37,6 +37,7 @@
 
 	/* Harvest: */
 	/*--base_bg_selected: #AD8641;*/
+
 }
 
 /******************************************/
@@ -233,11 +234,14 @@
 		fill: #4AA6D7 !important;
 		background: transparent !important;
 	}
+	.search-handoff-button, /* FF 66+ */
 	.search-wrapper input {
 
 		border: 1px solid #111111 !important;
-		background: #575757 !important;
+		background-color: #575757 !important;
 	}
+	.search-handoff-button:focus, /* FF 66+ */
+	.search-active .search-handoff-button, /* FF 66+ */
 	.search-wrapper:active input,
 	.search-wrapper input:focus {
 
