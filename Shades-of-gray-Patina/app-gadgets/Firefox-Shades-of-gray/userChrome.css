@@ -578,6 +578,8 @@ A complete list of context IDs can be found in Firefox using this URL:
 /* #context-sendpagetodevice,              /* Send page to device */
 /* #context-sep-sendpagetodevice,          /* Separator */
 /* #context_selectAllTabs,                 /* Select all tabs */
-/* #context_sendTabToDevice                /* Send tab to device */
+/* #context_sendTabToDevice,               /* Send tab to device */
+/* #context-savelinktopocket,              /* Save link to pocket */
+/* #context-pocket                         /* Save page to pocket */
 
 { display: none !important; }
