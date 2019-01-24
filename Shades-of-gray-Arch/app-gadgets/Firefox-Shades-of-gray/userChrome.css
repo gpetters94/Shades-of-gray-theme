@@ -378,6 +378,13 @@ richlistitem[type="download"][verdict]:hover:active {
 	background: var(--button_bg_active) !important;
 }
 
+/* Fallback webextension popup background color
+(should be set by add-ons, but isn't always) */
+.webextension-popup-stack {
+
+	background-color: #ffffff !important;
+}
+
 /******************************************/
 /************* Places window **************/
 /******************************************/
