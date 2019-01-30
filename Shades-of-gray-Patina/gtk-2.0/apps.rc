@@ -29,3 +29,59 @@ widget_class "*ThunarWindow*.<GtkScrolledWindow>"       style "thunar-frame"
 widget_class "*ThunarShortcutsView*"                    style "dark-sidebar"
 widget_class "*ThunarTreeView*"                         style "dark-sidebar"
 widget_class "*ThunarWindow*.<GtkHPaned>"               style "thunar-handle"
+
+
+#######################################
+# Workaround for text colored entries #
+#######################################
+
+style "entry_decolor" {
+
+  xthickness = 6
+  ythickness = 4
+
+  engine "pixmap" {
+
+	image {
+	  function = SHADOW
+	  state = NORMAL
+	  detail = "entry"
+	  file = "assets/entry-border-bg.png"
+	  border = {6, 6, 6, 6}
+	  stretch = TRUE
+	}
+
+	image {
+	  function = SHADOW
+	  state = ACTIVE
+	  detail = "entry"
+	  file = "assets/entry-border-active-bg.png"
+	  border = {6, 6, 6, 6}
+	  stretch = TRUE
+	}
+
+	image {
+	  function = FLAT_BOX
+	  state    = ACTIVE
+	  detail   = "entry_bg"
+	  file     = "assets/null.png"
+	}
+
+	image {
+	  function = FLAT_BOX
+	  state    = INSENSITIVE
+	  detail   = "entry_bg"
+	  file     = "assets/null.png"
+	}
+
+	image {
+	  function = FLAT_BOX
+	  detail   = "entry_bg"
+	  file     = "assets/null.png"
+	}
+  }
+}
+
+# Hexchat colored entries
+class "SexySpellEntry"                                   style:highest "entry_decolor"
+# (FIXME: entries beside mode buttons - help is desired)
