@@ -70,6 +70,10 @@
 		#contents {
 			font-size: 93%;
 		}
+		#contents ul,
+		#contents ul ul {
+			list-style: circle;
+		}
 		#version {
 			font-size: 90%;
 		}
@@ -164,7 +168,7 @@
 
 		<h2 id="Contents">Table of contents</h2>
 
-		<ul id="contents">
+		<ol id="contents">
 			<li><a href="#Installation">Installation</a></li>
 				<ul>
 					<li><a href="#Arch_Linux">Arch Linux</a></li>
@@ -176,6 +180,11 @@
 					<li><a href="#Thunderbird">Thunderbird</a></li>
 					<li><a href="#Firefox">Firefox</a></li>
 					<li><a href="#Firefox_addons">Firefox add-ons</a></li>
+						<ul>
+							<li><a href="#Bookmark_search_plus">Bookmarked Search Plus 2</a></li>
+							<li><a href="#Panorama_Tab_Groups">Panorama Tab Groups</a></li>
+							<li><a href="#Bookmarked_Speed_Dial">Bookmarked Speed Dial</a></li>
+						</ul>
 					<li><a href="#Inkscape">Inkscape</a></li>
 				</ul>
 			<li><a href="#Requirements">Requirements</a></li>
@@ -189,8 +198,9 @@
 					<li><a href="#vb6_issue">VirtualBox 6.0: GTK issue</a></li>
 					<li><a href="#white_font">White font in white input field</a></li>
 					<li><a href="#addon_issues">Firefox add-on customization issues</a></li>
+					<li><a href="#Th_unread_messages">Font color of unread messages in Thunderbird</a></li>
 				</ul>
-		</ul>
+		</ol>
 
 		<hr>
 
@@ -213,7 +223,7 @@
 
 		<h3 id="Installation_terminal">Installation via terminal</h3>
 
-		<p>You can install the git version by using this method:</p>
+		<p>You can install the Git version by using this method:</p>
 
 		<div><code>
 			mkdir ~/Shades-of-gray-git<br>
@@ -249,7 +259,7 @@
 			~/.thunderbird/&lt;name-of-your-profile&gt;/chrome/userChrome.css
 		</code></div>
 
-		<p>If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment out the current theme color in <code>userChrome.css</code> (Thunderbird and/or Firefox) uncomment the new theme color value.</p>
+		<p>If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment out the current theme color in <code>userChrome.css</code> (Thunderbird and/or Firefox) and uncomment the new theme color value.</p>
 
 		<h4 id="Thunderbird_Calendar">&#8226;  Thunderbird Calendar</h4>
 
@@ -287,6 +297,8 @@
 
 		<h3 id="Firefox_addons">Firefox add-ons</h4>
 
+		<p>Theme customizations for Firefox add-ons are included in separate CSS files. The CSS code is imported into <code>userContent.css</code>. If a new add-on customization has been added to <em>Shades of gray</em>, please also update the file <code>userContent.css</code> which contains the new import instruction.</p>
+
 		<h4 id="Bookmark_search_plus">&#8226;  Bookmark search plus 2</h4>
 
 		<p>The file <code>bookmark-search-plus-2.css</code> contains theme customizations for the very useful add-on <em>Bookmark search plus 2</em> (<a href="https://addons.mozilla.org/firefox/addon/bookmark-search-plus-2">AMO</a> | <a href="https://github.com/aaFn/Bookmark-search-plus-2">Github</a>).<br>
@@ -306,6 +318,21 @@
 		</code></div>
 
 		<p class="note">Note: in <em>Panorama Tab Groups</em> settings you can toggle between light and dark theme. The Shades-of-gray customizations only take effect with the dark theme.</p>
+
+		<h4 id="Bookmarked_Speed_Dial">&#8226;  Bookmarked Speed Dial</h4>
+
+		<p><em>Bookmarked Speed Dial</em> (<a href="https://addons.mozilla.org/firefox/addon/bookmarked-speeddial">AMO</a>) is an add-on that offers similar functionality to <em>Vivaldi Speed Dial</em>.</p>
+
+		<p>The file <code>bookmarked-speed-dial.css</code> contains a <em>Shades-of-gray</em> theme customization.<br>
+		Copy this file in addition to <code>userContent.css</code> into your <em>chrome</em> directory:</p>
+
+		<div><code>
+			~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/bookmarked-speed-dial.css
+		</code></div>
+
+		<p>The directory <code>../app-gadgets/Firefox-Shades-of-gray/bookmarked-speed-dial-images</code> contains images wich you can choose as '<em>Default dial image</em>' and '<em>Default folder image</em>' in the add-on options.</p>
+
+		<p class="note">Note: in the add-on options you can customize the appearance with your own CSS code. This only takes effect if you remove the '<code>!important</code>' statement from the correlating property in '<code>bookmarked-speed-dial.css</code>'.</p>
 
 		<hr>
 
@@ -341,6 +368,16 @@
 		<hr>
 
 		<h2 id="Changelog">Changelog</h2>
+
+		<h4 id="Next_Release">Next Release</h4>
+
+		<ul id="version">
+			<li>GTK2: workaround entry background color in HexChat (apps.rc)</li>
+			<li>Firefox add-on theme: 2.0.52 update (bookmark-search-plus-2.css)</li>
+			<li>Firefox: fallback webextension popup background added (userChrome.css)</li>
+			<li>Firefox add-on theme added: Bookmarked Speed Dial (bookmarked-speed-dial.css, userContent.css)</li>
+			<li>Thunderbird: titles of unread messages are colored (userChrome.css)</li>
+		</ul>
 
 		<h4 id="1.1.4">1.1.4</h4>
 
@@ -546,6 +583,24 @@
 			<span class="m">-  @import url("panorama-tab-groups.css");</span><br>
 			<span class="p">+  /* @import url("panorama-tab-groups.css"); */</span>
 		</code></div><br>
+
+		<hr>
+
+		<h4 id="Th_unread_messages">Font color of unread messages in Thunderbird</h4>
+
+		<blockquote>
+			<p>Is it possible to change the font color for titles of unread messages in the Thunderbird folder pane and thread view?</p>
+		</blockquote>
+
+		<p>You can customize this by pasting the following code snippet at the end of the file <code>userChrome.css</code> in your Thunderbird profile:</p>
+
+		<div><code>
+			#threadTree > treechildren::-moz-tree-cell-text(unread),<br>
+			#folderTree > treechildren::-moz-tree-cell-text(hasUnreadMessages-true) {<br><br>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;color: #FFA500 !important;<br>
+			}
+		</code></div>
 
 	<hr>
 
