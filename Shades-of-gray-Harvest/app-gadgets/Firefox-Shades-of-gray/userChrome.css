@@ -221,6 +221,12 @@ html|*.textbox-textarea:selected {
 
 	background-color: var(--button_bg_active) !important;
 }
+/* smaller scrollbar in sidebar*/
+/* NOTE: seems OK in FF 65-67 - watching for side effects in later versions */
+scrollbar[orient="vertical"] {
+
+	margin-right: -5px !important;
+}
 
 /******************************************/
 /*************** titlebar *****************/
