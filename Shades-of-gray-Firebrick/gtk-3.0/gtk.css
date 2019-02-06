@@ -5308,6 +5308,7 @@ box-shadow: none;
 }
 .pluma-window treeview,
 .xed-window treeview,
+.gedit-document-panel,
 .gedit-side-panel-paned treeview {
 
 	color: @sidebar_fg;
