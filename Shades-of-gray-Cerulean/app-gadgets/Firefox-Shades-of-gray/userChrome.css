@@ -223,7 +223,8 @@ html|*.textbox-textarea:selected {
 }
 /* smaller scrollbar in sidebar*/
 /* NOTE: seems OK in FF 65-67 - watching for side effects in later versions */
-scrollbar[orient="vertical"] {
+#historyTree scrollbar[orient="vertical"],
+#bookmarks-view scrollbar[orient="vertical"] {
 
 	margin-right: -5px !important;
 }
