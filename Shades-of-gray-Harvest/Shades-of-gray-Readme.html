@@ -74,7 +74,7 @@
 		#contents ul ul {
 			list-style: circle;
 		}
-		#version {
+		.version {
 			font-size: 90%;
 		}
 		code {
@@ -164,7 +164,7 @@
 			<li id="patina">&#8226; Patina</li>
 		</ul>
 
-		<hr>
+	<hr>
 
 		<h2 id="Contents">Table of contents</h2>
 
@@ -186,6 +186,11 @@
 							<li><a href="#Bookmarked_Speed_Dial">Bookmarked Speed Dial</a></li>
 						</ul>
 					<li><a href="#Inkscape">Inkscape</a></li>
+					<li><a href="#Syntax">Syntax Highlighting</a></li>
+						<ul>
+							<li><a href="#Sublime">Sublime Text</a></li>
+							<li><a href="#Gedit">Gedit, Pluma, Xed, Mousepad</a></li>
+						</ul>
 				</ul>
 			<li><a href="#Requirements">Requirements</a></li>
 			<li><a href="#License">License</a></li>
@@ -202,7 +207,7 @@
 				</ul>
 		</ol>
 
-		<hr>
+	<hr>
 
 		<h2 id="Installation">Installation</h2>
 
@@ -219,7 +224,7 @@
 			In <a href="https://github.com/WernerFP/Shades-of-gray-theme/commits/master" title="Shades-of-gray GitHub commits">GitHub commits</a> you can check if there are changes since the latest release that can be useful for you.
 		</p>
 
-		<hr>
+	<hr>
 
 		<h3 id="Installation_terminal">Installation via terminal</h3>
 
@@ -236,7 +241,7 @@
 
 		<p class="note">Note: Existing installations of Shades-of-gray are overwritten by the last command. If Shades-of-gray was previously installed using your distribution‘s package management, the package should be uninstalled first.</p>
 
-		<hr>
+	<hr>
 
 		<h3 id="Manual_Installation">Manual Installation</h3>
 
@@ -244,7 +249,7 @@
 
 		<p>Shades-of-gray can be downloaded from <a href="https://github.com/WernerFP/Shades-of-gray-theme/commits/master" title="Shades-of-gray on GitHub">GitHub</a> or from <a href="https://www.opendesktop.org/p/1244058/" title="Shades-of-gray on openDesktop.org">openDesktop.org</a>.</p>
 
-		<hr>
+	<hr>
 
 		<h2 id="Gadgets">Gadgets</h2>
 
@@ -259,14 +264,14 @@
 			~/.thunderbird/&lt;name-of-your-profile&gt;/chrome/userChrome.css
 		</code></div>
 
-		<p>If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment out the current theme color in <code>userChrome.css</code> (Thunderbird and/or Firefox) and uncomment the new theme color value.</p>
+		<p>If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment the current theme color in <code>userChrome.css</code> (Thunderbird and/or Firefox) and uncomment the new theme color value.</p>
 
 		<h4 id="Thunderbird_Calendar">&#8226;  Thunderbird Calendar</h4>
 
 		<p>Thunderbird‘s Calendar (formaly <i>Lightning</i>) uses its own bright colors in default setting. The option for using theme colors is hidden as '<em>Accessibility</em>'.<br>
 		Open the Thunderbird settings and activate the checkbox '<em>Optimize colors for accessibility</em>' in calendar area.</p>
 
-		<hr>
+	<hr>
 
 		<h3 id="Firefox">Firefox</h3>
 
@@ -293,7 +298,7 @@
 			~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/userContent.css
 		</code></div>
 
-		<hr>
+	<hr>
 
 		<h3 id="Firefox_addons">Firefox add-ons</h4>
 
@@ -334,7 +339,7 @@
 
 		<p class="note">Note: in the add-on options you can customize the appearance with your own CSS code. This only takes effect if you remove the '<code>!important</code>' statement from the correlating property in '<code>bookmarked-speed-dial.css</code>'.</p>
 
-		<hr>
+	<hr>
 
 		<h3 id="Inkscape">Inkscape</h3>
 
@@ -348,7 +353,39 @@
 		<p class="note">Note: not all symbols can be customized because Inkscape is partly using standard GTK symbols:<br>
 		https://bugs.launchpad.net/inkscape/+bug/789804</p>
 
-		<hr>
+	<hr>
+
+		<h3 id="Syntax">Syntax Highlighting</h3>
+
+		<p>Shades-of-gray includes the syntax color scheme Shades-of-pastel for several editors. By using pastel colors on dark background like pastel chalks on a blackboard the Shades-of-pastel scheme provides balanced and easy on eyes contrasts.</p>
+
+
+		<h4 id="Sublime">&#8226;  Sublime Text</h4>
+
+		<p>To install the scheme for Sublime-Text change to directory <code>Shades-of-gray/app-gadgets/Syntax-Colors</code>. Copy the contained file <code>Shades-of-pastel.tmTheme</code> to a folder in your Sublime Packages directory:</p>
+
+		<div><code>
+			mkdir -p $HOME/.config/sublime-text-3/Packages/Shades-of-pastel<br>
+			cp Shades-of-pastel.tmTheme $HOME/.config/sublime-text-3/Packages/Shades-of-pastel/
+		</code></div>
+
+		<p>Now you can select Shades-of-pastel as a color scheme in menu <i>Preferences</i>.</p>
+
+		<p class="note">Note: To get a perfect integration of Sublime window elements in Shades-of-gray you can choose the 'Adaptive.sublime-theme' in 'Preferences'.</p>
+
+		<h4 id="Gedit">&#8226;  Gedit, Pluma, Xed, Mousepad</h4>
+
+		<p>Shades-of-pastel can be used by all editors with syntax highlighting based on <i>GtkSourceView 3</i>.<br>
+		To install the color scheme change to directory <code>Shades-of-gray/app-gadgets/Syntax-Colors</code>. Copy the contained file <code>shades-of-pastel.xml</code> into the following user directory:</p>
+
+		<div><code>
+		mkdir -p $HOME/.local/share/gtksourceview-3.0/styles<br>
+		cp shades-of-pastel.xml $HOME/.local/share/gtksourceview-3.0/styles/<br>
+		</code></div>
+
+		<p>Shades-of-pastel is now available in the settings of your editor.</p>
+
+	<hr>
 
 		<h2 id="Requirements">Requirements</h2>
 
@@ -359,29 +396,32 @@
 
 		</ul>
 
-		<hr>
+	<hr>
 
 		<h2 id="License">License</h2>
 
 		<p>GNU General Public License <a href="https://raw.githubusercontent.com/WernerFP/Shades-of-gray-theme/master/LICENSE" title="Shades-of-gray license">GPL-3</a></p>
 
-		<hr>
+	<hr>
 
 		<h2 id="Changelog">Changelog</h2>
 
-		<h4 id="Next_Release">Next Release</h4>
+		<h4 id="1.1.5">1.1.5</h4>
 
-		<ul id="version">
-			<li>GTK2: workaround entry background color in HexChat (apps.rc)</li>
+		<ul class="version">
+			<li>GTK2: entry background color in HexChat fixed (apps.rc)</li>
+			<li>GTK3: Gedit document-panel background color synchronized (gtk.css)</li>
+			<li>Thunderbird: titles of unread messages are colored (userChrome.css)</li>
 			<li>Firefox add-on theme: 2.0.52 update (bookmark-search-plus-2.css)</li>
 			<li>Firefox: fallback webextension popup background added (userChrome.css)</li>
+			<li>Firefox: width of vertical scrollbar in sidebar reduced (userChrome.css)</li>
 			<li>Firefox add-on theme added: Bookmarked Speed Dial (bookmarked-speed-dial.css, userContent.css)</li>
-			<li>Thunderbird: titles of unread messages are colored (userChrome.css)</li>
+			<li>Syntax color schemes for Sublime-Text, Gedit, Pluma, Xed, Mousepad etc. added (Shades-of-pastel)</li>
 		</ul>
 
 		<h4 id="1.1.4">1.1.4</h4>
 
-		<ul id="version">
+		<ul class="version">
 			<li>GTK3, GTK2, Cinnamon, Gnome, Openbox: thin dark menu separator lines added</li>
 			<li>GTK3: side effect Evolution-CSS in Rhythmbox fixed (gtk.css)</li>
 			<li>Gnome: slider and barlevel fixed to version 3.29+ (gnome-shell.css)</li>
@@ -396,7 +436,7 @@
 
 		<h4 id="1.1.3">1.1.3</h4>
 
-		<ul id="version">
+		<ul class="version">
 			<li>Thunar, Nemo, Nautilus, Caja: list view improved (gtk.css)</li>
 			<li>Firefox: minor adjustments in places window (userChrome.css)</li>
 			<li>Firefox add-on theme added: Bookmark search plus 2 (bookmark-search-plus-2.css, userContent.css)</li>
@@ -404,7 +444,7 @@
 
 		<h4 id="1.1.2">1.1.2</h4>
 
-		<ul id="version">
+		<ul class="version">
 			<li>Xfce4: panel adjusted to gtk3 in Xfce 4.13 (gtk.css)</li>
 			<li>Xfwm4: window buttons supplemented (xfwm4)</li>
 			<li>Thunderbird, Lightning: Shades-of-gray icons added (userChrome.css, assets)</li>
@@ -417,7 +457,7 @@
 
 		<h4 id="1.1.1">1.1.1</h4>
 
-		<ul id="version">
+		<ul class="version">
 			<li>Openbox: close button modified</li>
 			<li>Openbox: some improvements (close button, menu)</li>
 			<li>Thunderbird: minimum column width defined (userChrome.css)</li>
@@ -427,7 +467,7 @@
 
 		<h4 id="1.1.0">1.1.0</h4>
 
-		<ul id="version">
+		<ul class="version">
 			<li>New: theme for Cinnamon added (cinnamon.css, assets)</li>
 			<li>GTK3: minor changes (gtk.css)</li>
 			<li>Metacity: updated for Cinnamon (metacity-theme-*.xml)</li>
@@ -438,39 +478,39 @@
 
 		<h4 id="1.0.4.1">1.0.4.1</h4>
 
-		<ul id="version">
+		<ul class="version">
 			<li>Fix: gtk3-submenus are positioned closer to parent menu (gtk.css)</li>
 		</ul>
 
 		<h4 id="1.0.4">1.0.4</h4>
 
-		<ul id="version">
+		<ul class="version">
 			<li>Borders and separators slightly less contrast (gtk-colors.css, gtk-2.0)</li>
 			<li>Thunderbird: added theme customizations for color tags in email tree view (userChrome.css)</li>
 		</ul>
 
 		<h4 id="1.0.3">1.0.3</h4>
 
-		<ul id="version">
+		<ul class="version">
 			<li>Fix: now window decorations of Gnome programs correctly trigger a resize mouse pointer (gtk.css)</li>
 		</ul>
 
 		<h4 id="1.0.2">1.0.2</h4>
 
-		<ul id="version">
+		<ul class="version">
 			<li>Borders in focused entries are highlighted less obtrusive (gtk.css)</li>
 			<li>Unused variables removed (gtk-colors.css)</li>
 			<li>Nemo, Gedit, Pluma: sidebars treeview/places unified (gtk.css)</li>
 		</ul>
 
-		<hr>
+	<hr>
 
 		<h2 id="Bugreports">Bug reports</h2>
 
 		<p>Please report bugs, issues and feature requests on <a href="https://github.com/WernerFP/Shades-of-gray-theme/issues" title="Shades-of-gray issues">GitHub</a>.
 		First you can check the ongoing <a href="https://github.com/WernerFP/Shades-of-gray-theme/commits/master" title="Shades-of-gray GitHub commits">GitHub commits</a> to see if your issue has already been solved.</p>
 
-		<hr>
+	<hr>
 
 		<h2 id="FAQ">FAQ and tips</h2>
 
@@ -511,7 +551,7 @@
 			QT_QPA_PLATFORMTHEME=qt5ct
 		</code></div><br>
 
-		<hr>
+	<hr>
 
 		<h4 id="gtk_java">Java applications and GTK+</h4>
 
@@ -530,7 +570,7 @@
 
 		<p>After the next login you can start the Java program and select GTK+ in preferences.</p>
 
-		<hr>
+	<hr>
 
 		<h4 id="vb6_issue">VirtualBox 6.0: GTK issue</h3>
 
