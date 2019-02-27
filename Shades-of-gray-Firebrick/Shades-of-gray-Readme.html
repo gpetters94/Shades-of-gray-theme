@@ -190,6 +190,7 @@
 						<ul>
 							<li><a href="#Sublime">Sublime Text</a></li>
 							<li><a href="#Gedit">Gedit, Pluma, Xed, Mousepad</a></li>
+							<li><a href="#Vim">Vim, GVim</a></li>
 						</ul>
 				</ul>
 			<li><a href="#Requirements">Requirements</a></li>
@@ -300,7 +301,7 @@
 
 	<hr>
 
-		<h3 id="Firefox_addons">Firefox add-ons</h4>
+		<h3 id="Firefox_addons">Firefox add-ons</h3>
 
 		<p>Theme customizations for Firefox add-ons are included in separate CSS files. The CSS code is imported into <code>userContent.css</code>. If a new add-on customization has been added to <em>Shades of gray</em>, please also update the file <code>userContent.css</code> which contains the new import instruction.</p>
 
@@ -385,6 +386,17 @@
 
 		<p>Shades-of-pastel is now available in the settings of your editor.</p>
 
+		<h4 id="Vim">&#8226;  Vim, GVim</h4>
+
+		<p>To install Shades-of-pastel for Vim change to directory <code>Shades-of-gray/app-gadgets/Syntax-Colors</code>. Copy the file <code>shades-of-pastel.vim</code> into your Vim profile folder:</p>
+
+		<div><code>
+		mkdir -p $HOME/.vim/colors<br>
+		cp shades-of-pastel.vim $HOME/.vim/colors/<br>
+		</code></div>
+
+		<p>Turn on syntax highlighting (<code>syntax on</code>) in your configuration file (<code>~/.vimrc</code>) and append the line <code>colorscheme shades-of-pastel</code> if you want to use the Shades-of-Pastel scheme by default.</p>
+
 	<hr>
 
 		<h2 id="Requirements">Requirements</h2>
@@ -405,6 +417,13 @@
 	<hr>
 
 		<h2 id="Changelog">Changelog</h2>
+
+		<h4 id="Next">Next release</h4>
+
+		<ul class="version">
+			<li>Firefox add-on: 0.8.8 update (panorama-tab-groups.css)</li>
+			<li>Syntax scheme for Vim and GVim added (Shades-of-pastel)</li>
+		</ul>
 
 		<h4 id="1.1.5">1.1.5</h4>
 
@@ -572,7 +591,7 @@
 
 	<hr>
 
-		<h4 id="vb6_issue">VirtualBox 6.0: GTK issue</h3>
+		<h4 id="vb6_issue">VirtualBox 6.0: GTK issue</h4>
 
 		<p>The main window in <i>VirtualBox 6.0</i> (Qt5) is not readable with dark gtk-themes via <code>qt5ct</code> (white font on light background).<br><br>
 		You can work around this improper conduct by starting <i>VirtualBox</i> with qt5-theme <i>'Fusion'</i> instead of the gtk-theme:</p>
