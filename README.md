@@ -10,6 +10,22 @@ Shades-of-gray is available in seven color variants:
 
 The following description with further information is part of the file `Shades-of-gray-Readme.html`, contained in the Shades-of-gray theme folder.
 
+## Table of Contents
+
+- [Installation](#installation)
+  - [Arch Linux](#arch-linux)
+  - [Installation via terminal](#installation-via-terminal)
+  - [Manual Installation](#manual-installation)
+- [Gadgets](#gadgets)
+  - [Thunderbird](#thunderbird)
+  - [Firefox](#firefox)
+  - [Firefox add-ons](#firefox-add-ons)
+  - [Inkscape](#inkscape)
+  - [Syntax Highlighting](#syntax-highlighting)
+- [Requirements](#requirements)
+- [License](#license)
+- [Screenshots](#screenshots)
+
 ## Installation
 
 ### Arch Linux
@@ -127,7 +143,7 @@ Shades-of-gray includes the syntax color scheme Shades-of-pastel for several edi
 
 #### • Sublime Text
 
-To install the scheme for Sublime-Text change to directory <code>Shades-of-gray/app-gadgets/Syntax-Colors</code>. Copy the contained file <code>Shades-of-pastel.tmTheme</code> to a folder in your Sublime Packages directory:</p>
+To install the scheme for Sublime-Text change to directory <code>Shades-of-gray/app-gadgets/Syntax-Colors</code>. Copy the contained file <code>Shades-of-pastel.tmTheme</code> to a folder in your Sublime Packages directory:
 ```
 mkdir -p $HOME/.config/sublime-text-3/Packages/Shades-of-pastel
 cp Shades-of-pastel.tmTheme $HOME/.config/sublime-text-3/Packages/Shades-of-pastel/
@@ -143,13 +159,23 @@ cp shades-of-pastel.xml $HOME/.local/share/gtksourceview-3.0/styles/
 ```
 Shades-of-pastel is now available in the settings of your editor.
 
+#### • Vim, GVim
+
+To install Shades-of-pastel for Vim change to directory `Shades-of-gray/app-gadgets/Syntax-Colors`. Copy the file `shades-of-pastel.vim` into your Vim profile folder:</p>
+
+```
+mkdir -p $HOME/.vim/colors<br>
+cp shades-of-pastel.vim $HOME/.vim/colors/<br>
+```
+Turn on syntax highlighting (`syntax on`) in your configuration file (`~/.vimrc`) and append the line `colorscheme shades-of-pastel` if you want to use the Shades-of-Pastel scheme by default.
+
 ## Requirements
 
 * GTK+ 3.20 or above
 * Pixmap theme engine
 * Murrine theme engine
 
-## License:
+## License
 
 GNU General Public License v3.0
 
