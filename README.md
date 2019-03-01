@@ -164,8 +164,8 @@ Shades-of-pastel is now available in the settings of your editor.
 To install Shades-of-pastel for Vim change to directory `Shades-of-gray/app-gadgets/Syntax-Colors`. Copy the file `shades-of-pastel.vim` into your Vim profile folder:</p>
 
 ```
-mkdir -p $HOME/.vim/colors<br>
-cp shades-of-pastel.vim $HOME/.vim/colors/<br>
+mkdir -p $HOME/.vim/colors
+cp shades-of-pastel.vim $HOME/.vim/colors/
 ```
 Turn on syntax highlighting (`syntax on`) in your configuration file (`~/.vimrc`) and append the line `colorscheme shades-of-pastel` if you want to use the Shades-of-Pastel scheme by default.
 
