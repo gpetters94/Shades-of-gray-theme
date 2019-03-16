@@ -1164,7 +1164,7 @@ StScrollBar StButton#hhandle:active {
 }
 #panel .clock-display > * > *:last-child {
 
-	color: #999999;
+	color: whitesmoke;
 	margin-left: .3em;
 }
 #panel .popup-menu-arrow {
@@ -1664,25 +1664,29 @@ StScrollBar StButton#hhandle:active {
 }
 
 .window-close {
+
 	background-image: url("assets/misc/close-window.svg");
+	color: transparent;
+ 	background-color: transparent;
 	background-size: 26px;
-	height: 26px;
-	width: 26px;
+ 	border: none;
+ 	box-shadow: none;
+ 	height: 26px;
+ 	width: 26px;
+ 	-shell-close-overlap: 11px;
 }
 .window-close:hover {
+
 	background-image: url("assets/misc/close-window-hover.svg");
-	background-size: 26px;
-	height: 26px;
-	width: 26px;
-}
+	color: transparent;
+	background-color: transparent;
+
+ }
 .window-close:active {
+
 	background-image: url("assets/misc/close-window-active.svg");
-	background-size: 26px;
-	height: 26px;
-	width: 26px;
-}
-.window-close {
-	-shell-close-overlap: 11px;
+	color: transparent;
+	background-color: transparent;
 }
 
 .nm-dialog {
