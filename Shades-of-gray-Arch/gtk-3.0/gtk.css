@@ -87,7 +87,8 @@ iconview text,
 textview text {
 
 	color: @base_fg;
-	background-color: @base_color;
+	/* (Bug in gnome-control-center 3.32: @base_color is ignored) */
+	background-color: @theme_base_color;
 }
 .view:selected:focus,
 iconview:selected:focus,
