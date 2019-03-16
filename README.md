@@ -152,10 +152,13 @@ Now you can select Shades-of-pastel as a color scheme in menu *Preferences*.
 
 #### • Gedit, Pluma, Xed, Mousepad
 
-Shades-of-pastel can be used by all editors with syntax highlighting based on *GtkSourceView 3*. To install the color scheme change to directory `Shades-of-gray/app-gadgets/Syntax-Colors`. Copy the contained file `shades-of-pastel.xml` into the following user directory:
+Shades-of-pastel can be used by editors with syntax highlighting based on *GtkSourceView 3* or *GtkSourceView 4*. To install the color scheme change to directory `Shades-of-gray/app-gadgets/Syntax-Colors`. Copy the contained file `shades-of-pastel.xml` into the following user directories:
 ```
 mkdir -p $HOME/.local/share/gtksourceview-3.0/styles
 cp shades-of-pastel.xml $HOME/.local/share/gtksourceview-3.0/styles/
+
+mkdir -p $HOME/.local/share/gtksourceview-4/styles
+cp shades-of-pastel.xml $HOME/.local/share/gtksourceview-4/styles/
 ```
 Shades-of-pastel is now available in the settings of your editor.
 
