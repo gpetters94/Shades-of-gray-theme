@@ -118,7 +118,7 @@ The file `panorama-tab-groups.css` contains theme customizations for the recomme
 
 Bookmarked Speed Dial ([AMO](href="https://addons.mozilla.org/firefox/addon/bookmarked-speeddial)) is an add-on that offers similar functionality to Vivaldi Speed Dial
 
-The file `bookmarked-speed-dial.css` contains a <em>Shades-of-gray</em> theme customization. Copy this file in addition to `userContent.css` into your *chrome<* directory:
+The file `bookmarked-speed-dial.css` contains a <em>Shades-of-gray</em> theme customization. Copy this file in addition to `userContent.css` into your *chrome* directory:
 
 `~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/bookmarked-speed-dial.css`
 
