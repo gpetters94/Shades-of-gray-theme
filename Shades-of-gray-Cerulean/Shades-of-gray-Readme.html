@@ -376,12 +376,17 @@
 
 		<h4 id="Gedit">&#8226;  Gedit, Pluma, Xed, Mousepad</h4>
 
-		<p>Shades-of-pastel can be used by all editors with syntax highlighting based on <i>GtkSourceView 3</i>.<br>
-		To install the color scheme change to directory <code>Shades-of-gray/app-gadgets/Syntax-Colors</code>. Copy the contained file <code>shades-of-pastel.xml</code> into the following user directory:</p>
+		<p>Shades-of-pastel can be used by editors with syntax highlighting based on <i>GtkSourceView 3</i> or <i>GtkSourceView 4</i>.<br>
+		To install the color scheme change to directory <code>Shades-of-gray/app-gadgets/Syntax-Colors</code>. Copy the contained file <code>shades-of-pastel.xml</code> into the following user directories:</p>
 
 		<div><code>
 		mkdir -p $HOME/.local/share/gtksourceview-3.0/styles<br>
 		cp shades-of-pastel.xml $HOME/.local/share/gtksourceview-3.0/styles/<br>
+		</code></div>
+
+		<div><code>
+		mkdir -p $HOME/.local/share/gtksourceview-4/styles<br>
+		cp shades-of-pastel.xml $HOME/.local/share/gtksourceview-4/styles/<br>
 		</code></div>
 
 		<p>Shades-of-pastel is now available in the settings of your editor.</p>
@@ -418,13 +423,16 @@
 
 		<h2 id="Changelog">Changelog</h2>
 
-		<h4 id="Next">Next release</h4>
+		<h4 id="1.1.6">1.1.6</h4>
 
 		<ul class="version">
-			<li>Syntax scheme for Vim and GVim added (Shades-of-pastel)</li>
+			<li>New: Syntax scheme for Vim and GVim added (Shades-of-pastel)</li>
+			<li>GNOME Shell 3.32: close buttons in dash overview adapted (gnome-shell.css)</li>
+			<li>GTK3 workaround: gnome-control-center 3.32 ignores '<em>@base_color</em>' (gtk.css)</li>
 			<li>Firefox add-on: 0.8.8 update (panorama-tab-groups.css)</li>
 			<li>Firefox add-on: color '<em>#searchtext</em>' fixed (bookmark-search-plus-2.css)</li>
 			<li>Firefox urlbar indicator: color for validated sites adjusted (userChrome.css)</li>
+			<li>Firefox 66+: update CSS corrections for '<em>about</em>' sites (userContent.css)</li>
 		</ul>
 
 		<h4 id="1.1.5">1.1.5</h4>
@@ -436,8 +444,8 @@
 			<li>Firefox add-on theme: 2.0.52 update (bookmark-search-plus-2.css)</li>
 			<li>Firefox: fallback webextension popup background added (userChrome.css)</li>
 			<li>Firefox: width of vertical scrollbar in sidebar reduced (userChrome.css)</li>
-			<li>Firefox add-on theme added: Bookmarked Speed Dial (bookmarked-speed-dial.css, userContent.css)</li>
-			<li>Syntax color schemes for Sublime-Text, Gedit, Pluma, Xed, Mousepad etc. added (Shades-of-pastel)</li>
+			<li>New: Firefox add-on theme - Bookmarked Speed Dial (bookmarked-speed-dial.css, userContent.css)</li>
+			<li>New: Syntax color schemes for Sublime-Text, Gedit, Pluma, Xed, Mousepad etc. added (Shades-of-pastel)</li>
 		</ul>
 
 		<h4 id="1.1.4">1.1.4</h4>
@@ -452,7 +460,7 @@
 			<li>Firefox, Thunderbird: thin dark menu separator lines added (userChrome.css)</li>
 			<li>Firefox: overflow submenu improved for add-on content (userChrome.css)</li>
 			<li>Firefox: added options to hide context menu items (userChrome.css)</li>
-			<li>Firefox add-on theme added: Panorama Tab Groups (panorama-tab-groups.css, userContent.css)</li>
+			<li>New: Firefox add-on theme - Panorama Tab Groups (panorama-tab-groups.css, userContent.css)</li>
 		</ul>
 
 		<h4 id="1.1.3">1.1.3</h4>
@@ -460,7 +468,7 @@
 		<ul class="version">
 			<li>Thunar, Nemo, Nautilus, Caja: list view improved (gtk.css)</li>
 			<li>Firefox: minor adjustments in places window (userChrome.css)</li>
-			<li>Firefox add-on theme added: Bookmark search plus 2 (bookmark-search-plus-2.css, userContent.css)</li>
+			<li>New: Firefox add-on theme - Bookmark search plus 2 (bookmark-search-plus-2.css, userContent.css)</li>
 		</ul>
 
 		<h4 id="1.1.2">1.1.2</h4>
