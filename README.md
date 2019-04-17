@@ -120,7 +120,7 @@ Bookmarked Speed Dial ([AMO](href="https://addons.mozilla.org/firefox/addon/book
 
 The file `bookmarked-speed-dial.css` contains a <em>Shades-of-gray</em> theme customization. Copy this file in addition to `userContent.css` into your *chrome* directory:
 
-`~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/bookmarked-speed-dial.css`
+`~/.mozilla/firefox/<name-of-your-profile>/chrome/bookmarked-speed-dial.css`
 
 The directory `../app-gadgets/Firefox-Shades-of-gray/bookmarked-speed-dial-images` contains images wich you can choose as '*Default dial image*' and '*Default folder image*' in the add-on options.
 
