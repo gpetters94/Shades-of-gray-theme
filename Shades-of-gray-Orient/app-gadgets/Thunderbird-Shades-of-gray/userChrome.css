@@ -465,8 +465,11 @@ toolbar > toolbarbutton {
 
 	-moz-appearance: treetwistyopen !important;
 }
-#enigmailStatusHdrDetails {
+#enigmailStatusHdrDetails,
+.enigMsgHdrView-flat-button {
+
 	-moz-appearance: none !important;
+	color: var(--base_fg) !important;
 	background-color: var(--button_bg) !important;
 	box-shadow: none !important;
 	border-radius: 3px !important;
