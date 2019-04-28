@@ -118,6 +118,7 @@ button.browser-style.default.pressed {
 
 html|*.textbox-input:selected,
 html|*.textbox-textarea:selected {
+
   margin: 0px !important;
   border: none !important;
   padding: 0px 1px !important;
@@ -153,22 +154,45 @@ html|*.textbox-textarea:selected {
 	outline: none;
 }
 
-#identity-popup-mainView {
+#identity-popup-mainView,
+#identity-popup-cookiesView,
+#identity-popup-trackersView {
 
 	background-color: var(--base_bg) !important;
 }
-#identity-popup-securityView-footer {
+#identity-popup-securityView-footer,
+#identity-popup-clear-sitedata-button {
 
 	background-color: var(--button_bg) !important;
 }
 #identity-popup-securityView-footer > button:hover,
-#identity-popup-securityView-footer > button:focus {
+#identity-popup-securityView-footer > button:focus,
+#identity-popup-clear-sitedata-button:hover,
+#identity-popup-clear-sitedata-button:active,
+#identity-popup-cookiesView-settings-button:hover,
+#identity-popup-cookiesView-settings-button:active,
+#identity-popup-trackersView-settings-button:hover,
+#identity-popup-trackersView-settings-button:active,
+#identity-popup-more-info:hover,
+#identity-popup-more-info:active {
 
 	background-color: var(--button_bg_hover) !important;
 }
-#identity-popup-securityView-footer > button:hover:active {
+#identity-popup-securityView-footer > button:hover:active,
+#identity-popup-clear-sitedata-button:hover:active,
+#identity-popup-cookiesView-settings-button:hover:active,
+#identity-popup-trackersView-settings-button:hover:active,
+#identity-popup-more-info:hover:active {
 
 	background-color: var(--button_bg_active) !important;
+}
+#identity-popup-trackersView-strict-info{
+
+	font-size: 0.95em !important;
+	color: #f5f5f5 !important;
+	background-color: #415366 !important;
+	border: 1px solid #45A1FF !important;
+	border-radius: 2px !important;
 }
 #identity-box.extensionPage {
 
