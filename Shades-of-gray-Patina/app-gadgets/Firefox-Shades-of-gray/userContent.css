@@ -297,7 +297,7 @@
 
 @-moz-document url-prefix(about) {
 
-	a {
+	a:not(.context-menu) {
 		/*Links readable on light and dark background */
 		color: #2b95ff !important;
 	}
