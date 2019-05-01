@@ -147,6 +147,10 @@
 		color: #d1d1d1 !important;
 
 	}
+	.context-menu > ul > li > a {
+
+		color: #f5f5f5 !important;
+	}
 	.collapsible-section.active {
 
 		background: rgba( 190, 190, 190, 0.1 ) !important;
@@ -297,18 +301,25 @@
 
 @-moz-document url-prefix(about) {
 
-	a:not(.context-menu) {
+	a {
 		/*Links readable on light and dark background */
 		color: #2b95ff !important;
 	}
 }
-/* url-prefix is not recognized in dialogs: */
-/********* Fix common.css FF 57+ **********/
-	.menulist-dropmarker {
-
-		-moz-context-properties: none !important;
+@-moz-document	url(about:credits),
+				url(about:cache),
+				url(about:buildconfig),
+				url(https://www.mozilla.org/credits/) {
+	html {
+		background-color: #ffffff !important;
+	}
 }
-	#sanitizeEverythingWarningBox {
+/********* Fix common.css FF 57+ **********/
+.menulist-dropmarker {
 
-		background-color: #ededed !important;
+	-moz-context-properties: none !important;
+}
+#sanitizeEverythingWarningBox {
+
+	background-color: #ededed !important;
 }
