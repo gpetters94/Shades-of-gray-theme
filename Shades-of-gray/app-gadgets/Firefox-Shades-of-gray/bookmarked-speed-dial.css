@@ -259,6 +259,10 @@
 		font-family: "DejaVu Sans", arial, sans-serif !important;
 		line-height: 1.75em !important;
 	}
+	.content {
+	/* Fallback to #addon-options in dark 'about:' pages*/
+		background: transparent !important;
+	}
 	td, td input, label {
 
 		height: inherit !important;
