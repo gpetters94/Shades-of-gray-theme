@@ -116,16 +116,6 @@ button.browser-style.default.pressed {
 /**************** urlbar ******************/
 /******************************************/
 
-html|*.textbox-input:selected,
-html|*.textbox-textarea:selected {
-
-  margin: 0px !important;
-  border: none !important;
-  padding: 0px 1px !important;
-  background-color: green !important;
-  color: inherit;
-  font: inherit;
-}
 #urlbar,
 .searchbar-textbox {
 
@@ -290,26 +280,6 @@ html|*.textbox-textarea:selected {
 #toolbar-menubar {
 
 	background-color: var(--base_dark_color) !important;
-}
-
-/******************************************/
-/**************** appMenu *****************/
-/******************************************/
-
-#appMenu-tp-toggle {
-/* tracking protection switch (Firefox 63+) */
-	border: 1px solid var(--borders) !important;
-}
-#appMenu-tp-toggle:hover,
-#appMenu-tp-toggle:-moz-focusring,
-#appMenu-tp-toggle[enabled=true]:hover {
-
-	border: 1px solid #636363 !important;
-}
-#appMenu-tp-toggle[enabled=true] {
-
-	background-color: #5aa411 !important;
-	border: 1px solid var(--borders) !important;
 }
 
 /******************************************/
@@ -601,15 +571,15 @@ richlistitem[type="download"][verdict]:hover:active {
 
 .panel-header > label {
 
-    font-weight: 400 !important;
-    font-size: 1.075em !important;
-    text-overflow: ellipsis !important;
-    overflow: hidden !important;
+	font-weight: 400 !important;
+	font-size: 1.075em !important;
+	text-overflow: ellipsis !important;
+	overflow: hidden !important;
 }
 /* (default 32px in panelUI.css -- IMHO botch) */
 .panel-header > .subviewbutton-back + label {
 
-    margin-inline-end: 0 !important;
+	margin-inline-end: 0 !important;
 }
 /* (default 29em is too small for many add-ons) */
 #widget-overflow panelview[id^="PanelUI-webext-"] .panel-header,

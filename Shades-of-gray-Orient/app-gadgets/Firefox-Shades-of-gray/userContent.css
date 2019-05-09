@@ -5,7 +5,15 @@
 ************************************************/
 
 /******************************************/
-/*********** Import add-on CSS ************/
+/****** Import CSS for "about:"-pages *****/
+/******   (comment out if not used)   *****/
+/******************************************/
+
+@import url("about.css");
+
+/******************************************/
+/********** Import add-ons CSS ************/
+/******  (comment out if not used)   ******/
 /******************************************/
 
 @import url("bookmark-search-plus-2.css");
@@ -207,7 +215,7 @@
 	}
 	.card-outer .card-text:not(.no-description) .card-title {
 
-	color: inherit !important;
+		color: inherit !important;
 	}
 	.modal {
 
@@ -293,33 +301,14 @@
 
 		-webkit-filter: grayscale(100%) !important;
 	}
-}
+/************* FF 60 ESR - fix ***************/
+	.prefs-pane .actions {
 
-/******************************************/
-/******** Corrections Firefox css *********/
-/******************************************/
-
-@-moz-document url-prefix(about) {
-
-	a {
-		/*Links readable on light and dark background */
-		color: #2b95ff !important;
+		background: transparent !important;
 	}
-}
-@-moz-document	url(about:credits),
-				url(about:cache),
-				url(about:buildconfig),
-				url(https://www.mozilla.org/credits/) {
-	html {
-		background-color: #ffffff !important;
+	.prefs-pane .prefs-modal-inner-wrapper .options {
+
+		background: transparent !important;
+		border: none !important;
 	}
-}
-/********* Fix common.css FF 57+ **********/
-.menulist-dropmarker {
-
-	-moz-context-properties: none !important;
-}
-#sanitizeEverythingWarningBox {
-
-	background-color: #ededed !important;
 }
