@@ -127,7 +127,7 @@
 			display: block;
 			font-style: italic;
 			font-size: 93%;
-			background-color: #e5f2e5;
+			background-color: #e5f2e5;/
 			color: #303030;
 		}
 		.m {
@@ -288,15 +288,16 @@
 
 		<p class="note">Note: You should choose the dark style in Firefox to get a consistent dark appearance.</p>
 
-		<h5 id="userContent">&#8226;  userContent.css</h5>
+		<h5 id="userContent">&#8226;  userContent.css | about.css</h5>
 
 		<p>Firefox uses widgets of the current GTK3 theme in websites that have not designed their own widgets for forms. With dark themes this is ugly and input fields, checkboxes etc. are difficult to use (e.g. black font in dark input fields). To fix this behavior the file <code>userContent.css</code> contains color-neutral form widgets.</p>
 
-		<p>This file also contains theme customizations for the New Tab page (<em>about:newtab</em>).</p>
-		<p>Copy the file or its contents to this location for enabling:</p>
+		<p>The file <code>about.css</code> contains <em>Shades-of-gray</em> theme customizations for the Firefox <code>about:</code> pages (<code>about:about</code> provides an overview).</p>
+		<p>Copy both files to this location:</p>
 
 		<div><code>
-			~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/userContent.css
+			~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/userContent.css<br>
+			~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/about.css
 		</code></div>
 
 	<hr>
@@ -428,6 +429,11 @@
 		<ul class="version">
 			<li>Thunderbird: Enigmail flat button text color forced (userChrome.css)</li>
 			<li>Firefox add-on: background focus group header fixed (panorama-tab-groups.css)</li>
+			<li>Firefox add-on: minor fix (bookmarked-speed-dial.css)</li>
+			<li>Firefox 66+ home content: blue font in context menu fixed (userContent.css)</li>
+			<li>Firefox: customizations identity-popup (userChrome.css)</li>
+			<li>Firefox: CSS-code cleaned up (userContent.css, userChrome.css)</li>
+			<li>New: Firefox - dark Shades-of-gray theme for '<code>about:</code>' pages (about.css)</li>
 		</ul>
 
 		<h4 id="1.1.6">1.1.6</h4>
