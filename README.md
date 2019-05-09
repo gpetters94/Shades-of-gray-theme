@@ -88,16 +88,17 @@ Additional options are included at the end of the file userChrome.css (e.g. to h
 
 > **Note:** You should choose the dark style in Firefox to get a consistent dark appearance.
 
-##### • userContent.css
+##### • userContent.css | about.css
 
 Firefox uses widgets of the current GTK3 theme in websites that have not designed their own widgets for forms. With dark themes this is ugly and input fields, checkboxes etc. are difficult to use (e.g. black font in dark input fields). To fix this behavior the file `userContent.css` contains color-neutral form widgets.
 
-This file also contains theme customizations for the New Tab page (*about:newtab*).
+The file `about.css` contains Shades-of-gray theme customizations for the Firefox `about:` pages (`about:about`provides an overview).
 
-Copy the file or its contents to this location for enabling:
-
-`~/.mozilla/firefox/<name-of-your-profile>/chrome/userContent.css`
-
+Copy both files to this location:
+```
+~/.mozilla/firefox/<name-of-your-profile>/chrome/userContent.css
+~/.mozilla/firefox/<name-of-your-profile>/chrome/about.css
+```
 ### Firefox add-ons
 
 #### • Bookmark search plus 2
