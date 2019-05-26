@@ -79,14 +79,15 @@
 		}
 		code {
 			font-family: "DejaVu Sans Mono", Consolas, Monaco, "Courier New", Courier, monospace;
+			font-style: normal;
 		}
 		p > code {
 			font-size: 90%;
-			background-color: rgba(27,31,35,0.05);
+			background-color: rgb(238, 238, 238);
 		}
 		div > code {
 			font-size: 90%;
-			background-color: rgba(27,31,35,0.05);
+			background-color: rgb(238, 238, 238);
 			padding: 0.6em;
 			margin: 0;
 			display: block;
@@ -127,8 +128,9 @@
 			display: block;
 			font-style: italic;
 			font-size: 93%;
-			background-color: #e5f2e5;/
+			background-color: rgba(255, 243, 212, 0.6);
 			color: #303030;
+			border-left: 5px solid #ffd76f;
 		}
 		.m {
 			color: red;
@@ -240,7 +242,7 @@
 			sudo cp -r * /usr/share/themes/<br>
 		</code></div>
 
-		<p class="note">Note: Existing installations of Shades-of-gray are overwritten by the last command. If Shades-of-gray was previously installed using your distribution‘s package management, the package should be uninstalled first.</p>
+		<p class="note">Existing installations of Shades-of-gray are overwritten by the last command. If Shades-of-gray was previously installed using your distribution‘s package management, the package should be uninstalled first.</p>
 
 	<hr>
 
@@ -276,6 +278,8 @@
 
 		<h3 id="Firefox">Firefox</h3>
 
+		<p class="note">As of Firefox 69, you must set the <code>toolkit.legacyUserProfileCustomizations.stylesheets</code> preference to <code>true</code> in <code>about:config</code> in order to load <code>userChrome.css</code> or <code>userContent.css</code> files.</p>
+
 		<h5 id="userChrome">&#8226;  userChrome.css</h5>
 
 		<p>The file <code>userChrome.css</code> in folder <code>Firefox-Shades-of-gray</code> contains a theme adaptation to Shades-of-gray. To enable the customizations, copy the file or its content to this location:</p>
@@ -284,9 +288,8 @@
 			~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/userChrome.css
 		</code></div>
 
-		<p>Additional options are included at the end of the file <code>userChrome.css</code> (e.g. to hide unwanted items in context menus). You can activate options of your choice by removing the comment characters <code>/*</code> at the beginning of a line.</p>
-
-		<p class="note">Note: You should choose the dark style in Firefox to get a consistent dark appearance.</p>
+		<p>Additional options are included at the end of the file <code>userChrome.css</code> (e.g. to hide unwanted items in context menus). You can activate options of your choice by removing the comment characters <code>/*</code> at the beginning of a line.<br>
+		You should choose the dark style in Firefox to get a consistent dark appearance.</p>
 
 		<h5 id="userContent">&#8226;  userContent.css | about.css</h5>
 
@@ -324,7 +327,7 @@
 			~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/panorama-tab-groups.css
 		</code></div>
 
-		<p class="note">Note: in <em>Panorama Tab Groups</em> settings you can toggle between light and dark theme. The Shades-of-gray customizations only take effect with the dark theme.</p>
+		<p class="note">In <em>Panorama Tab Groups</em> settings you can toggle between light and dark theme. The Shades-of-gray customizations only take effect with the dark theme.</p>
 
 		<h4 id="Bookmarked_Speed_Dial">&#8226;  Bookmarked Speed Dial</h4>
 
@@ -339,7 +342,7 @@
 
 		<p>The directory <code>../app-gadgets/Firefox-Shades-of-gray/bookmarked-speed-dial-images</code> contains images wich you can choose as '<em>Default dial image</em>' and '<em>Default folder image</em>' in the add-on options.</p>
 
-		<p class="note">Note: in the add-on options you can customize the appearance with your own CSS code. This only takes effect if you remove the '<code>!important</code>' statement from the correlating property in '<code>bookmarked-speed-dial.css</code>'.</p>
+		<p class="note">In the add-on options you can customize the appearance with your own CSS code. This only takes effect if you remove the <code>!important</code> statement from the correlating property in <code>bookmarked-speed-dial.css</code>.</p>
 
 	<hr>
 
@@ -352,7 +355,7 @@
 			~/.config/inkscape/icons/icons.svg
 		</code></div>
 
-		<p class="note">Note: not all symbols can be customized because Inkscape is partly using standard GTK symbols:<br>
+		<p class="note">Not all symbols can be customized because Inkscape is partly using standard GTK symbols:<br>
 		https://bugs.launchpad.net/inkscape/+bug/789804</p>
 
 	<hr>
@@ -373,7 +376,7 @@
 
 		<p>Now you can select Shades-of-pastel as a color scheme in menu <i>Preferences</i>.</p>
 
-		<p class="note">Note: To get a perfect integration of Sublime window elements in Shades-of-gray you can choose the 'Adaptive.sublime-theme' in 'Preferences'.</p>
+		<p class="note">To get a perfect integration of Sublime window elements in Shades-of-gray you can choose the 'Adaptive.sublime-theme' in 'Preferences'.</p>
 
 		<h4 id="Gedit">&#8226;  Gedit, Pluma, Xed, Mousepad</h4>
 
