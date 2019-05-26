@@ -49,7 +49,7 @@ cd Shades-of-gray-theme/
 rm -rf README.md LICENSE .git
 sudo cp -r * /usr/share/themes/
 ```
-> **Note:** Existing installations of Shades-of-gray are overwritten by the last command. If Shades-of-gray was previously installed using your distribution‘s package management, the package should be uninstalled first.
+> **Note:** existing installations of Shades-of-gray are overwritten by the last command. If Shades-of-gray was previously installed using your distribution‘s package management, the package should be uninstalled first.
 
 ### Manual Installation
 
@@ -78,6 +78,8 @@ Open the Thunderbird settings and activate the checkbox '*Optimize colors for ac
 
 ### Firefox
 
+> **Note:** as of Firefox 69, you must set the `toolkit.legacyUserProfileCustomizations.stylesheets` preference to `true` in `about:config` in order to load `userChrome.css` or `userContent.css` files.
+
 ##### • userChrome.css
 
 The file `userChrome.css` in folder `Firefox-Shades-of-gray` contains a theme adaptation to Shades-of-gray. To enable the customizations, copy the file or its content to this location:
@@ -86,7 +88,7 @@ The file `userChrome.css` in folder `Firefox-Shades-of-gray` contains a theme ad
 
 Additional options are included at the end of the file userChrome.css (e.g. to hide unwanted items in context menus). You can activate options of your choice by removing the comment characters `/*` at the beginning of a line.
 
-> **Note:** You should choose the dark style in Firefox to get a consistent dark appearance.
+> **Note:** you should choose the dark style in Firefox to get a consistent dark appearance.
 
 ##### • userContent.css | about.css
 
@@ -113,7 +115,7 @@ The file `panorama-tab-groups.css` contains theme customizations for the recomme
 
 `~/.mozilla/firefox/<name-of-your-profile>/chrome/panorama-tab-groups.css`
 
-> **Note:** In *Panorama Tab Groups* you can toggle between light and dark theme. The Shades-of-gray customizations only take effect with the dark theme.
+> **Note:** in *Panorama Tab Groups* you can toggle between light and dark theme. The Shades-of-gray customizations only take effect with the dark theme.
 
 #### • Bookmarked Speed Dial
 
