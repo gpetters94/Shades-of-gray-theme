@@ -81,6 +81,7 @@ you're on your own... */
 @define-color warning_color                     #d41835;
 @define-color error_color                       #eb6300;
 @define-color success_color                     #5aa411;
+@define-color content_view_bg                   #404040;
 
 /******************************************/
 /************ COLOR VARIABLES *************/
