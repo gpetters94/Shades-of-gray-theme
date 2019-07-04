@@ -78,7 +78,7 @@ Open the Thunderbird settings and activate the checkbox '*Optimize colors for ac
 
 ### Firefox
 
-> **Note:** as of Firefox 69, you must set the `toolkit.legacyUserProfileCustomizations.stylesheets` preference to `true` in `about:config` in order to load `userChrome.css` or `userContent.css` files.
+> **Note:** as of Firefox 68/69, you must set the `toolkit.legacyUserProfileCustomizations.stylesheets` preference to `true` in `about:config` in order to load `userChrome.css` or `userContent.css` files. Details are explained at [ghacks](https://www.ghacks.net/2019/05/24/firefox-69-userchrome-css-and-usercontent-css-disabled-by-default).
 
 ##### • userChrome.css
 
@@ -90,16 +90,12 @@ Additional options are included at the end of the file userChrome.css (e.g. to h
 
 > **Note:** you should choose the dark style in Firefox to get a consistent dark appearance.
 
-##### • userContent.css | about.css
+##### • userContent.css
 
-Firefox uses widgets of the current GTK3 theme in websites that have not designed their own widgets for forms. With dark themes this is ugly and input fields, checkboxes etc. are difficult to use (e.g. black font in dark input fields). To fix this behavior the file `userContent.css` contains color-neutral form widgets.
-
-The file `about.css` contains Shades-of-gray theme customizations for the Firefox `about:` pages (`about:about`provides an overview).
-
-Copy both files to this location:
+The file `userContent.css` contains customizations for the Firefox Home screen (`about:home`, `about:newtab`) and more unobtrusive form widgets.
+If you want to use these customizations, copy the file to this location:
 ```
 ~/.mozilla/firefox/<name-of-your-profile>/chrome/userContent.css
-~/.mozilla/firefox/<name-of-your-profile>/chrome/about.css
 ```
 ### Firefox add-ons
 
