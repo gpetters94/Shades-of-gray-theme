@@ -205,7 +205,7 @@
 					<li><a href="#gtk_java">Java applications and GTK+</a></li>
 					<li><a href="#vb6_issue">VirtualBox 6.0: GTK issue</a></li>
 					<li><a href="#white_font">White font in white input field</a></li>
-					<li><a href="#addon_issues">Firefox add-on customization issues</a></li>
+					<li><a href="#firefox_issues">Firefox customization issues</a></li>
 					<li><a href="#Th_unread_messages">Font color of unread messages in Thunderbird</a></li>
 				</ul>
 		</ol>
@@ -278,7 +278,7 @@
 
 		<h3 id="Firefox">Firefox</h3>
 
-		<p class="note">As of Firefox 69, you must set the <code>toolkit.legacyUserProfileCustomizations.stylesheets</code> preference to <code>true</code> in <code>about:config</code> in order to load <code>userChrome.css</code> or <code>userContent.css</code> files.</p>
+		<p class="note">As of Firefox 68/69, you must set the <code>toolkit.legacyUserProfileCustomizations.stylesheets</code> preference to <code>true</code> in <code>about:config</code> in order to load <code>userChrome.css</code> or <code>userContent.css</code> files.</p>
 
 		<h5 id="userChrome">&#8226;  userChrome.css</h5>
 
@@ -291,23 +291,20 @@
 		<p>Additional options are included at the end of the file <code>userChrome.css</code> (e.g. to hide unwanted items in context menus). You can activate options of your choice by removing the comment characters <code>/*</code> at the beginning of a line.<br>
 		You should choose the dark style in Firefox to get a consistent dark appearance.</p>
 
-		<h5 id="userContent">&#8226;  userContent.css | about.css</h5>
+		<h5 id="userContent">&#8226;  userContent.css</h5>
 
-		<p>Firefox uses widgets of the current GTK3 theme in websites that have not designed their own widgets for forms. With dark themes this is ugly and input fields, checkboxes etc. are difficult to use (e.g. black font in dark input fields). To fix this behavior the file <code>userContent.css</code> contains color-neutral form widgets.</p>
-
-		<p>The file <code>about.css</code> contains <em>Shades-of-gray</em> theme customizations for the Firefox <code>about:</code> pages (<code>about:about</code> provides an overview).</p>
-		<p>Copy both files to this location:</p>
+		<p>The file <code>userContent.css</code> contains customizations for the Firefox Home screen (<code>about:home</code>, <code>about:newtab</code>) and more unobtrusive form widgets.
+		<br>If you want to use these customizations, copy the file to this location:</p>
 
 		<div><code>
 			~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/userContent.css<br>
-			~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/about.css
 		</code></div>
 
 	<hr>
 
 		<h3 id="Firefox_addons">Firefox add-ons</h3>
 
-		<p>Theme customizations for Firefox add-ons are included in separate CSS files. The CSS code is imported into <code>userContent.css</code>. If a new add-on customization has been added to <em>Shades of gray</em>, please also update the file <code>userContent.css</code> which contains the new import instruction.</p>
+		<p>Some theme customizations for Firefox add-ons are included in separate CSS files. The CSS code is imported into <code>userContent.css</code>. If a new add-on customization has been added to <em>Shades of gray</em>, please also update the file <code>userContent.css</code> which contains the new import instruction.</p>
 
 		<h4 id="Bookmark_search_plus">&#8226;  Bookmark search plus 2</h4>
 
@@ -426,6 +423,16 @@
 	<hr>
 
 		<h2 id="Changelog">Changelog</h2>
+
+		<h4 id="1.1.8">1.1.8</h4>
+
+		<ul class="version">
+			<li>GTK3: Epiphany urlbar dropdown fixed (gtk-colors.css)</li>
+			<li>Firefox: modifications for FF 68/69 (userChrome.css, userContent.css)</li>
+			<li>Firefox: about:addons can no longer be customized (about.css removed)</li>
+			<li>Firefox: Bookmarked Speed Dial for FF 68/69 adjusted (bookmarked-speed-dial.css)</li>
+			<li>Firefox: Bookmark search plus 2 for FF 68/69 adjusted (bookmark-search-plus-2.css)</li>
+		</ul>
 
 		<h4 id="1.1.7">1.1.7</h4>
 
@@ -652,6 +659,17 @@
 		</code></div><br>
 
 	<hr>
+
+		<h4 id="firefox_issues">Firefox customization issues</h4>
+
+		<blockquote>
+			<p>Why are the adjustments for Firefox <code>about:</code>-pages (about.css) no longer included?
+			</p>
+		</blockquote>
+
+		<p>The page <code>about:addons</code> in Firefox 68 and higher contains dynamic content (HTML with inline styles created by JavaScript) and cannot be customized anymore. Therefore, the customizations in "about.css" are no longer included.</p>
+
+		<p><i>(Firefox customizations are becoming increasingly difficult or even made impossible by Mozilla Foundation. They don't care what users want.)</i></p>
 
 		<h4 id="addon_issues">Firefox add-on customization issues</h4>
 
