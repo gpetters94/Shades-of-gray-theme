@@ -38,6 +38,7 @@
 	--base_color:                    #515151;
 	--base_fg:                       #f5f5f5;
 	--base_bg:                       #404040;
+	--base_bg_active:                #787878;
 	--base_fg_selected:              #ffffff;
 	--base_fg_insens:                #a3a3a3;
 
@@ -49,9 +50,10 @@
 	--tab_fg_insens:                 #afafaf;
 
 	/* Buttons */
-	--button_bg:                     #575757;
-	--button_bg_hover:               #696969;
-	--button_bg_active:              #757575;
+	--button_bg:                     rgba(140, 140, 140, 0.4) !important;
+	--button_bg_hover:               rgba(140, 140, 140, 0.6) !important;
+	--button_bg_active:              rgba(140, 140, 140, 0.9) !important;
+
 
 	/* Borders */
 	--borders:                       #181818;
@@ -69,16 +71,20 @@
 	--panel-separator-color: #323232 !important;
 
 	/* Popup menus */
-	--arrowpanel-dimmed: var(--base_bg_selected) !important;
-	--arrowpanel-dimmed-further: var(--button_bg_hover) !important;
-	--arrowpanel-dimmed-even-further: var(--button_bg_active) !important;
+	--arrowpanel-dimmed: rgba(128, 128, 128, 0.6) !important;
+	--arrowpanel-dimmed-further: rgba(140, 140, 140, 0.6) !important;
+	--arrowpanel-dimmed-even-further: rgba(140, 140, 140, 0.9) !important;
+
+	/* QuantumBar */
+	--autocomplete-popup-background: #434343 !important;
+	--autocomplete-popup-highlight-background: #787878 !important;
 
 	/* Not blue */
 	--preference-selected-color: var(--button_bg) !important;
 	--preference-unselected-color: var(--button_bg_hover) !important;
 	--preference-active-color: var(--button_bg_active) !important;
 	--selected-fill-color: var(--button_bg) !important;
-	--chrome-selection-background-color: var(--base_bg_selected) !important;
+	--chrome-selection-background-color: var(--base_bg_active) !important;
 
 	/* Clean gray without bluish */
 	--grey-10: #f9f9f9 !important;
@@ -120,7 +126,7 @@ button.browser-style.default.pressed {
 .searchbar-textbox {
 
 	-moz-appearance: none !important;
-	background-color: var(--button_bg) !important;
+	background-color: #575757 !important;
 	border: 1px solid  var(--borders) !important;
 	border-radius: 3px !important;
 }
@@ -234,7 +240,7 @@ button.browser-style.default.pressed {
 .sidebar-placesTreechildren::-moz-tree-cell-text(selected) {
 
 	color: var(--base_fg_selected) !important;
-	background: var(--base_bg_selected) !important;
+	background: var(--base_bg_active) !important;
 	border: none !important;
 }
 #sidebar-header,
@@ -433,8 +439,8 @@ richlistitem[type="download"][verdict]:hover:active {
 #placesList treechildren::-moz-tree-cell(selected) {
 
 	color: var(--base_fg_selected) !important;
-	background-color: var(--base_bg_selected) !important;
-	outline: 1px solid var(--base_bg_selected) !important;
+	background-color: var(--base_bg_active) !important;
+	outline: 1px solid var(--base_bg_active) !important;
 }
 #placeContent {
 
@@ -447,122 +453,101 @@ richlistitem[type="download"][verdict]:hover:active {
 	min-height: 26px !important;
 	padding-bottom: 0px !important;
 }
-#placeContent > treechildren:-moz-tree-row(even) {
+#placeContent > treechildren::-moz-tree-row(even) {
 
 	background-color: var(--treeview_row_bg_even) !important;
 }
-#placeContent > treechildren:-moz-tree-row(hover) {
+#placeContent > treechildren::-moz-tree-row(hover) {
 
 	border-bottom: 1px solid var(--treeview_row_hover_line) !important;
-
 }
 #placeContent > treechildren::-moz-tree-cell(selected) {
 
 	color: var(--base_fg_selected) !important;
-	background-color: var(--base_bg_selected) !important;
-	outline: 1px solid var(--base_bg_selected) !important;
+	background-color: var(--base_bg_active) !important;
+	outline: 1px solid var(--base_bg_active) !important;
 }
 
 /******************************************/
-/********* Searchbar in list form *********/
+/************** QuantumBar  ***************/
 /******************************************/
 
-.searchbar-engine-one-off-item[tooltiptext] {
-
-	color: var(--base_fg) !important;
-	background-color: var(--base_bg) !important;
-	width: 100% !important;
-	height: 24px !important;
-	background-image: none !important;
-	padding-left: 6px !important;
-	box-sizing: content-box !important;
-	line-height: 1em !important;
-}
-.searchbar-engine-one-off-item[tooltiptext]:hover {
-
-	color: var(--base_fg_selected) !important;
-	background: var(--base_bg_selected) !important;
-	border: none !important;
-}
-/* Hide empty fields of search engines */
-.searchbar-engine-one-off-item:not([tooltiptext]), .search-panel-current-input {
-
-	display: none !important;
-}
-.searchbar-engine-one-off-item[tooltiptext], .addengine-item,
-.searchbar-engine-one-off-item.last-of-row:not(.dummy),
-.search-setting-button,
-.search-setting-button:not(.last-row),
-.search-panel-one-offs {
-
-	border: none !important;
-}
-/* Labels of search engine */
-.searchbar-engine-one-off-item[tooltiptext]::after {
-
-	content: attr(tooltiptext);
-	display: block !important;
-	margin: 5px 6px 0px !important;
-}
-/* Icons of search engines */
-.searchbar-engine-one-off-item > .button-box {
-
-	display: inline-flex !important;
-	width: 16px !important;
-	max-width: 16px !important;
-	margin-top: 4px !important;
-}
-/* Minimum vertical height search suggestions 5 entries 1.5em */
-.search-panel-tree {
-
-	background-color: var(--button_bg) !important;
-	min-height: 7.5em !important;
-}
 .search-panel-header {
 
 	border: none !important;
 	color: var(--base_fg_insens) !important;
 	background-color: #313131 !important;
+	margin-top: -1px !important;
 }
 .search-panel-header > label {
 
 	font-style: italic !important;
+}
+.search-panel-one-offs {
+
+	background-color: #535353 !important;
 }
 .search-setting-button {
 
 	-moz-appearance: none !important;
 	color: var(--base_fg) !important;
 	background-color: var(--button_bg) !important;
+	border-top: 1px solid var(--borders) !important;
 }
-.search-setting-button:hover,
+.search-setting-button:hover  {
+
+	color: var(--base_fg_selected) !important;
+	background-color: var(--button_bg_hover) !important;
+}
 .search-setting-button[selected] {
 
 	color: var(--base_fg_selected) !important;
 	background-color: var(--button_bg_active) !important;
 }
-.autocomplete-richlistbox {
-
-	padding: 0 !important;
-	margin: 0 !important;
-	min-height: 120px !important;
-	max-height: 160px !important;
-	border-bottom: 1px solid  var(--borders) !important;
-}
 .autocomplete-richlistbox,
 .autocomplete-richlistitem {
 
-	background-color: var(--base_color) !important;
+	background-color: #434343 !important;
 }
 .autocomplete-richlistitem:hover,
 .autocomplete-richlistitem[selected] {
 
-	background-color: var(--base_bg_selected) !important;
-
+	background-color: var(--base_bg_active) !important;
 }
-/* Adjust vertical center of font if necessary (default 6px): */
-.searchbar-engine-one-off-item[tooltiptext]::after {
 
-	margin-top: 6px !important;
+/******************************************/
+/*************** SearchBar ****************/
+/******************************************/
+
+#searchbar {
+
+	-moz-appearance: none !important;
+	background: transparent !important;
+	border: none !important;
+}
+.search-go-button {
+	/* Present in FF 68+ */
+	background-color: #575757 !important;
+	border-top: 1px solid var(--borders) !important;
+	border-bottom: 1px solid var(--borders) !important;
+	border-right: 1px solid var(--borders) !important;
+	border-radius: 3px !important;
+}
+.searchbar-search-button {
+	/* Compatibility mode up to FF 68 (ESR):
+	button can only be integrated in FF 68+ (like .search-go-button) */
+	background-color: transparent !important;
+	border-radius: 3px !important;
+}
+.search-go-button:hover,
+.searchbar-search-button:hover {
+
+	background-color: var(--button_bg_hover) !important;
+}
+.search-go-button:active,
+.searchbar-search-button:active {
+
+	background-color: var(--button_bg_active) !important;
 }
 
 /******************************************/

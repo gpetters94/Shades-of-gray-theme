@@ -5,13 +5,6 @@
 ************************************************/
 
 /******************************************/
-/****** Import CSS for "about:"-pages *****/
-/******   (comment out if not used)   *****/
-/******************************************/
-
-@import url("about.css");
-
-/******************************************/
 /********** Import add-ons CSS ************/
 /******  (comment out if not used)   ******/
 /******************************************/
@@ -20,128 +13,16 @@
 @import url("panorama-tab-groups.css");
 @import url("bookmarked-speed-dial.css");
 
-/******************************************/
-/****** Shades of gray theme colors *******/
-/******************************************/
-
 :root {
-
-	/* Shades of gray: */
-	/*--base_bg_selected: #787878;*/
-
-	/* Orient blue: */
-	/*--base_bg_selected: #1B779E;*/
-
-	/* Cerulean blue:; */
-	/*--base_bg_selected: #6484a4;*/
-
-	/* Arch blue: */
-	/*--base_bg_selected: #1F77B7;*/
-
-	/* Patina green: */
-	/*--base_bg_selected: #3c7460;*/
-
-	/* Firebrick: */
-	--base_bg_selected: #c14e4e;
-
-	/* Harvest: */
-	/*--base_bg_selected: #AD8641;*/
-
-}
-
-/******************************************/
-/************* Firefox forms **************/
-/******************************************/
-
-@-moz-document url-prefix("http"), url-prefix("moz-extension") {
-
-	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]),
-	textarea,
-	select {
-
-		-moz-appearance: none;
-		color: black;
-		background-color: white;
-		border: 1px solid rgba(0, 0, 0, 0.3);
-		border-radius: 3px;
-		min-height: 1.5em;
-		padding-left: 3px;
-	}
-	select {
-
-		-moz-appearance: none;
-		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAMklEQVQI13XMwQkAIBADweGw/zbs7xrQlyKnBvYTNoHEKGSgu7O7c5UQ1Xg95LKh/cwJnLQO8gRyckIAAAAASUVORK5CYII=);
-		background-position: right 5px center;
-		background-repeat: no-repeat;
-		padding-right: 1.1em !important;
-		color: black;
-		background-color: #dfdfdf;
-		display: inline-block;
-		cursor: pointer;
-		box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
-		box-shadow: inset 0 3px 0 0 #ebebeb;
-		border-radius: 3px;
-		border: 1px solid rgba(0, 0, 0, 0.3);
-	}
-	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]):hover,
-	textarea:hover,
-	select:hover {
-
-		border: 1px solid rgba(0, 0, 0, 0.5);
-	}
-	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]):focus,
-	textarea:focus,
-	select:focus {
-
-		border: 1px solid rgba(0, 0, 0, 1);
-	}
-	select:hover,
-	select:active {
-
-		background-color: #e7e7e7;
-	}
-	button,
-	input[type="reset"],
-	input[type="button"],
-	input[type="submit"] {
-
-		-moz-appearance: none;
-		color: black;
-		background-color: #dfdfdf;
-		display: inline-block;
-		cursor: pointer;
-		box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
-		border-radius: 3px;
-		border: 1px solid rgba(0, 0, 0, 0.3);
-	}
-	button:hover,
-	input[type="reset"]:hover,
-	input[type="button"]:hover,
-	input[type="submit"]:hover {
-
-		background-color: #ebebeb;
-		border: 1px solid rgba(0, 0, 0, 0.5);
-	}
-	button:active,
-	input[type="reset"]:active,
-	input[type="button"]:active,
-	input[type="submit"]:active {
-
-		background-color: #f0f0f0;
-		border: 1px solid rgba(0, 0, 0, 0.5);
-	}
-	input[type="radio"],
-	input[type="checkbox"] {
-
-		filter: brightness(1.45);
-	}
+	/* used by imported addons */
+	--base_bg_selected: #787878;
 }
 
 /******************************************/
 /******** about:newtab about:home *********/
 /******************************************/
 
-@-moz-document url(about:newtab), url(about:home) {
+@-moz-document url(about:newtab), url(about:home), url(about:welcome) {
 
 	body {
 
@@ -266,6 +147,12 @@
 			inset 0 -1px #787878 !important;
 		outline: none;
 	}
+	.fake-focus .search-handoff-button { /* FF 69+ */
+
+		background-color: #3a3a3a !important;
+		border: 1px dashed #787878 !important;
+		box-shadow: none !important;
+	}
 	.search-wrapper .search-label,
 	.search-wrapper .search-button {
 
@@ -310,5 +197,95 @@
 
 		background: transparent !important;
 		border: none !important;
+	}
+}
+
+/******************************************/
+/************* Firefox forms **************/
+/******************************************/
+/*
+As of Firefox 68 the following adaptations "Firefox forms" are no longer necessary.
+These customized form widgets are more unobtrusive than original ones in FF68+.
+In Firefox 60 ESR the adapted form widgets are still needed.
+*/
+@-moz-document url-prefix("http"), url-prefix("moz-extension") {
+
+	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]),
+	textarea {
+
+		-moz-appearance: none;
+		color: black;
+		background-color: white;
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		border-radius: 3px;
+		padding: 0.2rem 0.2rem 0.2rem 0.3rem;
+	}
+	select {
+
+		-moz-appearance: none;
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAMklEQVQI13XMwQkAIBADweGw/zbs7xrQlyKnBvYTNoHEKGSgu7O7c5UQ1Xg95LKh/cwJnLQO8gRyckIAAAAASUVORK5CYII=);
+		background-position: right 5px center;
+		background-repeat: no-repeat;
+		padding: 3px 1rem 3px 3px !important;
+		color: black;
+		background-color: rgba(211, 211, 211, 0.45);
+		display: inline-block;
+		cursor: pointer;
+		box-shadow: inset 0 1rem 0 0 rgba(255, 255, 255, 0.3);
+		border-radius: 3px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+
+	}
+	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]):hover,
+	textarea:hover,
+	select:hover {
+
+		border: 1px solid rgba(0, 0, 0, 0.3);
+	}
+	input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]):not([type=reset]):focus,
+	textarea:focus,
+	select:focus {
+
+		border: 1px solid rgba(0, 0, 0, 1);
+	}
+	select:hover,
+	select:active {
+
+		filter: brightness(1.03);
+	}
+	button,
+	input[type="reset"],
+	input[type="button"],
+	input[type="submit"] {
+
+		-moz-appearance: none;
+		color: black;
+		background-color: rgba(211, 211, 211, 0.45);
+		display: inline-block;
+		padding: 3px 1.2rem 3px 1.2rem !important;
+		cursor: pointer;
+		box-shadow: inset 0 1rem 0 0 rgba(255, 255, 255, 0.3);
+		border-radius: 3px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+	button:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover,
+	input[type="submit"]:hover {
+
+		filter: brightness(1.03);
+	}
+	button:active,
+	input[type="reset"]:active,
+	input[type="button"]:active,
+	input[type="submit"]:active {
+
+		background-color: #f0f0f0;
+		border: 1px solid rgba(0, 0, 0, 0.5);
+	}
+	input[type="radio"],
+	input[type="checkbox"] {
+
+		filter: contrast(0.7) brightness(1.05);
 	}
 }
