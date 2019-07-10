@@ -5222,7 +5222,11 @@ headerbar .nautilus-canvas-item.subtitle:selected:focus,
 
 	border-top: 1px solid @borders;
 }
+.nautilus-window .floating-bar {
 
+	background-color: @sidebar_bg;
+	border: 1px solid @sidebar_bg;
+}
 .nautilus-window .searchbar-container {
 
 	margin-top: -1px;
