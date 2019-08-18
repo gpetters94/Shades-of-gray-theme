@@ -92,7 +92,7 @@ Additional options are included at the end of the file userChrome.css (e.g. to h
 
 ##### • userContent.css
 
-The file `userContent.css` contains customizations for the Firefox Home screen (`about:home`, `about:newtab`) and more unobtrusive form widgets.
+The file `userContent.css` contains customizations for the Firefox Home screen (`about:home`, `about:newtab`) and more.
 If you want to use these customizations, copy the file to this location:
 ```
 ~/.mozilla/firefox/<name-of-your-profile>/chrome/userContent.css
