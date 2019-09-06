@@ -69,12 +69,16 @@ The folder `assets` and the file `userChrome.css` in folder `Thunderbird-Shades-
 ~/.thunderbird/<name-of-your-profile>/chrome/userChrome.css
 ```
 
+Select the default theme in the Thunderbird settings to ensure a consistent appearance.
+
 If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment the current theme color in `userChrome.css` (Thunderbird and/or Firefox) and uncomment the new theme color value.
 
 #### • Thunderbird Calendar
 
 Thunderbird‘s Calendar (formaly Lightning) is using its own bright colors in default setting. The option for using theme colors is hidden as '*Accessibility*'.
 Open the Thunderbird settings and activate the checkbox '*Optimize colors for accessibility*' in calendar area.
+
+> **Note:** Thunderbird 68.0: There are several bugs in the new Calendar (Lightning) - e.g. events are sometimes not displayed in the "Today Pane". These problems can be handled by deleting the cache folder `/.cache/thunderbird` before starting Thunderbird.
 
 ### Firefox
 
