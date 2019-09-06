@@ -41,6 +41,9 @@
 	--base_fg_selected:              #ffffff;
 	--base_fg_insens:                #a3a3a3;
 
+	/* Menus */
+	--menu_bg:                       #404040;
+
 	/* Borders */
 	--borders:                       #191919;
 	--borders_separator:             #575757;
@@ -163,14 +166,40 @@ menuseparator {
 	margin: 4px 0 4px 0 !important;
 	padding: 0 !important;
 }
-/* NOTE: sideffect in preferences -> display -> tags
-listbox {
 
-	-moz-appearance: none !important;
-	border: none !important;
+
+#msgHeaderView {
+
 	background-color: var(--base_bg) !important;
 }
-*/
+statusbarpanel, .statusbarpanel {
+
+	background: var(--base_bg) !important;
+}
+
+/******************************************/
+/**************** Overview ****************/
+/******************************************/
+
+#acctCentralRows {
+
+	background-color: #505050 !important;
+}
+.acctCentralRowTitleBox {
+
+	background-color: var(--base_bg) !important;
+	border: 1px solid var(--borders) !important;
+}
+
+/******************************************/
+/***************** Menus ******************/
+/******************************************/
+
+panelview {
+
+	background-color: var(--menu_bg) !important;
+}
+
 /******************************************/
 /***************** Tabbox *****************/
 /******************************************/
@@ -504,55 +533,6 @@ toolbar > toolbarbutton {
 }
 
 /******************************************/
-/************** Scrollbars ****************/
-/******************************************/
-
-scrollbar {
-
-	-moz-appearance: none !important;
-	width: 11px !important;
-	padding: 2px !important;
-	background-color: #434343 !important;
-	border-left: 1px solid var(--borders) !important;
-	background-image: none !important;
-}
-srollbarbutton {
-
-	-moz-appearance: none !important;
-	width: 9px !important;
-	max-width: 10px !important;
-	border: none !important;
-}
-slider thumb {
-
-	-moz-appearance: none !important;
-	max-width: 9px !important;
-	background-color: #898989 !important;
-	border-radius: 3px !important;
-
-}
-slider thumb:hover {
-
-	-moz-appearance: none !important;
-	background-color: #999999 !important;
-
-}
-slider thumb:active {
-
-	-moz-appearance: none !important;
-	background-color: #b3b3b3 !important;
-
-}
-thumb {
-
-	-moz-appearance: none !important;
-	width: 11px !important;
-	max-width: 11px !important;
-	min-height: 100px !important;
-	border: none !important;
-}
-
-/******************************************/
 /************** Mail header ***************/
 /******************************************/
 
@@ -678,35 +658,25 @@ treechildren::-moz-tree-cell-text(folderNameCol, specialFolder-Inbox, newMessage
 
 #threadTree {
 
-background-color: var(--base_color) !important;
+	background-color: var(--base_color) !important;
 }
 #threadTree > treechildren::-moz-tree-row {
 
-	height: 26px !important;
+	min-height: 26px !important;
 	background-color: var(--treeview_row_bg) !important;
-	border: none !important;
 	border-bottom: 1px solid transparent !important;
 }
-#threadTree > treechildren:-moz-tree-row(even) {
+#threadTree > treechildren::-moz-tree-row(even) {
 
 	background-color: var(--treeview_row_bg_even) !important;
 }
-#threadTree > treechildren:-moz-tree-row(hover) {
+#threadTree > treechildren::-moz-tree-row(hover) {
 
 	border-bottom: 1px dotted var(--treeview_row_hover_line) !important;
 }
-#threadTree > treechildren::-moz-tree-cell-text {
-
-	color: var(--base_fg) !important;
-}
 #threadTree > treechildren::-moz-tree-row(selected) {
 
-	border: none !important;
 	background-color: var(--base_bg_selected) !important;
-}
-#threadTree > treechildren::-moz-tree-cell-text(selected) {
-
-	color: var(--base_fg_selected);
 }
 #threadCols treecol[sortDirection="ascending"] .treecol-sortdirection {
 
@@ -799,6 +769,7 @@ background-color: var(--base_color) !important;
 .agenda-container-box,
 .agenda-allday-container-box,
 .agenda-checkbox {
+
     background-color: transparent !important;
 }
 .agenda-container-box[selected="true"],
@@ -836,6 +807,80 @@ calendar-editable-item[selected="true"] .calendar-color-box {
 
 	background-color: var(--base_bg_selected) !important;
 }
+
+/* ---------- Mainly inline styles in Thunderbird 68+ ---------- */
+
+.calendar-task-treechildren::-moz-tree-row,
+#unifinder-search-results-tree > treechildren::-moz-tree-row {
+
+	min-height: 25px !important;
+	border-bottom: 1px solid transparent !important;
+}
+.calendar-task-treechildren::-moz-tree-row(hover),
+#unifinder-search-results-tree > treechildren::-moz-tree-row(hover) {
+
+	border-bottom: 1px dotted var(--treeview_row_hover_line) !important;
+}
+#unifinder-search-results-tree > treechildren::-moz-tree-row(even) {
+
+	background-color: var(--treeview_row_bg_even) !important;
+}
+#unifinder-search-results-tree > treechildren::-moz-tree-row(odd) {
+
+	background-color: var(--treeview_row_bg) !important;
+}
+.calendar-task-treechildren::-moz-tree-row(odd) {
+
+	background-color: var(--treeview_row_bg_even) !important;
+}
+.calendar-task-treechildren::-moz-tree-row(selected),
+#unifinder-search-results-tree > treechildren::-moz-tree-row(selected) {
+
+	background-color: var(--base_bg_selected) !important;
+}
+
+radio.calview[selected="true"] {
+
+    background-image: linear-gradient(to bottom,
+    	var(--base_bg_selected) 2px,
+    	transparent 2px) !important;
+}
+
+#unifinder-search-field,
+#task-text-filter-field {
+
+	-moz-appearance: none !important;
+	min-height: 26px !important;
+	padding-left: 8px !important;
+	background-color: var(--entry_bg) !important;
+	border: 1px solid var(--borders) !important;
+	border-radius: 3px !important;
+	transition: none !important;
+}
+#unifinder-search-field[focused="true"],
+#task-text-filter-field[focused="true"] {
+
+	-moz-appearance: none !important;
+	border: 1px solid var(--borders) !important;
+	border-radius: 3px !important;
+	background-color: var(--entry_bg_focus) !important;
+	box-shadow: inset 1px 0 var(--borders_active),
+		inset -1px 0 var(--borders_active),
+		inset 0 1px var(--borders_active),
+		inset 0 -1px var(--borders_active) !important;
+	outline: none;
+}
+
+/* Bug in Thunderbird 68:
+Font in task description should be sans-serif
+but via JavaScript (inline style) is forced serif.
+Relevant CSS instructions don't work. */
+/*
+#calendar-task-details-description-wrapper {
+
+	font-family: sans-serif !important;
+}
+*/
 
 /*****************************************/
 /*** More legible colors on dark theme ***/
@@ -961,6 +1006,17 @@ calendar-editable-item[selected="true"] .calendar-color-box {
 /******************************************/
 /*************** Color tags ***************/
 /******************************************/
+
+/*
+In Thunderbird 68+ thread labels are created as
+inline styles with JavaScript (TagUtils.jsm).
+This annoyingly prevents the usage of userChrome.css
+for thread label decoration design purposes.
+
+For this reason, the CSS code from "Column 1" to "Column 10"
+only works on Thunderbird before version 68 and will be
+removed in the future.
+*/
 
 /*************** Column 1 *****************/
 
@@ -1165,7 +1221,7 @@ calendar-editable-item[selected="true"] .calendar-color-box {
 	padding-left: 0 !important;
 }
 #threadTree > treechildren::-moz-tree-cell(lc-33FF33, subjectCol) {
-
+background-color: green !important;
 	border-left: 3px solid #33FF33 !important;
 	padding-left: 0 !important;
 }
