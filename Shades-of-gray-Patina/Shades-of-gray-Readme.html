@@ -267,12 +267,17 @@
 			~/.thunderbird/&lt;name-of-your-profile&gt;/chrome/userChrome.css
 		</code></div>
 
+		<p>Select the default theme in the Thunderbird settings to ensure a consistent appearance.</p>
+		
 		<p>If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment the current theme color in <code>userChrome.css</code> (Thunderbird and/or Firefox) and uncomment the new theme color value.</p>
 
 		<h4 id="Thunderbird_Calendar">&#8226;  Thunderbird Calendar</h4>
 
 		<p>Thunderbird‘s Calendar (formaly <i>Lightning</i>) uses its own bright colors in default setting. The option for using theme colors is hidden as '<em>Accessibility</em>'.<br>
 		Open the Thunderbird settings and activate the checkbox '<em>Optimize colors for accessibility</em>' in calendar area.</p>
+
+		<p class="note">Note about Thunderbird 68.0: There are several bugs in the new Calendar (Lightning) - e.g. events are sometimes not displayed in the "Today Pane".<br>
+			These problems can be handled by deleting the cache folder (<code>~/.cache/thunderbird/</code> before starting Thunderbird.</p>
 
 	<hr>
 
@@ -423,6 +428,14 @@
 	<hr>
 
 		<h2 id="Changelog">Changelog</h2>
+
+		<h4 id="1.1.9">Next Release</h4>
+
+		<ul class="version">
+			<li>GTK3: Nautilus floating-bar fixed (gtk.css)</li>
+			<li>Firefox 68+: form widgets are obsolete (userContent.css)</li>
+			<li>Thunderbird 68+: modifications, improvements, regressions (userChrome.css)</li>
+		</ul>
 
 		<h4 id="1.1.8">1.1.8</h4>
 
