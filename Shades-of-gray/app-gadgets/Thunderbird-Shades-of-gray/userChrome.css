@@ -1221,7 +1221,7 @@ removed in the future.
 	padding-left: 0 !important;
 }
 #threadTree > treechildren::-moz-tree-cell(lc-33FF33, subjectCol) {
-background-color: green !important;
+
 	border-left: 3px solid #33FF33 !important;
 	padding-left: 0 !important;
 }
