@@ -78,7 +78,7 @@ If you change a Shades-of-gray theme color, it is not necessary to copy the file
 Thunderbird‘s Calendar (formaly Lightning) is using its own bright colors in default setting. The option for using theme colors is hidden as '*Accessibility*'.
 Open the Thunderbird settings and activate the checkbox '*Optimize colors for accessibility*' in calendar area.
 
-> **Note:** Thunderbird 68.0: there are several bugs in the new Calendar (Lightning) - e.g. events are sometimes not displayed in the "Today Pane". These problems can be handled by deleting the cache folder `~/.cache/thunderbird` before starting Thunderbird.
+> **Note:** Thunderbird 68.0: There are several bugs in the new Calendar (Lightning) - e.g. events are sometimes not visible in the "*Today Pane*". These problem can be handled by deleting the cache folder `/.cache/thunderbird` before starting Thunderbird (see also *Shades-of-gray-Readme.html*).
 
 ### Firefox
 
