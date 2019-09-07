@@ -207,6 +207,7 @@
 					<li><a href="#white_font">White font in white input field</a></li>
 					<li><a href="#firefox_issues">Firefox customization issues</a></li>
 					<li><a href="#Th_unread_messages">Font color of unread messages in Thunderbird</a></li>
+					<li><a href="#Th_calendar_issues">Thunderbird 68 Calendar issues</a></li>
 				</ul>
 		</ol>
 
@@ -268,7 +269,7 @@
 		</code></div>
 
 		<p>Select the default theme in the Thunderbird settings to ensure a consistent appearance.</p>
-		
+
 		<p>If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment the current theme color in <code>userChrome.css</code> (Thunderbird and/or Firefox) and uncomment the new theme color value.</p>
 
 		<h4 id="Thunderbird_Calendar">&#8226;  Thunderbird Calendar</h4>
@@ -277,7 +278,7 @@
 		Open the Thunderbird settings and activate the checkbox '<em>Optimize colors for accessibility</em>' in calendar area.</p>
 
 		<p class="note">Note about Thunderbird 68.0: There are several bugs in the new Calendar (Lightning) - e.g. events are sometimes not displayed in the "Today Pane".<br>
-			These problems can be handled by deleting the cache folder (<code>~/.cache/thunderbird/</code> before starting Thunderbird.</p>
+			These problems can be handled by deleting the cache folder <code>~/.cache/thunderbird/</code> before starting Thunderbird.</p>
 
 	<hr>
 
@@ -429,7 +430,7 @@
 
 		<h2 id="Changelog">Changelog</h2>
 
-		<h4 id="1.1.9">Next Release</h4>
+		<h4 id="1.1.9">1.1.9</h4>
 
 		<ul class="version">
 			<li>GTK3: Nautilus floating-bar fixed (gtk.css)</li>
@@ -716,6 +717,24 @@
 
 				&nbsp;&nbsp;&nbsp;&nbsp;color: #FFA500 !important;<br>
 			}
+		</code></div>
+
+		<hr>
+
+		<h4 id="Th_calendar_issues">Thunderbird 68 Calendar issues</h4>
+
+		<blockquote>
+			<p>Events are not visible in the Today Pane of the Thunderbird 68 Calendar. Is this a bug in the Shades-of-gray theme and can you fix it?</p>
+		</blockquote>
+
+		<p>No, it's a bug related to the Thunderbird 68 <i>startupCache</i>. This problem can be handled by deleting the cache folder <code>~/.cache/thunderbird/</code> before starting Thunderbird or via shell script to start Thunderbird:</p>
+
+		<div><code>
+			#!/bin/bash<br><br>
+
+			find ~/.cache/thunderbird -name "startupCache" -type d -exec rm -rv {} +  2>/dev/null<br>
+			thunderbird & disown
+
 		</code></div>
 
 	<hr>
