@@ -16,7 +16,11 @@
 :root {
 	/* used by imported addons */
 	--base_bg_selected: #787878;
+
+	scrollbar-color: rgba(130,130,130,0.9) rgba(180,180,180,0.9) !important;
+	/*scrollbar-width: thin !important;*/
 }
+
 
 /******************************************/
 /******** about:newtab about:home *********/
