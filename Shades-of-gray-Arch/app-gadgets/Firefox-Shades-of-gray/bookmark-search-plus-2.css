@@ -71,18 +71,39 @@
 		margin: 6px !important;
 		border: none !important;
 	}
-	#mglass {
+	#sbutton {
 
-		padding: 16px 8px 8px 8px !important;
-		margin-top: 6px !important;
-		margin-right: 6px !important;
-		width: 0px !important;
-		height: 0px !important;
-		background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhLS0gR2VuZXJhdG9yOiBHcmF2aXQuaW8gLS0+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBzdHlsZT0iaXNvbGF0aW9uOmlzb2xhdGUiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48ZGVmcz48Y2xpcFBhdGggaWQ9Il9jbGlwUGF0aF9IcWJ6bmZpU1p1NmxmdG0xYlJHUTlGWGl6STlrT2NLcCI+PHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+PC9jbGlwUGF0aD48L2RlZnM+PGcgY2xpcC1wYXRoPSJ1cmwoI19jbGlwUGF0aF9IcWJ6bmZpU1p1NmxmdG0xYlJHUTlGWGl6STlrT2NLcCkiPjxwYXRoIGQ9IiBNIDE1LjcwNyAxNC4yOTMgTCAxMC44ODUgOS40NzEgQyAxMi43IDYuOTIxIDEyLjI1NyAzLjQwNiA5Ljg2OCAxLjM4NSBDIDcuNDc4IC0wLjYzNiAzLjkzOCAtMC40ODggMS43MjUgMS43MjUgQyAtMC40ODggMy45MzggLTAuNjM2IDcuNDc4IDEuMzg1IDkuODY4IEMgMy40MDYgMTIuMjU3IDYuOTIxIDEyLjcgOS40NzEgMTAuODg1IEwgMTQuMjkzIDE1LjcwNyBDIDE0LjY4NSAxNi4wODYgMTUuMzA5IDE2LjA4MSAxNS42OTUgMTUuNjk1IEMgMTYuMDgxIDE1LjMwOSAxNi4wODYgMTQuNjg1IDE1LjcwNyAxNC4yOTMgWiAgTSA2IDEwIEMgMy43OTEgMTAgMiA4LjIwOSAyIDYgQyAyIDMuNzkxIDMuNzkxIDIgNiAyIEMgOC4yMDkgMiAxMCAzLjc5MSAxMCA2IEMgMTAgOC4yMDkgOC4yMDkgMTAgNiAxMCBaICIgZmlsbD0icmdiKDIwOSwyMDksMjA5KSIvPjwvZz48L3N2Zz4=') !important;
-		filter: opacity(30%) !important;
-		background-size: 16px;
-		background-repeat: no-repeat !important;
-		background-color: transparent !important;
+		box-shadow: none !important;
+
+		margin-top: 4px !important;
+		margin-right: 4px !important;
+		height:20px !important;
+		width: 20px !important;
+
+	}
+	.swboth,
+	.swtitle,
+	.swurl {
+
+		filter: opacity(75%) brightness(102%) !important;
+	}
+	.srboth,
+	.srtitle,
+	.srurl {
+
+	filter: opacity(90%) brightness(130%) !important;
+	}
+	.swboth:hover,
+	.swtitle:hover,
+	.swurl:hover {
+
+		filter: opacity(90%) !important;
+	}
+	.srboth:hover,
+	.srtitle:hover,
+	.srurl:hover {
+
+		filter: opacity(100%) brightness(110%) !important;
 	}
 	#cancelsearch {
 
@@ -199,5 +220,4 @@
 		color: #a3a3a3 !important;
 		background: #404040 !important;
 	}
-
 }
