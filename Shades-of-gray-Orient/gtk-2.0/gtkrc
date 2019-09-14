@@ -16,10 +16,10 @@
 # gtk-color-scheme = "selected_bg_color:      #787878"
 
 # Orient blue:
-gtk-color-scheme = "selected_bg_color:      #1B779E"
+# gtk-color-scheme = "selected_bg_color:      #1B779E"
 
 # Arch blue:
-# gtk-color-scheme = "selected_bg_color:      #1F77B7"
+gtk-color-scheme = "selected_bg_color:      #1F77B7"
 
 # Cerulean blue:
 # gtk-color-scheme = "selected_bg_color:      #6484a4"
@@ -65,7 +65,7 @@ gtk-color-scheme = "notebook_bg:              #4a4a4a"
 gtk-color-scheme = "dark_sidebar_bg:          #3a3a3a"
 
 # Links
-gtk-color-scheme = "link_color:               #a6a6a6"
+gtk-color-scheme = "link_color:               #54a5cc"
 
 # Tooltips
 gtk-color-scheme = "tooltip_bg_color:         #474747"

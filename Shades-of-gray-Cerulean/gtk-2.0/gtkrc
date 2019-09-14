@@ -65,7 +65,7 @@ gtk-color-scheme = "notebook_bg:              #4a4a4a"
 gtk-color-scheme = "dark_sidebar_bg:          #3a3a3a"
 
 # Links
-gtk-color-scheme = "link_color:               #a6a6a6"
+gtk-color-scheme = "link_color:               #54a5cc"
 
 # Tooltips
 gtk-color-scheme = "tooltip_bg_color:         #474747"

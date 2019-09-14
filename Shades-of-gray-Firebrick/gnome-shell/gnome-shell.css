@@ -50,7 +50,7 @@ Patina green                 #3c7460
 Firebrick                    #c14e4e
 Harvest                      #AD8641
 
-/*******************************************
+/******************************************
 ************** Theme colors ***************
 ******************************************/
 
@@ -60,12 +60,12 @@ StEntry,
 .lg-dialog StEntry,
 .lg-dialog StEntry:focus {
 
-	selection-background-color: #c14e4e;
+	selection-background-color: #AD8641;
 }
 .popup-menu .popup-menu-item:active,
 .popup-menu .popup-menu-item.selected {
 
-	border-image: url("assets/menu/menu-hover-firebrick.svg") 9 9 1 1;
+	border-image: url("assets/menu/menu-hover-harvest.svg") 9 9 1 1;
 }
 
 /******************************************/
@@ -300,11 +300,11 @@ StScrollBar StButton#hhandle:active {
 }
 .shell-link {
 
-	color: #cccccc;
+	color: #54a5cc;
 }
 .shell-link:hover {
 
-	color: #e6e6e6;
+	color: #6dafcf;
 }
 .headline {
 
@@ -2212,7 +2212,7 @@ StScrollBar StButton#hhandle:active {
 }
 .url-highlighter {
 
-	link-color: #cccccc;
+	link-color: #54a5cc;
 }
 
 /******************************************/
@@ -2944,11 +2944,11 @@ StScrollBar StButton#hhandle:active {
 }
 .lg-dialog .shell-link {
 
-	color: #cccccc;
+	color: #54a5cc;
 }
 .lg-dialog .shell-link:hover {
 
-	color: #e6e6e6;
+	color: #6dafcf;
 }
 .lg-completions-text {
 

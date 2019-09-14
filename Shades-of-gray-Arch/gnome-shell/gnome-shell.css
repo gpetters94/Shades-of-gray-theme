@@ -300,11 +300,11 @@ StScrollBar StButton#hhandle:active {
 }
 .shell-link {
 
-	color: #cccccc;
+	color: #54a5cc;
 }
 .shell-link:hover {
 
-	color: #e6e6e6;
+	color: #6dafcf;
 }
 .headline {
 
@@ -2212,7 +2212,7 @@ StScrollBar StButton#hhandle:active {
 }
 .url-highlighter {
 
-	link-color: #cccccc;
+	link-color: #54a5cc;
 }
 
 /******************************************/
@@ -2944,11 +2944,11 @@ StScrollBar StButton#hhandle:active {
 }
 .lg-dialog .shell-link {
 
-	color: #cccccc;
+	color: #54a5cc;
 }
 .lg-dialog .shell-link:hover {
 
-	color: #e6e6e6;
+	color: #6dafcf;
 }
 .lg-completions-text {
 

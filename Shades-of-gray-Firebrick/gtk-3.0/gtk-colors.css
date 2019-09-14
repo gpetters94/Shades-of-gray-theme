@@ -219,10 +219,10 @@ you're on your own... */
 @define-color tab_bg_activatable_hover      rgba(128, 128, 128, 0.12);
 
 /* Link */
-@define-color link_fg                       #cccccc;
-@define-color link_fg_active                #e6e6e6;
-@define-color link_fg_visited               #d6d6d6;
-@define-color link_fg_selected              #f5f5f5;
+@define-color link_fg                       #54a5cc;
+@define-color link_fg_active                #6dafcf;
+@define-color link_fg_visited               #54a5cc;
+@define-color link_fg_selected              #6dafcf;
 
 /* Images */
 @define-color image_fg                      #a6a6a6;

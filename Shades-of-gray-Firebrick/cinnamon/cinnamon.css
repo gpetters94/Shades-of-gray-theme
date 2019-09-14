@@ -25,7 +25,7 @@ License: GPL-3.0+
 	/* Patina green */
 	/*selection-background-color: #3c7460;*/
 	/* Firebrick */
-	selection-background-color: #c14e4e;
+	/*selection-background-color: #c14e4e;*/
 	/* Harvest */
 	/*selection-background-color: #AD8641;*/
 }
@@ -47,7 +47,7 @@ License: GPL-3.0+
 	/* Patina green */
 	/*background-color: #3c7460;*/
 	/* Firebrick */
-	background-color: #c14e4e;
+	/*background-color: #c14e4e;*/
 	/* Harvest */
 	/*background-color: #AD8641;*/
 }
@@ -70,7 +70,7 @@ License: GPL-3.0+
 	/* Patina green */
 	/*border-color: #3c7460;*/
 	/* Firebrick */
-	border-color: #c14e4e;
+	/*border-color: #c14e4e;*/
 	/* Harvest */
 	/*border-color: #AD8641;*/
 }
@@ -410,12 +410,12 @@ StScrollBar StButton#hhandle:active {
 }
 .cinnamon-link {
 
-	color: #cccccc;
+	color: #54a5cc;
 	text-decoration: underline;
 }
 .cinnamon-link:hover {
 
-	color: #e6e6e6;
+	color: #6dafcf;
 }
 
 #Tooltip {
