@@ -47,6 +47,11 @@
 	-gtk-icon-effect: dim;
 	/*-gtk-icon-filter: opacity(0.5); GTK 3.90 or later*/
 }
+/* Workaround Evolution bug: link color in HTML messages: */
+*:link {
+
+	color: #54a5cc;
+}
 
 /************ gtkstyle fallback ***********/
 
