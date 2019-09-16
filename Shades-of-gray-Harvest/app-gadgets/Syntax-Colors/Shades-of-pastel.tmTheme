@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
+<plist version="1.1">
 <dict>
 	<key>author</key>
 	<string>WernerFP</string>
@@ -258,13 +258,26 @@
 			<key>name</key>
 			<string>Tag name</string>
 			<key>scope</key>
-			<string>entity.name.tag, punctuation.definition.tag</string>
+			<string>entity.name.tag</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#7FA8D4</string>
+				<string>#E06767</string>
+			</dict>
+		</dict>
+			<dict>
+			<key>name</key>
+			<string>Tag name</string>
+			<key>scope</key>
+			<string>punctuation.definition.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#70B1E0</string>
 			</dict>
 		</dict>
 		<dict>
@@ -625,4 +638,3 @@
 	<string>76cc56cb-cfdf-4375-9b19-4633d53ec687</string>
 </dict>
 </plist>
-

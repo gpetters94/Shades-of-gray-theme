@@ -3,9 +3,10 @@
 
 " Color scheme: Shades of pastel
 " Author: WernerFP - https://github.com/WernerFP
-" Version: 1.0
+" Version: 1.1
 " License: GPL-3.0+
 
+" ************************************************************************************************
 " Syntax color table
 " ************************************************************************************************
 " #D3D7CF 188 -> Normal
@@ -26,8 +27,10 @@
 " #6BB88A  72 -> Function
 " #8ECC7E 113 -> Identifier Macro
 
+" ************************************************************************************************
 " Start off
 " ************************************************************************************************
+
 set background=dark
 highlight clear
 
@@ -37,6 +40,7 @@ endif
 
 let g:colors_name = "Shades of pastel"
 
+" ************************************************************************************************
 " General colors
 " ************************************************************************************************
 hi Normal         ctermfg=188  ctermbg=234  cterm=NONE   guifg=#D3D7CF guibg=#191919 gui=NONE
@@ -58,9 +62,8 @@ hi Folded         ctermfg=253  ctermbg=240  cterm=bold   guifg=#D3D7CF guibg=#52
 hi ColorColumn    ctermfg=NONE ctermbg=235  cterm=NONE   guifg=NONE    guibg=#202020 gui=NONE
 
 hi ErrorMsg       ctermfg=231  ctermbg=166  cterm=NONE   guifg=#F0F0F0 guibg=#B55D14 gui=NONE
-hi ModeMsg        ctermfg=188  ctermbg=24   cterm=NONE   guifg=#D3D7CF guibg=#005F87 gui=NONE
+hi ModeMsg        ctermfg=188  ctermbg=236  cterm=NONE   guifg=#D3D7CF guibg=#2C2C2B gui=NONE
 hi WarningMsg     ctermfg=231  ctermbg=124  cterm=NONE   guifg=#F0F0F0 guibg=#C23B22 gui=NONE
-hi Question       ctermfg=42   ctermbg=NONE cterm=NONE   guifg=#00D7AF guibg=NONE    gui=NONE
 
 hi Pmenu          ctermfg=188  ctermbg=238  cterm=NONE   guifg=#D3D7CF guibg=#404040 gui=NONE
 hi PmenuSbar      ctermfg=NONE ctermbg=237  cterm=NONE   guifg=NONE    guibg=#323232 gui=NONE
@@ -70,6 +73,8 @@ hi PmenuSel       ctermfg=255  ctermbg=244  cterm=NONE   guifg=#FFFFFF guibg=#78
 hi Search         ctermfg=234 ctermbg=223   cterm=NONE   guifg=#191919 guibg=#FFD7AF gui=NONE
 hi IncSearch      ctermfg=234 ctermbg=223   cterm=NONE   guifg=#191919 guibg=#FFD7AF gui=NONE
 
+
+" ************************************************************************************************
 " Syntax colors
 " ************************************************************************************************
 hi Boolean        ctermfg=167  ctermbg=NONE cterm=bold   guifg=#DE5550 guibg=NONE    gui=bold
@@ -120,6 +125,7 @@ hi Title          ctermfg=167  ctermbg=NONE cterm=bold   guifg=#E06767 guibg=NON
 hi Todo           ctermfg=236  ctermbg=230  cterm=NONE   guifg=#000000 guibg=#FFFFD7 gui=NONE
 hi Type           ctermfg=204  ctermbg=NONE cterm=NONE   guifg=#F54985 guibg=NONE    gui=NONE
 
+" ************************************************************************************************
 " Additional modifications
 " ************************************************************************************************
 hi Underlined     cterm=underline    gui=underline
@@ -131,6 +137,7 @@ hi Pseudo         ctermfg=216  ctermbg=NONE cterm=italic guifg=#EBA7A7 guibg=NON
 hi Variable       ctermfg=110  ctermbg=NONE cterm=italic guifg=#7FA8D4 guibg=NONE    gui=italic
 
 
+" ************************************************************************************************
 " Language specifics
 " ************************************************************************************************
 
@@ -139,11 +146,13 @@ hi Variable       ctermfg=110  ctermbg=NONE cterm=italic guifg=#7FA8D4 guibg=NON
 hi link AspVBSMethods                PreCondit
 hi link AspVBSFunction               Character
 
+
 " BiBTeX
 " ************************************************************************************************
 hi link bibKey                       Function
 hi link bibType                      Type
 hi link bibVariable                  Special
+
 
 " C
 " ************************************************************************************************
@@ -151,9 +160,11 @@ hi cConstant                         ctermfg=74 guifg=#65A1F0
 hi link cDefine                      Define
 hi link cSpecial                     SpecialChar
 
+
 " C++
 " ************************************************************************************************
 hi link cppStatement                 Keyword
+
 
 " CoffeeScript
 " NB: Plugin https://github.com/kchmck/vim-coffee-script
@@ -163,6 +174,7 @@ hi link coffeeGlobal                 Type
 hi link coffeeObjAssign              Function
 hi link coffeeOperator               Tag
 hi link coffeeSpecialIdent           SpecialChar
+
 
 " CSS
 " ************************************************************************************************
@@ -187,12 +199,14 @@ hi link cssFunction                  Identifier
 hi link sassIdChar                   Identifier
 hi link sassClassChar                Identifier
 
+
 " Diff
 " ************************************************************************************************
 hi DiffAdd               ctermfg=255 ctermbg=28  cterm=NONE guifg=#F0F0F0 guibg=#008700 gui=NONE
 hi DiffDelete            ctermfg=255 ctermbg=124 cterm=NONE guifg=#F0F0F0 guibg=#A00000 gui=NONE
 hi DiffChange            ctermfg=255 ctermbg=31  cterm=NONE guifg=#F0F0F0 guibg=#0087D7 gui=NONE
 hi DiffText              ctermfg=255 ctermbg=61  cterm=NONE guifg=#F0F0F0 guibg=#5F5FD7 gui=NONE
+
 
 " Erlang
 " ************************************************************************************************
@@ -207,6 +221,7 @@ hi link goEscapeC                    SpecialChar
 hi link goEscapeX                    SpecialChar
 hi link goEscapeU                    SpecialChar
 
+
 " Haskell
 " ************************************************************************************************
 hi link hsOperator                   Keyword
@@ -214,14 +229,22 @@ hi link hsStructure                  Type
 hi link hsVarSym                     PreCondit
 hi link hsCharacter                  SpecialChar
 
+
 " HTML
 " ************************************************************************************************
 hi link htmlTag                      Tag
 hi link htmlEndTag                   Tag
-hi link htmlTagName                  Tag
+hi link htmlTagName                  Title
 hi link htmlArg                      Identifier
 hi link htmlLink                     SpecialChar
 hi link htmlSpecialTagName           Type
+hi def link htmlH1                      Statement
+hi def link htmlH2                      Statement
+hi def link htmlH3                      Statement
+hi def link htmlH4                      Statement
+hi def link htmlH5                      Statement
+hi def link htmlH6                      Statement
+
 
 " Java
 " ************************************************************************************************
@@ -229,22 +252,26 @@ hi link javaOperator                 Structure
 hi link javaStorageClass             PreCondit
 hi link javaStatement                Identifier
 
+
 " JavaScript
 " ************************************************************************************************
 hi link javaScriptBraces             Normal
 hi link javaScriptIdentifier         Type
 hi link javaScriptNumber             Number
 
+
 " Json
 " ************************************************************************************************
 hi link jsonKeyword                  PreCondit
 hi link jsonBraces                   Normal
+
 
 " Lisp
 " ************************************************************************************************
 hi link lispEscapeSpecial            Variable
 hi link lispDecl                     Type
 hi lispVar                           ctermfg=72 cterm=italic guifg=#6BB88A gui=italic
+
 
 " Lua
 " ************************************************************************************************
@@ -257,16 +284,18 @@ hi link luaFor                       Keyword
 hi link luaCond                      Keyword
 hi link luaElse                      Keyword
 
+
 " Makefile
 " ************************************************************************************************
 hi link makeCommands                 Special
 hi link makeIdent                    Variable
 hi link makeSpecial                  SpecialChar
 
+
 " Markdown
 " ************************************************************************************************
 hi ListTags           ctermfg=74  cterm=bold  guifg=#65A1F0 gui=bold
-hi CodeTags           ctermfg=74 cterm=bold,underline    guifg=#65A1F0 gui=bold,underline
+hi CodeTags           ctermfg=216 ctermbg=238 cterm=bold    guifg=#FA9F7B guibg=#414140 gui=bold
 hi QuoteTags          ctermfg=72  cterm=bold  guifg=#6BB88A gui=bold
 
 hi link markdownH1                   Title
@@ -289,21 +318,24 @@ hi link markdownFootnote             Special
 hi link markdownFootnoteDefinition   Special
 hi markdownItalic                    ctermfg=183 cterm=italic guifg=#B99EE3 gui=italic
 hi link markdownItalicDelimiter      SpecialChar
-hi markdownBold                      ctermfg=183 cterm=bold guifg=#B99EE3 gui=bold
+hi markdownBold                      ctermfg=183  cterm=bold guifg=#B99EE3 gui=bold
 hi link markdownBoldDelimiter        SpecialChar
 hi markdownBoldItalic                ctermfg=183 cterm=bold,italic guifg=#B99EE3 gui=bold,italic
 hi link markdownBoldItalicDelimiter  SpecialChar
+
 
 " Matlab
 " ************************************************************************************************
 hi link matlabDelimiter              Type
 hi matlabOperator                    ctermfg=74 cterm=bold guifg=#65A1F0 gui=bold
 
+
 " ObjectiveC
 " ************************************************************************************************
 hi link objcObjDef                   Identifier
 hi link objcPool                     Identifier
 hi link objcHiddenArgument           Identifier
+
 
 " Perl
 " ************************************************************************************************
@@ -313,6 +345,7 @@ hi link perlVarPlain2                Variable
 hi link perlVarNotInMatches          Variable
 hi link perlVarSlash                 Variable
 hi link perlSharpBang                Comment
+
 
 " PHP
 " ************************************************************************************************
@@ -325,6 +358,7 @@ hi link phpParent                    Normal
 hi link phpMethods                   Identifier
 hi link phpFunctions                 Identifier
 
+
 " Python
 " ************************************************************************************************
 hi link pythonRepeat                 Type
@@ -334,6 +368,7 @@ hi link pythonDecorator              PreCondit
 hi link pythonDecoratorName          PreCondit
 hi pythonConditional                 ctermfg=116 cterm=bold guifg=#86CAD9 gui=bold
 
+
 " Ruby
 " ************************************************************************************************
 hi link rubyInstanceVariable         Variable
@@ -341,6 +376,7 @@ hi link rubyPseudoVariable           Variable
 hi link rubySymbol                   SpecialChar
 hi link rubyKeyword                  Statement
 hi link rubyRepeat                   Statement
+
 
 " Rust
 " ************************************************************************************************
@@ -350,6 +386,7 @@ hi link rustSigil                    Keyword
 hi link rustRepeat                   Repeat
 hi link rustTrait                    Title
 
+
 " Samba
 " ************************************************************************************************
 hi link sambaKeyword                 Tag
@@ -357,7 +394,9 @@ hi link sambaSection                 Type
 hi link sambaMacro                   SpecialChar
 hi link sambaBoolean                 Boolean
 
+
 " Scala
+" NB: structure of scala.vim is not standard-compliant
 " ************************************************************************************************
 hi scalaNameDefinition               ctermfg=72  guifg=#6BB88A
 hi scalaKeyword                      ctermfg=116 cterm=bold guifg=#8BC7C4 gui=bold
@@ -367,6 +406,7 @@ hi scalaTypeDeclaration              ctermfg=204 guifg=#F54985
 hi scalaTypeTypePostDeclaration      ctermfg=204 guifg=#F54985
 hi scalaInstanceDeclaration          ctermfg=116 guifg=#86CAD9
 hi scalaInterpolation                ctermfg=113 guifg=#8ECC7E
+
 
 " Shell
 " ************************************************************************************************
@@ -379,6 +419,7 @@ hi link shSpecialDQ                  SpecialChar
 hi link shSpecialSQ                  SpecialChar
 hi link shSpecialNoZS                SpecialChar
 hi link shStatement                  SpecialChar
+
 
 " TeX
 " ************************************************************************************************
@@ -397,6 +438,7 @@ hi link texInputFile                 Special
 hi link texBeginEndName              Identifier
 hi link texCmdArgs                   Identifier
 
+
 " Vim
 " ************************************************************************************************
 hi link vimCommentTitle              Comment
@@ -407,15 +449,17 @@ hi link vimHiGuiRgb                  SpecialChar
 hi link vimHiNmbr                    SpecialChar
 hi link vimHiTerm                    Tag
 
+
 " XML
 " ************************************************************************************************
-hi link xmlTag                       Tag
+hi link xmlTag                       Title
 hi link xmlEndTag                    Tag
-hi link xmlTagName                   Tag
+hi link xmlTagName                   Title
 hi link xmlAttrib                    Identifier
 hi link xmlAttribPunct               Identifier
 hi link xmlEntity                    Special
 hi link xmlEntityPunct               Special
+
 
 " YAML
 " ************************************************************************************************
@@ -423,6 +467,7 @@ hi link yamlBool                     Boolean
 hi link yamlBlockMappingKey          Tag
 hi link yamlFlowMappingKey           Variable
 hi link yamlKeyValueDelimiter        Delimiter
+
 
 " Zsh
 " ************************************************************************************************
