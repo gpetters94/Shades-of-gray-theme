@@ -62,8 +62,9 @@ hi Folded         ctermfg=253  ctermbg=240  cterm=bold   guifg=#D3D7CF guibg=#52
 hi ColorColumn    ctermfg=NONE ctermbg=235  cterm=NONE   guifg=NONE    guibg=#202020 gui=NONE
 
 hi ErrorMsg       ctermfg=231  ctermbg=166  cterm=NONE   guifg=#F0F0F0 guibg=#B55D14 gui=NONE
-hi ModeMsg        ctermfg=188  ctermbg=236  cterm=NONE   guifg=#D3D7CF guibg=#2C2C2B gui=NONE
+hi ModeMsg        ctermfg=188  ctermbg=24   cterm=NONE   guifg=#D3D7CF guibg=#005F87 gui=NONE
 hi WarningMsg     ctermfg=231  ctermbg=124  cterm=NONE   guifg=#F0F0F0 guibg=#C23B22 gui=NONE
+hi Question       ctermfg=42   ctermbg=NONE cterm=NONE   guifg=#00D7AF guibg=NONE    gui=NONE
 
 hi Pmenu          ctermfg=188  ctermbg=238  cterm=NONE   guifg=#D3D7CF guibg=#404040 gui=NONE
 hi PmenuSbar      ctermfg=NONE ctermbg=237  cterm=NONE   guifg=NONE    guibg=#323232 gui=NONE
@@ -318,7 +319,7 @@ hi link markdownFootnote             Special
 hi link markdownFootnoteDefinition   Special
 hi markdownItalic                    ctermfg=183 cterm=italic guifg=#B99EE3 gui=italic
 hi link markdownItalicDelimiter      SpecialChar
-hi markdownBold                      ctermfg=183  cterm=bold guifg=#B99EE3 gui=bold
+hi markdownBold                      ctermfg=183 cterm=bold guifg=#B99EE3 gui=bold
 hi link markdownBoldDelimiter        SpecialChar
 hi markdownBoldItalic                ctermfg=183 cterm=bold,italic guifg=#B99EE3 gui=bold,italic
 hi link markdownBoldItalicDelimiter  SpecialChar
