@@ -1007,6 +1007,16 @@ Relevant CSS instructions don't work. */
 /*************** Color tags ***************/
 /******************************************/
 
+.tagvalue {
+
+	padding: 2px 16px !important;
+	border-radius: 5px !important;
+	border-style: none !important;
+	border-width: 0 !important;
+	text-shadow: none !important;
+	color: #000000 !important;
+}
+
 /*
 In Thunderbird 68+ thread labels are created as
 inline styles with JavaScript (TagUtils.jsm).
