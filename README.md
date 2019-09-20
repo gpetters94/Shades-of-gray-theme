@@ -138,7 +138,7 @@ To use them in Inkscape, the file must be stored in this directory:
 
 ### Syntax Highlighting
 
-Shades-of-gray includes the syntax color scheme Shades-of-pastel for several editors. By using pastel colors on dark background like pastel chalks on a blackboard the Shades-of-pastel scheme provides balanced and easy on eyes contrasts.
+Shades-of-gray includes the syntax color scheme [Shades-of-pastel](https://github.com/WernerFP/Shades-of-pastel) for several editors. By using pastel colors on dark background like pastel chalks on a blackboard the Shades-of-pastel scheme provides balanced and easy on eyes contrasts.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/22373662/52785609-ad0bd580-3058-11e9-99c1-13c802444149.png" width="773px" height="158px"></img></br><i>Shades of pastel: Bash sample in Sublime Text</i>
