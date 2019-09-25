@@ -33,6 +33,11 @@
 		background-color: #3a3a3a !important;
 		margin-left: 3px !important;
 	}
+	::selection {
+
+		color: #ffffff;
+		background-color: #787878;
+	}
 	#bookmarks {
 
 		background-color: #3a3a3a !important;
@@ -74,12 +79,11 @@
 	#sbutton {
 
 		box-shadow: none !important;
-
 		margin-top: 4px !important;
 		margin-right: 4px !important;
-		height:20px !important;
+		height: 20px !important;
 		width: 20px !important;
-
+		border-radius: 3px !important
 	}
 	.swboth,
 	.swtitle,
