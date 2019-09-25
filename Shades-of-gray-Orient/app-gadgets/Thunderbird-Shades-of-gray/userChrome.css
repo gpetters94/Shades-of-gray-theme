@@ -509,8 +509,7 @@ toolbar > toolbarbutton {
 	background-color: var(--button_bg_hover) !important;
 }
 
-/* Workaround Thunderbird 52 */
-/* Bugs in multimessageview.css and other files */
+/******* Buttons in multimessageview *******/
 
 .toolbarbutton-1.msgHeaderView-button {
 
@@ -703,6 +702,63 @@ treechildren::-moz-tree-cell-text(folderNameCol, specialFolder-Inbox, newMessage
 }
 
 /******************************************/
+/************* Notifications **************/
+/******************************************/
+
+notification[type="warning"],
+notification[type="critical"] {
+
+	color: #000000;
+	border-color: rgba(12, 12, 12, 0.4) !important;
+}
+notification[type="warning"] {
+
+	background-color: #ffe792 !important;
+}
+notification[type="critical"] {
+
+  background-color: #f58682 !important;
+}
+/* Enigmail notifications */
+.enigmailHeaderName {
+
+	color: #575757 !important;
+	-moz-margin-end: 10px !important;
+}
+.enigmailHeaderBoxLabelSignatureOk {
+
+	color: #000000 !important;
+	background-color: #b7d9ad !important;
+	border-color: rgba(12, 12, 12, 0.4) !important;
+}
+.enigmailHeaderBoxLabelSignatureVerified {
+
+	color: #000000 !important;
+	background-color: #c1daf5 !important;
+	border-color: rgba(12, 12, 12, 0.4) !important;
+}
+
+.enigmailHeaderBoxLabelNoSignature {
+
+	color: #000000 !important;
+	background-color: #c3c3c3 !important;
+	border-color: rgba(12, 12, 12, 0.4) !important;
+}
+.enigmailHeaderBoxLabelSignatureNotOk {
+
+	color: #000000 !important;
+	background-color: #f5c8a2 !important;
+	border-color: rgba(12, 12, 12, 0.4) !important;
+}
+.enigmailHeaderBoxLabelSignatureUnknown,
+.enigmailHeaderBoxLabelBuggyMailFormat {
+
+	color: #000000 !important;
+	background-color: #cabae3 !important;
+	border-color: rgba(12, 12, 12, 0.4) !important;
+}
+
+/******************************************/
 /*************** Adressbook ***************/
 /******************************************/
 
@@ -745,6 +801,9 @@ treechildren::-moz-tree-cell-text(folderNameCol, specialFolder-Inbox, newMessage
 /******************************************/
 /**************** Calendar ****************/
 /******************************************/
+
+/* ---------- Thunderbird 60 ------------ */
+/* ----- Will be removed in future ------ */
 
 #calendar-task-details-description {
 
@@ -808,7 +867,7 @@ calendar-editable-item[selected="true"] .calendar-color-box {
 	background-color: var(--base_bg_selected) !important;
 }
 
-/* ---------- Mainly inline styles in Thunderbird 68+ ---------- */
+/* ---------- Thunderbird 68+ (mainly inline styles) ----------- */
 
 .calendar-task-treechildren::-moz-tree-row,
 #unifinder-search-results-tree > treechildren::-moz-tree-row {
