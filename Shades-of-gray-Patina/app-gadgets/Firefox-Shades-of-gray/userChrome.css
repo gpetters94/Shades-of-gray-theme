@@ -23,7 +23,7 @@
 	/*--base_bg_selected: #1F77B7;*/
 
 	/* Patina green: */
-	--base_bg_selected: #3c7460;
+	/*--base_bg_selected: #3c7460;*/
 
 	/* Firebrick: */
 	/*--base_bg_selected: #c14e4e;*/
@@ -582,9 +582,6 @@ richlistitem[type="download"][verdict]:hover:active {
 You can use the following instruction to hide items in context menus.
 Uncomment selectors of your choice (remove /* at the beginning of a line).
 Please note: after the last entry comma is not allowed.
----------------------------------------------------------------------------
-A complete list of context IDs can be found in Firefox using this URL:
-	view-source:chrome://browser/content/browser.xul
 **************************************************************************/
 
 /* #context-openlinkinusercontext-menu,    /* Open link in new container tab */
