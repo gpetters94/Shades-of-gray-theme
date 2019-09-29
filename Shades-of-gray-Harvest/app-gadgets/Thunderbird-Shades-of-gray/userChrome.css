@@ -930,6 +930,21 @@ radio.calview[selected="true"] {
 	outline: none;
 }
 
+/**** Calendar dialog: Invite Attendees ****/
+
+.freebusy-timebar-title,
+.freebusy-timebar-hour {
+
+	color: #000000 !important;
+}
+#attendees-list hbox textbox {
+
+	color: #000000 !important;
+	background-color: transparent !important;
+	font-size: 11px !important;
+	margin-top: -5px !important;
+}
+
 /* Bug in Thunderbird 68:
 Font in task description should be sans-serif
 but via JavaScript (inline style) is forced serif.
