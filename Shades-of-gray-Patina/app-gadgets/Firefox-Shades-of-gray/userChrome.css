@@ -23,7 +23,7 @@
 	/*--base_bg_selected: #1F77B7;*/
 
 	/* Patina green: */
-	/*--base_bg_selected: #3c7460;*/
+	--base_bg_selected: #3c7460;
 
 	/* Firebrick: */
 	/*--base_bg_selected: #c14e4e;*/
@@ -53,7 +53,6 @@
 	--button_bg:                     rgba(140, 140, 140, 0.4) !important;
 	--button_bg_hover:               rgba(140, 140, 140, 0.6) !important;
 	--button_bg_active:              rgba(140, 140, 140, 0.9) !important;
-
 
 	/* Borders */
 	--borders:                       #181818;
@@ -96,6 +95,16 @@
 	--grey-70: #383838 !important;
 	--grey-80: #2a2a2a !important;
 	--grey-90: #0c0c0c !important;
+
+	--lwt-toolbar-field-background-color: #575757 !important;
+	--lwt-toolbar-field-focus: #3a3a3a !important;
+	--lwt-sidebar-background-color: #3a3a3a !important;
+	--lwt-sidebar-text-color: #f5f5f5 !important;
+	--toolbarbutton-focus-outline: 1px solid rgba(200, 200, 200, 0.75) !important;
+}
+:root[lwt-popup-brighttext] panel .text-link {
+
+	color: #54a5cc !important;
 }
 
 /******************************************/
@@ -119,36 +128,31 @@ button.browser-style.default.pressed {
 }
 
 /******************************************/
-/**************** urlbar ******************/
+/*********** urlbar, searchbar ************/
 /******************************************/
 
 #urlbar,
-.searchbar-textbox {
+/* FF 60 ESR */
+.searchbar-textbox,
+/* > FF 60 ESR up to 71+ */
+.browser-toolbar > #nav-bar-customization-target > #search-container > #searchbar > .searchbar-textbox {
 
-	-moz-appearance: none !important;
 	background-color: #575757 !important;
-	border: 1px solid  var(--borders) !important;
-	border-radius: 3px !important;
-}
-#urlbar:hover,
-.searchbar-textbox:hover {
-
-	box-shadow: inset 1px 0 var(--borders_active),
-		inset -1px 0 var(--borders_active),
-		inset 0 1px var(--borders_active),
-		inset 0 -1px var(--borders_active) !important;
 }
 #urlbar:-moz-lwtheme[focused="true"],
-#navigator-toolbox .searchbar-textbox:-moz-lwtheme[focused="true"] {
+/* FF 60 ESR */
+#navigator-toolbox .searchbar-textbox:-moz-lwtheme[focused="true"],
+/* > FF 60 ESR up to 71+ */
+.browser-toolbar > #nav-bar-customization-target > #search-container > #searchbar > .searchbar-textbox:focus-within {
 
 	color: var(--base_fg_selected) !important;
 	background-color: var(--entry_bg_focus) !important;
-	box-shadow: inset 1px 0 var(--borders_active),
-		inset -1px 0 var(--borders_active),
-		inset 0 1px var(--borders_active),
-		inset 0 -1px var(--borders_active) !important;
 	outline: none;
 }
+
+/******************************************/
+/************* Identity popup *************/
+/******************************************/
 
 #identity-popup-mainView,
 #identity-popup-cookiesView,
@@ -213,6 +217,74 @@ button.browser-style.default.pressed {
 }
 
 /******************************************/
+/*********** Protections popup ************/
+/******************************************/
+/* Firefox 70+ */
+.protections-popup-section,
+#protections-popup-footer,
+#protections-popup-siteNotWorkingView-header,
+#protections-popup-tp-switch-section,
+.protections-popup-list,
+#protections-popup-cookiesView > .panel-header,
+#protections-popup-trackersView > .panel-header,
+#protections-popup-trackersView > .panel-header,
+#protections-popup-sendReportView > .panel-header {
+
+	background-color: var(--base_bg) !important;
+}
+.protections-popup-description,
+#protections-popup-sendReportView-heading > description {
+
+	background-color: rgba(69, 161, 255, 0.2) !important;
+}
+/* Garish colors of mozilla advertising neutralized:; */
+#protections-popup-mainView-panel-header {
+
+	background: var(--base_bg) !important;
+}
+#protections-popup > .panel-arrowcontainer > .panel-arrowbox > .panel-arrow {
+
+	fill: var(--base_bg) !important;
+}
+
+/******************************************/
+/************* search panel ***************/
+/******************************************/
+
+.search-panel-one-offs,
+.searchbar-engine-one-off-item[tooltiptext] {
+
+	color: var(--base_fg) !important;
+	background-color: #515151 !important;
+	border: none !important;
+}
+.searchbar-engine-one-off-item[tooltiptext]:hover {
+
+	color: var(--base_fg_selected) !important;
+	background: var(--button_bg_hover) !important;
+}
+.search-panel-header {
+
+	color: var(--base_fg_insens) !important;
+	background-color: #313131 !important;
+}
+.search-panel-header > label {
+
+	font-style: italic !important;
+}
+.search-setting-button {
+
+	color: var(--base_fg) !important;
+	background-color: var(--button_bg) !important;
+}
+.search-setting-button:hover,
+.search-setting-button[selected] {
+
+	color: var(--base_fg_selected) !important;
+	background-color: var(--button_bg_active) !important;
+}
+
+/******************************************/
 /**************** sidebar *****************/
 /******************************************/
 
@@ -258,14 +330,31 @@ button.browser-style.default.pressed {
 
 	background-color: var(--button_bg_active) !important;
 }
-/* smaller scrollbar in sidebar*/
-/* NOTE: seems OK in FF 65-67 - watching for side effects in later versions */
-#historyTree scrollbar[orient="vertical"],
-#bookmarks-view scrollbar[orient="vertical"] {
 
-	margin-right: -5px !important;
+
+.search-box > .textbox-input-box {
+
+	height: 2.5em !important;
 }
 
+#template-container,
+.content-container,
+.content-scrollable,
+.deck {
+
+    background-color: var(--sidebar_bg) !important;
+}
+
+/******************************************/
+/**************** findbar *****************/
+/******************************************/
+
+.findbar-container,
+.findbar-closebutton,
+.findbar-closebutton.close-icon  {
+
+	background-color: #323232 !important;
+}
 /******************************************/
 /*************** titlebar *****************/
 /******************************************/
@@ -466,88 +555,6 @@ richlistitem[type="download"][verdict]:hover:active {
 	color: var(--base_fg_selected) !important;
 	background-color: var(--base_bg_active) !important;
 	outline: 1px solid var(--base_bg_active) !important;
-}
-
-/******************************************/
-/************** QuantumBar  ***************/
-/******************************************/
-
-.search-panel-header {
-
-	border: none !important;
-	color: var(--base_fg_insens) !important;
-	background-color: #313131 !important;
-	margin-top: -1px !important;
-}
-.search-panel-header > label {
-
-	font-style: italic !important;
-}
-.search-panel-one-offs {
-
-	background-color: #535353 !important;
-}
-.search-setting-button {
-
-	-moz-appearance: none !important;
-	color: var(--base_fg) !important;
-	background-color: var(--button_bg) !important;
-	border-top: 1px solid var(--borders) !important;
-}
-.search-setting-button:hover  {
-
-	color: var(--base_fg_selected) !important;
-	background-color: var(--button_bg_hover) !important;
-}
-.search-setting-button[selected] {
-
-	color: var(--base_fg_selected) !important;
-	background-color: var(--button_bg_active) !important;
-}
-.autocomplete-richlistbox,
-.autocomplete-richlistitem {
-
-	background-color: #434343 !important;
-}
-.autocomplete-richlistitem:hover,
-.autocomplete-richlistitem[selected] {
-
-	background-color: var(--base_bg_active) !important;
-}
-
-/******************************************/
-/*************** SearchBar ****************/
-/******************************************/
-
-#searchbar {
-
-	-moz-appearance: none !important;
-	background: transparent !important;
-	border: none !important;
-}
-.search-go-button {
-	/* Present in FF 68+ */
-	background-color: #575757 !important;
-	border-top: 1px solid var(--borders) !important;
-	border-bottom: 1px solid var(--borders) !important;
-	border-right: 1px solid var(--borders) !important;
-	border-radius: 3px !important;
-}
-.searchbar-search-button {
-	/* Compatibility mode up to FF 68 (ESR):
-	button can only be integrated in FF 68+ (like .search-go-button) */
-	background-color: transparent !important;
-	border-radius: 3px !important;
-}
-.search-go-button:hover,
-.searchbar-search-button:hover {
-
-	background-color: var(--button_bg_hover) !important;
-}
-.search-go-button:active,
-.searchbar-search-button:active {
-
-	background-color: var(--button_bg_active) !important;
 }
 
 /******************************************/
