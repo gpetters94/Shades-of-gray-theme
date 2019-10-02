@@ -4,6 +4,7 @@
 	 Name: Shades of gray Firefox userChrome.css
 	 Author: WernerFP
 	 License: GPL-3.0+
+	 Last change: 2019-10-02
 ***********************************************/
 
 :root {
@@ -140,14 +141,18 @@ button.browser-style.default.pressed {
 	background-color: #575757 !important;
 }
 #urlbar:-moz-lwtheme[focused="true"],
+#urlbar:not(.hidden-focus):-moz-lwtheme[focused="true"],
 /* FF 60 ESR */
 #navigator-toolbox .searchbar-textbox:-moz-lwtheme[focused="true"],
 /* > FF 60 ESR up to 71+ */
+#navigator-toolbox #searchbar:focus-within:-moz-lwtheme,
 .browser-toolbar > #nav-bar-customization-target > #search-container > #searchbar > .searchbar-textbox:focus-within {
 
+	-moz-appearance: none;
 	color: var(--base_fg_selected) !important;
 	background-color: var(--entry_bg_focus) !important;
 	outline: none;
+	border-color: var(--borders_active) !important;
 }
 
 /******************************************/
