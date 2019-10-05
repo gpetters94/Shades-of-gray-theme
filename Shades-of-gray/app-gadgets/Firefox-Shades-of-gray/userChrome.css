@@ -4,7 +4,7 @@
 	 Name: Shades of gray Firefox userChrome.css
 	 Author: WernerFP
 	 License: GPL-3.0+
-	 Last change: 2019-10-02
+	 Last change: 2019-10-05
 ***********************************************/
 
 :root {
@@ -67,6 +67,9 @@
 	--treeview_row_bg_even:          #474747;
 	--treeview_row_hover_line:       #929292;
 
+	/* Links */
+	--link_fg_color:                 #54a5cc;
+
 	/* Panel */
 	--panel-separator-color: #323232 !important;
 
@@ -102,10 +105,19 @@
 	--lwt-sidebar-background-color: #3a3a3a !important;
 	--lwt-sidebar-text-color: #f5f5f5 !important;
 	--toolbarbutton-focus-outline: 1px solid rgba(200, 200, 200, 0.75) !important;
+
+	--toolbar-bgcolor: #323232 !important;
+
+	/* Quantumbar -> Megabar (prospective 71+) */
+	--urlbar-popup-action-color: #ffe792 !important;
+	--autocomplete-popup-highlight-background: rgba(140, 140, 140, 0.65) !important;
+	/* Recommendations in neutral color */
+	--cfr-active-color: transparent !important;
 }
+
 :root[lwt-popup-brighttext] panel .text-link {
 
-	color: #54a5cc !important;
+	color: var(--link_fg_color) !important;
 }
 
 /******************************************/
@@ -153,6 +165,55 @@ button.browser-style.default.pressed {
 	background-color: var(--entry_bg_focus) !important;
 	outline: none;
 	border-color: var(--borders_active) !important;
+}
+
+/******************************************/
+/************* search panel ***************/
+/******************************************/
+
+.search-one-offs,
+.search-panel-one-offs,
+.searchbar-engine-one-off-item[tooltiptext] {
+
+	color: var(--base_fg) !important;
+	background-color: var(--entry_bg_focus) !important;
+	border: none !important;
+	background-color: #3a3a3a !important;
+}
+.search-one-offs {
+
+	box-shadow: 0 0 18px rgba(0, 0, 0, 0.5) !important;
+}
+.searchbar-engine-one-off-item[tooltiptext]:hover {
+
+	color: var(--base_fg_selected) !important;
+	background: var(--button_bg_hover) !important;
+}
+.search-panel-header {
+
+	color: var(--base_fg_insens) !important;
+	background-color: var(--entry_bg_focus) !important;
+}
+.search-panel-header > label {
+
+	font-style: italic !important;
+}
+.search-setting-button {
+
+	color: var(--base_fg) !important;
+	background-color: var(--button_bg) !important;
+}
+.search-setting-button:hover,
+.search-setting-button[selected] {
+
+	color: var(--base_fg_selected) !important;
+	background-color: var(--button_bg_active) !important;
+}
+/* Firefox Megabar (prospective 71+) */
+#urlbar .search-one-offs:not([hidden]) {
+
+	margin-bottom: 5px !important;
+	padding-block: 8px !important;
 }
 
 /******************************************/
@@ -253,43 +314,6 @@ button.browser-style.default.pressed {
 }
 
 /******************************************/
-/************* search panel ***************/
-/******************************************/
-
-.search-panel-one-offs,
-.searchbar-engine-one-off-item[tooltiptext] {
-
-	color: var(--base_fg) !important;
-	background-color: #515151 !important;
-	border: none !important;
-}
-.searchbar-engine-one-off-item[tooltiptext]:hover {
-
-	color: var(--base_fg_selected) !important;
-	background: var(--button_bg_hover) !important;
-}
-.search-panel-header {
-
-	color: var(--base_fg_insens) !important;
-	background-color: #313131 !important;
-}
-.search-panel-header > label {
-
-	font-style: italic !important;
-}
-.search-setting-button {
-
-	color: var(--base_fg) !important;
-	background-color: var(--button_bg) !important;
-}
-.search-setting-button:hover,
-.search-setting-button[selected] {
-
-	color: var(--base_fg_selected) !important;
-	background-color: var(--button_bg_active) !important;
-}
-
-/******************************************/
 /**************** sidebar *****************/
 /******************************************/
 
@@ -335,19 +359,16 @@ button.browser-style.default.pressed {
 
 	background-color: var(--button_bg_active) !important;
 }
-
-
 .search-box > .textbox-input-box {
 
 	height: 2.5em !important;
 }
-
 #template-container,
 .content-container,
 .content-scrollable,
 .deck {
 
-    background-color: var(--sidebar_bg) !important;
+	background-color: var(--sidebar_bg) !important;
 }
 
 /******************************************/
@@ -360,6 +381,7 @@ button.browser-style.default.pressed {
 
 	background-color: #323232 !important;
 }
+
 /******************************************/
 /*************** titlebar *****************/
 /******************************************/
