@@ -4,7 +4,7 @@
 	 Name: Shades of gray Firefox userChrome.css
 	 Author: WernerFP
 	 License: GPL-3.0+
-	 Last change: 2019-10-05
+	 Last change: 2019-10-07
 ***********************************************/
 
 :root {
@@ -63,12 +63,13 @@
 	--entry_bg_focus:                #3a3a3a;
 
 	/* Treeview */
-	--treeview_row_bg:               #535353;
-	--treeview_row_bg_even:          #474747;
-	--treeview_row_hover_line:       #929292;
+	/* Treeview */
+	--treeview_row_bg:               #434343;
+	--treeview_row_bg_even:          #393939;
+	--treeview_row_hover_line:       rgba(255,255,255,0.35);
 
 	/* Links */
-	--link_fg_color:                 #54a5cc;
+	--link_fg_color:                 #4AA6D7;
 
 	/* Panel */
 	--panel-separator-color: #323232 !important;
@@ -109,6 +110,7 @@
 	--toolbar-bgcolor: #323232 !important;
 
 	/* Quantumbar -> Megabar (prospective 71+) */
+	--urlbar-popup-url-color: var(--link_fg_color) !important;
 	--urlbar-popup-action-color: #ffe792 !important;
 	--autocomplete-popup-highlight-background: rgba(140, 140, 140, 0.65) !important;
 	/* Recommendations in neutral color */
@@ -566,6 +568,7 @@ richlistitem[type="download"][verdict]:hover:active {
 }
 #placeContent treechildren::-moz-tree-row {
 
+	background-color: var(--treeview_row_bg) !important;
 	min-height: 26px !important;
 	padding-bottom: 0px !important;
 }
