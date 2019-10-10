@@ -5408,6 +5408,11 @@ calendar-view .year-navigator.header {
 	font-size: 115%;
 	font-weight: bold;
 }
+/* Workaround https://gitlab.gnome.org/GNOME/gnome-calendar/issues/344 */
+calendar-view event label {
+
+	color: rgba(0, 0, 0, 0.85);
+}
 
 /******************************************/
 /***************** panel ******************/
