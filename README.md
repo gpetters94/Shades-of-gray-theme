@@ -1,7 +1,7 @@
 # Shades-of-gray
 
-Shades-of-gray is a flat dark GTK-theme with ergonomic contrasts. It supports Gnome, Cinnamon, Xfce4, Mate and Openbox.
-Theme customizations for Firefox, Thunderbird and Inkscape are additionally included.
+Shades-of-gray is a flat dark GTK-theme with ergonomic contrasts. It supports *Gnome*, *Cinnamon*, *Xfce4*, *Mate* and *Openbox*.
+Theme customizations for *Firefox*, *Thunderbird* and *Inkscape* are additionally included.
 Shades-of-gray is available in seven color variants:
 
 <p align="center">
@@ -19,7 +19,6 @@ The following description with further information is part of the file `Shades-o
 - [Gadgets](#gadgets)
   - [Thunderbird](#thunderbird)
   - [Firefox](#firefox)
-  - [Firefox add-ons](#firefox-add-ons)
   - [Inkscape](#inkscape)
   - [Syntax Highlighting](#syntax-highlighting)
 - [Requirements](#requirements)
@@ -35,11 +34,11 @@ You can install the AUR package:
 * Git version: [gtk-theme-shades-of-gray-git](https://aur.archlinux.org/packages/gtk-theme-shades-of-gray-git)
 
 If you want to benefit from the latest upstream changes, it makes sense to install the Git version.
-In GitHub [commits](https://github.com/WernerFP/Shades-of-gray-theme/commits/master) you can check if there are changes since the latest release that can be useful for you.
+In *GitHub* [commits](https://github.com/WernerFP/Shades-of-gray-theme/commits/master) you can check if there are changes since the latest release that can be useful for you.
 
 ### Installation via terminal
 
-You can install the git version by using this method:
+You can install the Git version by using this method:
 
 ```
 mkdir ~/Shades-of-gray-git
@@ -55,82 +54,64 @@ sudo cp -r * /usr/share/themes/
 
 Copy the chosen theme folders either for personal use into directory `~/.themes/` or for common use into `/usr/share/themes/`.
 
-Shades-of-gray can also be downloaded from [openDesktop.org](https://www.opendesktop.org/p/1244058/).
+*Shades-of-gray* can also be downloaded from [openDesktop.org](https://www.opendesktop.org/p/1244058/).
 
 ## Gadgets
 
-Each theme folder contains an `app-gadgets` directory with additional theme files for Thunderbird, Firefox and Inkscape.
+Each theme folder contains an `app-gadgets` directory with additional theme files for *Thunderbird*, *Firefox* and *Inkscape*.
 
 ### Thunderbird
 
-The folder `assets` and the file `userChrome.css` in folder `Thunderbird-Shades-of-gray` contain a Thunderbird theme adapted to Shades of gray. Copy both to this location:
+The folder `assets` and the file `userChrome.css` in folder `../app-gadgets/Thunderbird-Shades-of-gray/` contain a *Thunderbird* theme adapted to *Shades of gray*. To use these customizations, you can copy both to this location:
 ```
 ~/.thunderbird/<name-of-your-profile>/chrome/assets
 ~/.thunderbird/<name-of-your-profile>/chrome/userChrome.css
 ```
 
-Select the default theme in the Thunderbird settings to ensure a consistent appearance.
-
-If you change a Shades-of-gray theme color, it is not necessary to copy the file again. You can simply comment the current theme color in `userChrome.css` (Thunderbird and/or Firefox) and uncomment the new theme color value.
+Select the default theme in the *Thunderbird* settings to ensure a consistent appearance.
 
 #### • Thunderbird Calendar
 
-Thunderbird‘s Calendar (formaly Lightning) is using its own bright colors in default setting. The option for using theme colors is hidden as '*Accessibility*'.
-Open the Thunderbird settings and activate the checkbox '*Optimize colors for accessibility*' in calendar area.
+*Thunderbird‘s* Calendar (formaly *Lightning*) is using its own bright colors in default setting. The option for using theme colors is hidden as '*Accessibility*'.
+Open the *Thunderbird* settings and activate the checkbox '*Optimize colors for accessibility*' in calendar area.
 
 > **Note:** Thunderbird 68.0: There are several bugs in the new Calendar (Lightning) - e.g. events are sometimes not visible in the "*Today Pane*". These problem can be handled by deleting the cache folder `/.cache/thunderbird` before starting Thunderbird (see also *Shades-of-gray-Readme.html*).
 
 ### Firefox
 
-> **Note:** as of Firefox 68/69, you must set the `toolkit.legacyUserProfileCustomizations.stylesheets` preference to `true` in `about:config` in order to load `userChrome.css` or `userContent.css` files. Details are explained at [ghacks](https://www.ghacks.net/2019/05/24/firefox-69-userchrome-css-and-usercontent-css-disabled-by-default).
+> **Note:** as of Firefox 69, you must set the `toolkit.legacyUserProfileCustomizations.stylesheets` preference to `true` in `about:config` in order to load `userChrome.css` and `userContent.css` files. Details are explained at [ghacks](https://www.ghacks.net/2019/05/24/firefox-69-userchrome-css-and-usercontent-css-disabled-by-default).
 
-##### • userChrome.css
+The directory `../app-gadgets/Firefox-Shades-of-gray` contains a collection of *Shades-of gray* theme modifications for *Firefox*:
 
-The file `userChrome.css` in folder `Firefox-Shades-of-gray` contains a theme adaptation to Shades-of-gray. To enable the customizations, copy the file or its content to this location:
+* **userChrome.css**</br>
+This file contains modifications for the *Firefox* user interface.
 
-`~/.mozilla/firefox/<name-of-your-profile>/chrome/userChrome.css`
+* **userContent.css**</br>
+Herein are adjustments of the Firefox *Home-Screen*. In addition, the following customizations are imported via `userContent.css`:
 
-Additional options are included at the end of the file userChrome.css (e.g. to hide unwanted items in context menus). You can activate options of your choice by removing the comment characters `/*` at the beginning of a line.
+* **about.css**</br>
+The file `about.css` contains *Shades-of-gray* theme customizations for *Firefox* `about:` pages.
+
+* **bookmark-search-plus-2.css**</br>
+The file `bookmark-search-plus-2.css` contains a theme adaption for the very useful add-on *Bookmark search plus 2* ([AMO](https://addons.mozilla.org/firefox/addon/bookmark-search-plus-2) | [Github](https://github.com/aaFn/Bookmark-search-plus-2)).
+
+* **panorama-tab-groups.css**</br>
+This is a modification for the dark theme of the recommended add-on *Panorama Tab Groups* ([AMO](https://addons.mozilla.org/firefox/addon/panorama-tab-groups) | [Github](https://github.com/projectdelphai/panorama-tab-groups)).
+
+* **bookmarked-speed-dial.css**</br>
+*Bookmarked Speed Dial* ([AMO](https://addons.mozilla.org/firefox/addon/bookmarked-speeddial)) is an underrated add-on that offers similar functionality to *Vivaldi Speed Dial*. The file `bookmarked-speed-dial.css` is a *Shades-of-gray* theme customization.
+The folder `bookmarked-speed-dial-images` contains images wich you can choose as '*Default dial image*' and '*Default folder image*' in the add-on options.
+
+To use the customizations for *Firefox* you can copy the contents of directory `../app-gadgets/Firefox-Shades-of-gray/` to this location:
+
+`~/.mozilla/firefox/<name-of-your-profile>/chrome/`
 
 > **Note:** you should choose the dark style in Firefox to get a consistent dark appearance.
 
-##### • userContent.css
-
-The file `userContent.css` contains customizations for the Firefox Home screen (`about:home`, `about:newtab`) and more.
-If you want to use these customizations, copy the file to this location:
-```
-~/.mozilla/firefox/<name-of-your-profile>/chrome/userContent.css
-```
-### Firefox add-ons
-
-#### • Bookmark search plus 2
-
-The file `bookmark-search-plus-2.css` contains theme customizations for the very useful add-on *Bookmark search plus 2* ([AMO](https://addons.mozilla.org/firefox/addon/bookmark-search-plus-2) | [Github](https://github.com/aaFn/Bookmark-search-plus-2)). Copy this file in addition to `userContent.css` into your *chrome* directory:
-
-`~/.mozilla/firefox/<name-of-your-profile>/chrome/bookmark-search-plus-2.css`
-
-#### • Panorama Tab Groups
-
-The file `panorama-tab-groups.css` contains theme customizations for the recommended add-on *Panorama Tab Groups* ([AMO](https://addons.mozilla.org/firefox/addon/panorama-tab-groups) | [Github](https://github.com/projectdelphai/panorama-tab-groups)). Copy this file in addition to `userContent.css` into your *chrome* directory:
-
-`~/.mozilla/firefox/<name-of-your-profile>/chrome/panorama-tab-groups.css`
-
-> **Note:** in *Panorama Tab Groups* you can toggle between light and dark theme. The Shades-of-gray customizations only take effect with the dark theme.
-
-#### • Bookmarked Speed Dial
-
-Bookmarked Speed Dial ([AMO](href="https://addons.mozilla.org/firefox/addon/bookmarked-speeddial)) is an add-on that offers similar functionality to Vivaldi Speed Dial
-
-The file `bookmarked-speed-dial.css` contains a <em>Shades-of-gray</em> theme customization. Copy this file in addition to `userContent.css` into your *chrome* directory:
-
-`~/.mozilla/firefox/<name-of-your-profile>/chrome/bookmarked-speed-dial.css`
-
-The directory `../app-gadgets/Firefox-Shades-of-gray/bookmarked-speed-dial-images` contains images wich you can choose as '*Default dial image*' and '*Default folder image*' in the add-on options.
-
 ### Inkscape
 
-Original colored icons in Inkscape are hard to identify in dark themes. The file `icon.svg` in folder `Inkscape-icons` contains bright icons.
-To use them in Inkscape, the file must be stored in this directory:
+Original colored icons in *Inkscape* are hard to identify in dark themes. The file `icon.svg` in folder `Inkscape-icons` contains bright icons.
+To use them in *Inkscape*, the file must be stored in this directory:
 
 `~/.config/inkscape/icons/icons.svg`
 
@@ -138,7 +119,7 @@ To use them in Inkscape, the file must be stored in this directory:
 
 ### Syntax Highlighting
 
-Shades-of-gray includes the syntax color scheme [Shades-of-pastel](https://github.com/WernerFP/Shades-of-pastel) for several editors. By using pastel colors on dark background like pastel chalks on a blackboard the Shades-of-pastel scheme provides balanced and easy on eyes contrasts.
+*Shades-of-gray* includes the syntax color scheme *Shades-of-pastel* for several editors. By using pastel colors on dark background like pastel chalks on a blackboard the *Shades-of-pastel* scheme provides balanced and easy on eyes contrasts. A set of previews is available in this separate [Shades-of-pastel](https://github.com/WernerFP/Shades-of-pastel) repository.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/22373662/52785609-ad0bd580-3058-11e9-99c1-13c802444149.png" width="773px" height="158px"></img></br><i>Shades of pastel: Bash sample in Sublime Text</i>
@@ -146,16 +127,16 @@ Shades-of-gray includes the syntax color scheme [Shades-of-pastel](https://githu
 
 #### • Sublime Text
 
-To install the scheme for Sublime-Text change to directory <code>Shades-of-gray/app-gadgets/Syntax-Colors</code>. Copy the contained file <code>Shades-of-pastel.tmTheme</code> to a folder in your Sublime Packages directory:
+To install the scheme for S*ublime Text* change to directory <code>Shades-of-gray/app-gadgets/Syntax-Colors</code>. Copy the contained file <code>Shades-of-pastel.tmTheme</code> to a folder in your *Sublime* Packages directory:
 ```
 mkdir -p $HOME/.config/sublime-text-3/Packages/Shades-of-pastel
 cp Shades-of-pastel.tmTheme $HOME/.config/sublime-text-3/Packages/Shades-of-pastel/
 ```
-Now you can select Shades-of-pastel as a color scheme in menu *Preferences*.
+Now you can select the syntax color scheme *Shades-of-pastel* in menu *Preferences*.
 
 #### • Gedit, Pluma, Xed, Mousepad
 
-Shades-of-pastel can be used by editors with syntax highlighting based on *GtkSourceView 3* or *GtkSourceView 4*. To install the color scheme change to directory `Shades-of-gray/app-gadgets/Syntax-Colors`. Copy the contained file `shades-of-pastel.xml` into the following user directories:
+*Shades-of-pastel* can be used by editors with syntax highlighting based on *GtkSourceView 3* or *GtkSourceView 4*. To install the color scheme change to directory `Shades-of-gray/app-gadgets/Syntax-Colors`. Copy the contained file `shades-of-pastel.xml` into the following user directories:
 ```
 mkdir -p $HOME/.local/share/gtksourceview-3.0/styles
 cp shades-of-pastel.xml $HOME/.local/share/gtksourceview-3.0/styles/
@@ -163,17 +144,17 @@ cp shades-of-pastel.xml $HOME/.local/share/gtksourceview-3.0/styles/
 mkdir -p $HOME/.local/share/gtksourceview-4/styles
 cp shades-of-pastel.xml $HOME/.local/share/gtksourceview-4/styles/
 ```
-Shades-of-pastel is now available in the settings of your editor.
+*Shades-of-pastel* is now available in the settings of your editor.
 
 #### • Vim, GVim
 
-To install Shades-of-pastel for Vim change to directory `Shades-of-gray/app-gadgets/Syntax-Colors`. Copy the file `shades-of-pastel.vim` into your Vim profile folder:</p>
+To install *Shades-of-pastel* for *Vim* change to directory `Shades-of-gray/app-gadgets/Syntax-Colors`. Copy the file `shades-of-pastel.vim` into your *Vim* profile folder:</p>
 
 ```
 mkdir -p $HOME/.vim/colors
 cp shades-of-pastel.vim $HOME/.vim/colors/
 ```
-Turn on syntax highlighting (`syntax on`) in your configuration file (`~/.vimrc`) and append the line `colorscheme shades-of-pastel` if you want to use the Shades-of-Pastel scheme by default.
+Turn on syntax highlighting (`syntax on`) in your configuration file (`~/.vimrc`) and append the line `colorscheme shades-of-pastel` if you want to use the *Shades-of-Pastel* scheme by default.
 
 ## Requirements
 
