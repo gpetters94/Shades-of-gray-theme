@@ -197,7 +197,7 @@
 				</ul>
 			<li><a href="#Requirements">Requirements</a></li>
 			<li><a href="#License">License</a></li>
-			<li><a href="#Changelog">Changelog</a></li>
+			<li><a href="#Changelog">Changelogs</a></li>
 			<li><a href="#Bugreports">Bug reports</a></li>
 			<li><a href="#FAQ">FAQ and tips</a></li>
 				<ul>
@@ -297,13 +297,15 @@
 		<p>Additional options are included at the end of the file <code>userChrome.css</code> (e.g. to hide unwanted items in context menus). You can activate options of your choice by removing the comment characters <code>/*</code> at the beginning of a line.<br>
 		You should choose the dark style in Firefox to get a consistent dark appearance.</p>
 
-		<h5 id="userContent">&#8226;  userContent.css</h5>
+		<h5 id="userContent">&#8226;  userContent.css | about.css</h5>
 
-		<p>The file <code>userContent.css</code> contains customizations for the Firefox Home screen (<code>about:home</code>, <code>about:newtab</code>) and more unobtrusive form widgets.
-		<br>If you want to use these customizations, copy the file to this location:</p>
+		<p><code>userContent.css</code> includes customizations for the Firefox Home Screen (<code>about:home</code>, <code>about:newtab</code>) and more unobtrusive form widgets.
+		<p>The file<code>about.css</code> contains theme customizations for the Firefox <code>about:</code> pages (<code>about:about</code> provides an overview).</p>
+		<p>If you want to use these customizations, copy both files to this location:</p>
 
 		<div><code>
 			~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/userContent.css<br>
+			~/.mozilla/firefox/&lt;name-of-your-profile&gt;/chrome/about.css
 		</code></div>
 
 	<hr>
@@ -428,7 +430,25 @@
 
 	<hr>
 
-		<h2 id="Changelog">Changelog</h2>
+		<h2 id="Changelog">Changelogs</h2>
+
+		<h4 id="1.2.0">1.2.0</h4>
+
+		<ul class="version">
+			<li>Link colors for light and dark backgrounds optimized (GTK2, GTK3 etc.)</li>
+			<li>Evolution: workaround undeclared link color in HTML messages (gtk3.css)</li>
+			<li>Gnome Calendar: workaround poor events contrast with dark themes (gtk3.css)</li>
+			<li>Shades of pastel: HTML and XML syntax highlighting improved</li>
+			<li>Thunderbird: tag indicators and notifications improved (userChrome.css)</li>
+			<li>Lightning 68+: fixes for dark themes, improvements (userChrome.css)</li>
+			<li>Enigmail: colors of header box labels improved (userChrome.css)</li>
+			<li>Firefox: default scrollbars less intrusive (userContent.css)</li>
+			<li>Firefox: new search button in BPS2 adapted (bookmark-search-plus-2.css)</li>
+			<li>Firefox 60 ESR: Home Screen fixes and improvements (userContent.css)</li>
+			<li>Firefox 69+: modifications QuantumBar to Megabar in FF 71 (userChrome)</li>
+			<li>Firefox: modifications, improvements, regressions up to FF 71 (userChrome.css)</li>
+			<li>Firefox new: customizations for 'about:' pages added (about.css)</li>
+		</ul>
 
 		<h4 id="1.1.9">1.1.9</h4>
 
@@ -676,14 +696,9 @@
 
 		<h4 id="firefox_issues">Firefox customization issues</h4>
 
-		<blockquote>
-			<p>Why are the adjustments for Firefox <code>about:</code>-pages (about.css) no longer included?
-			</p>
-		</blockquote>
+		<p>From Firefox ESR to Nightly there are up to 10 versions with partly significant design changes. In newer Firefox versions, Mozilla increasingly uses unchangeable dynamic content (inline styles created with JavaScript). Firefox CSS customizations have become a real challenge.</p>
 
-		<p>The page <code>about:addons</code> in Firefox 68 and higher contains dynamic content (HTML with inline styles created by JavaScript) and cannot be customized anymore. Therefore, the customizations in "about.css" are no longer included.</p>
-
-		<p><i>(Firefox customizations are becoming increasingly difficult or even made impossible by Mozilla Foundation. They don't care what users want.)</i></p>
+		<p>If something is not as it should be, please take a look at the Shades-of-gray <a href="https://github.com/WernerFP/Shades-of-gray-theme">GitHub Repo</a>. If it is a solvable issue, there may already be a solution.</p>
 
 		<h4 id="addon_issues">Firefox add-on customization issues</h4>
 
