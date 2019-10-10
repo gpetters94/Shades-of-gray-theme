@@ -2,6 +2,7 @@
    Name: Shades of gray Firefox userContent.css
    Author: WernerFP
    License: GPL-3.0+
+   Last change: 2019-10-07
 ************************************************/
 
 /******************************************/
@@ -9,6 +10,7 @@
 /******  (comment out if not used)   ******/
 /******************************************/
 
+@import url("about.css");
 @import url("bookmark-search-plus-2.css");
 @import url("panorama-tab-groups.css");
 @import url("bookmarked-speed-dial.css");
@@ -35,6 +37,8 @@
 		--newtab-border-secondary-color: #292929 !important;
 		--newtab-search-dropdown-color: #575757 !important;
 		--newtab-search-dropdown-header-color: #313131 !important;
+		--newtab-snippets-background-color: #404040 !important;
+		--newtab-card-background-color: #515151 !important;
 		background-color: #323232 !important;
 		overflow: auto !important;
 		color: #d1d1d1 !important;
