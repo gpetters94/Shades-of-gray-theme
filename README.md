@@ -79,8 +79,6 @@ Open the *Thunderbird* settings and activate the checkbox '*Optimize colors for 
 
 ### Firefox
 
-> **Note:** as of Firefox 69, you must set the `toolkit.legacyUserProfileCustomizations.stylesheets` preference to `true` in `about:config` in order to load `userChrome.css` and `userContent.css` files. Details are explained at [ghacks](https://www.ghacks.net/2019/05/24/firefox-69-userchrome-css-and-usercontent-css-disabled-by-default).
-
 The directory `../app-gadgets/Firefox-Shades-of-gray` contains a collection of *Shades-of gray* theme modifications for *Firefox*:
 
 * **userChrome.css**</br>
@@ -107,6 +105,8 @@ To use the customizations for *Firefox* you can copy the contents of directory `
 `~/.mozilla/firefox/<name-of-your-profile>/chrome/`
 
 > **Note:** you should choose the dark style in Firefox to get a consistent dark appearance.
+
+> **Note:** as of Firefox 68/69, you must set the `toolkit.legacyUserProfileCustomizations.stylesheets` preference to `true` in `about:config` in order to load `userChrome.css` and `userContent.css` files.
 
 ### Inkscape
 
