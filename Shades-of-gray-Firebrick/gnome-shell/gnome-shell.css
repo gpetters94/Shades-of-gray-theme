@@ -60,12 +60,12 @@ StEntry,
 .lg-dialog StEntry,
 .lg-dialog StEntry:focus {
 
-	selection-background-color: #AD8641;
+	selection-background-color: #c14e4e;
 }
 .popup-menu .popup-menu-item:active,
 .popup-menu .popup-menu-item.selected {
 
-	border-image: url("assets/menu/menu-hover-harvest.svg") 9 9 1 1;
+	border-image: url("assets/menu/menu-hover-firebrick.svg") 9 9 1 1;
 }
 
 /******************************************/
@@ -149,7 +149,7 @@ stage {
 
 	text-shadow: 0 1px rgba(74, 74, 74, 0);
 	color: rgba(219, 219, 219, 0.45);
-	border: 1px solid rgba(43, 46, 57, 0.55);
+	border: 1px solid rgba(47, 47, 47, 0.55);
 	background-color: rgba(79, 79, 79, 0.55);
 	box-shadow: inset 0 1px rgba(79, 79, 79, 0.05);
 }
@@ -185,7 +185,7 @@ StEntry:insensitive {
 	color: rgba(219, 219, 219, 0.45);
 	background-color: #404040;
 	border-color: 1px solid #313440;
-	box-shadow: inset 0 2px 4px rgba(66, 68, 74, 0.05);
+	box-shadow: inset 0 2px 4px rgba(70, 70, 70, 0.05);
 }
 StEntry StIcon.capslock-warning {
 
@@ -1554,18 +1554,20 @@ StScrollBar StButton#hhandle:active {
 
 	padding: 4px;
 	color: #f5f5f5;
-	border-image: url("assets/misc/message.svg") 9 9 9 9;
+	background-color: #323232;
+	border: 1px solid #232323;
 }
 .message:hover,
 .message:focus {
 
 	color: #f5f5f5;
-	border-image: url("assets/misc/message-hover.svg") 9 9 9 9;
+	background-color: #353535;
 }
 .message:active {
 
 	color: #ffffff;
-	border-image: url("assets/misc/message-active.svg") 9 9 9 9;
+	background-color: #575757;
+	border: 1px solid #999999;
 }
 .message-icon-bin {
 
@@ -2228,9 +2230,9 @@ StScrollBar StButton#hhandle:active {
 	margin: 5px;
 	padding: 10px;
 	color: #f5f5f5;
-	background-color: transparent;
-	border: 1px solid transparent;
-	border-image: url("assets/menu/menu.svg") 9 9 9 9;
+	background-color: #373737;
+	border: 1px solid #232323;
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
 }
 .notification-banner .notification-icon,
 .notification-banner:hover .notification-icon,
@@ -2629,7 +2631,7 @@ StScrollBar StButton#hhandle:active {
 
 	text-shadow: 0 1px rgba(74, 74, 74, 0);
 	color: rgba(219, 219, 219, 0.45);
-	border: 1px solid rgba(43, 46, 57, 0.55);
+	border: 1px solid rgba(47, 47, 47, 0.55);
 	background-color: rgba(79, 79, 79, 0.55);
 	box-shadow: inset 0 1px rgba(79, 79, 79, 0.05);
 }
