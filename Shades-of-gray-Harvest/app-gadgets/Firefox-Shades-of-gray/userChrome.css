@@ -208,7 +208,7 @@ button.browser-style.default.pressed {
 .search-setting-button[selected] {
 
 	color: var(--base_fg_selected) !important;
-	background-color: var(--button_bg_active) !important;
+	background-color: var(--button_bg_hover) !important;
 }
 /* Firefox Megabar (prospective 71+) */
 #urlbar .search-one-offs:not([hidden]) {
