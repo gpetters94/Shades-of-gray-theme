@@ -74,6 +74,7 @@
 	--panel-separator-color: #323232 !important;
 
 	/* Popup menus */
+	--arrowpanel-background: #404040 !important;
 	--arrowpanel-dimmed: rgba(128, 128, 128, 0.6) !important;
 	--arrowpanel-dimmed-further: rgba(140, 140, 140, 0.6) !important;
 	--arrowpanel-dimmed-even-further: rgba(140, 140, 140, 0.9) !important;
@@ -145,7 +146,6 @@ button.browser-style.default.pressed {
 /*********** urlbar, searchbar ************/
 /******************************************/
 
-#urlbar,
 /* FF 60 ESR */
 .searchbar-textbox,
 /* > FF 60 ESR up to 71+ */
