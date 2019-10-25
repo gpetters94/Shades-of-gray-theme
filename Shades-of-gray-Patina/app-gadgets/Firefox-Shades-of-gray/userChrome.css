@@ -430,6 +430,10 @@ menupopup#BMB_bookmarksPopup > menu > menupopup > hbox {
 	color: var(--base_fg) !important;
 	background: var(--base_bg) !important;
 }
+#BMB_bookmarksPopup .subviewbutton > .menu-iconic-left {
+
+	color: #cacaca !important;
+}
 .panel-subview-footer,[class^="PanelUI-"],
 #PopupAutoCompleteRichResult .autocomplete-richlistbox {
 
