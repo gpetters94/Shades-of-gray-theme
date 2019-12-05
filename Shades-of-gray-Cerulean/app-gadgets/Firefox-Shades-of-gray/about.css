@@ -2,7 +2,7 @@
    Name: Shades of gray
    Author: WernerFP
    License: GPL-3.0+
-   Last change: 2019-10-07
+   Last change: 2019-12-05
 *************************************************
 Theme customization for Firefox "about:" pages
 Import this file in userContent.css:
@@ -1074,6 +1074,7 @@ Import this file in userContent.css:
 @-moz-document url-prefix(about:protections) {
 
 /* FF 69+ - advertising buttons more unobtrusive */
+	#manage-protections,
 	.card-header > button,
 	#get-proxy-extension-link,
 	#open-about-logins-button,
@@ -1084,6 +1085,7 @@ Import this file in userContent.css:
 		box-shadow: none !important;
 		font-size: 0.85em !important;
 	}
+	#manage-protections:hover,
 	.card-header > button:hover,
 	#get-proxy-extension-link:hover,
 	#open-about-logins-button:hover,

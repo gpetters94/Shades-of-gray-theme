@@ -4,10 +4,10 @@
 	 Name: Shades of gray Firefox userChrome.css
 	 Author: WernerFP
 	 License: GPL-3.0+
-	 Last change: 2019-10-07
+	 Last change: 2019-12-05
 ***********************************************/
 
-:root {
+*|*:root {
 
 	/****** Shades of gray theme colors ******/
 
@@ -87,6 +87,9 @@
 	--preference-selected-color: var(--button_bg) !important;
 	--preference-unselected-color: var(--button_bg_hover) !important;
 	--preference-active-color: var(--button_bg_active) !important;
+	--in-content-primary-button-background: var(--button_bg) !important;
+	--in-content-primary-button-background-hover: var(--button_bg_hover) !important;
+	--in-content-primary-button-background-active: var(--button_bg_active) !important;
 	--selected-fill-color: var(--button_bg) !important;
 	--chrome-selection-background-color: var(--base_bg_active) !important;
 
@@ -117,7 +120,7 @@
 	--cfr-active-color: transparent !important;
 }
 
-:root[lwt-popup-brighttext] panel .text-link {
+*|*:root[lwt-popup-brighttext] panel .text-link {
 
 	color: var(--link_fg_color) !important;
 }
@@ -208,7 +211,7 @@ button.browser-style.default.pressed {
 .search-setting-button[selected] {
 
 	color: var(--base_fg_selected) !important;
-	background-color: var(--button_bg_hover) !important;
+	background-color: var(--button_bg_hover) !important
 }
 /* Firefox Megabar (prospective 71+) */
 #urlbar .search-one-offs:not([hidden]) {
@@ -221,11 +224,36 @@ button.browser-style.default.pressed {
 /************* Identity popup *************/
 /******************************************/
 
+.panel-arrow {
+/* FIXME more specific if side effects */
+	fill: #404040 !important;
+}
+#protections-popup-mainView,
+#protections-popup-cookiesView,
+#protections-popup-cookiesView,
+#protections-popup-cookiesView-list,
+#protections-popup-trackersView,
+#protections-popup-fingerprintersView,
+#protections-popup-siteNotWorkingView,
 #identity-popup-mainView,
 #identity-popup-cookiesView,
 #identity-popup-trackersView {
 
 	background-color: var(--base_bg) !important;
+}
+#protections-popup-info-button:hover,
+#protections-popup-info-button:-moz-focusring {
+
+	outline-color: var(--button_bg_hover);
+	background-color: var(--button_bg_hover);
+}
+.protections-popup-tp-switch[enabled] {
+
+	background-color: var(--button_bg_hover) !important;
+}
+.protections-popup-tp-switch:hover {
+
+	background-color: var(--button_bg_active) !important;
 }
 #identity-popup-securityView-footer,
 #identity-popup-clear-sitedata-button {
@@ -252,6 +280,7 @@ button.browser-style.default.pressed {
 #identity-popup-more-info:hover:active {
 
 	background-color: var(--button_bg_active) !important;
+	background-color: rgba(140, 140, 140, 0.9) !important;
 }
 #identity-popup-trackersView-strict-info{
 
@@ -266,8 +295,8 @@ button.browser-style.default.pressed {
 	max-width: 160px !important;
 }
 /* Indicator color for validated sites */
-:root[lwt-popup-brighttext] .identity-popup-connection-secure,
-:root[lwt-toolbar-field-brighttext] #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity > #identity-icon-labels {
+*|*:root[lwt-popup-brighttext] .identity-popup-connection-secure,
+*|*:root[lwt-toolbar-field-brighttext] #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity > #identity-icon-labels {
 
 	color: #84c184 !important;
 }
@@ -443,17 +472,20 @@ menupopup#BMB_bookmarksPopup > menu > menupopup > hbox {
 
 .popup-notification-button[default][highlight="true"]:not([disabled]) {
 
-	background-color: var(--button_bg) !important;
+	/*background-color: var(--button_bg) !important;*/
+	background-color: rgba(140, 140, 140, 0.4) !important;
 	box-shadow: inset 0px 0px 1px 1px rgba(255 ,255, 255, 0.5) !important;
 }
 .popup-notification-button[default][highlight="true"]:hover:not([disabled]) {
 
-	background-color: var(--button_bg_hover) !important;
+	/*background-color: var(--button_bg_hover) !important;*/
+	background-color: rgba(140, 140, 140, 0.6) !important;
 	box-shadow: inset 0px 0px 1px 1px rgba(255 ,255, 255, 0.5) !important;
 }
 .popup-notification-button[default][highlight="true"]:hover:active:not([disabled]) {
 
-	background-color: var(--button_bg_active) !important;
+	/*background-color: var(--button_bg_active) !important;*/
+	background-color: rgba(140, 140, 140, 0.9) !important;
 	box-shadow: inset 0px 0px 1px 1px rgba(255 ,255, 255, 0.5) !important;
 }
 
@@ -462,14 +494,16 @@ menupopup#BMB_bookmarksPopup > menu > menupopup > hbox {
 .downloadsPanelFooterButton[default]:hover,
 #BMB_bookmarksPopup .subviewbutton.panel-subview-footer:hover {
 
-	background-color: var(--button_bg_hover) !important;
+	/*background-color: var(--button_bg_hover) !important;*/
+	background-color: rgba(140, 140, 140, 0.6) !important;
 }
 .panel-subview-footer:hover:active,
 .downloadsPanelFooterButton:hover:active,
 .downloadsPanelFooterButton[default]:hover:active,
 #BMB_bookmarksPopup .subviewbutton.panel-subview-footer:hover:active {
 
-	background-color: var(--button_bg_active) !important;
+	/*background-color: var(--button_bg_active) !important;*/
+	background-color: rgba(140, 140, 140, 0.9) !important;
 }
 /* Default at least! */
 .panel-subview-footer,
@@ -477,7 +511,8 @@ menupopup#BMB_bookmarksPopup > menu > menupopup > hbox {
 .downloadsPanelFooterButton[default],
 #BMB_bookmarksPopup .subviewbutton.panel-subview-footer {
 
-	background-color: var(--button_bg) !important;
+	/*background-color: var(--button_bg) !important;*/
+	background-color: rgba(140, 140, 140, 0.4) !important;
 }
 
 #emptyDownloads {
