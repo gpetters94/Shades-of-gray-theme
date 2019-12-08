@@ -4,7 +4,7 @@
 	 Name: Shades of gray Firefox userChrome.css
 	 Author: WernerFP
 	 License: GPL-3.0+
-	 Last change: 2019-12-05
+	 Last change: 2019-12-08
 ***********************************************/
 
 *|*:root {
@@ -172,6 +172,20 @@ button.browser-style.default.pressed {
 }
 
 /******************************************/
+/**************** megabar *****************/
+/******************************************/
+
+/* NOTE: status of adjustments FF 73 Nightly */
+.megabar {
+
+	font-size: inherit !important;
+}
+.urlbarView-row {
+
+	padding-block-start: 0px !important;
+}
+
+/******************************************/
 /************* search panel ***************/
 /******************************************/
 
@@ -228,32 +242,11 @@ button.browser-style.default.pressed {
 /* FIXME more specific if side effects */
 	fill: #404040 !important;
 }
-#protections-popup-mainView,
-#protections-popup-cookiesView,
-#protections-popup-cookiesView,
-#protections-popup-cookiesView-list,
-#protections-popup-trackersView,
-#protections-popup-fingerprintersView,
-#protections-popup-siteNotWorkingView,
 #identity-popup-mainView,
 #identity-popup-cookiesView,
 #identity-popup-trackersView {
 
 	background-color: var(--base_bg) !important;
-}
-#protections-popup-info-button:hover,
-#protections-popup-info-button:-moz-focusring {
-
-	outline-color: var(--button_bg_hover);
-	background-color: var(--button_bg_hover);
-}
-.protections-popup-tp-switch[enabled] {
-
-	background-color: var(--button_bg_hover) !important;
-}
-.protections-popup-tp-switch:hover {
-
-	background-color: var(--button_bg_active) !important;
 }
 #identity-popup-securityView-footer,
 #identity-popup-clear-sitedata-button {
@@ -315,7 +308,14 @@ button.browser-style.default.pressed {
 /******************************************/
 /*********** Protections popup ************/
 /******************************************/
-/* Firefox 70+ */
+
+#protections-popup-mainView,
+#protections-popup-cookiesView,
+#protections-popup-cookiesView,
+#protections-popup-cookiesView-list,
+#protections-popup-trackersView,
+#protections-popup-fingerprintersView,
+#protections-popup-siteNotWorkingView,
 .protections-popup-section,
 #protections-popup-footer,
 #protections-popup-siteNotWorkingView-header,
@@ -328,15 +328,30 @@ button.browser-style.default.pressed {
 
 	background-color: var(--base_bg) !important;
 }
+#protections-popup-info-button:hover,
+#protections-popup-info-button:-moz-focusring {
+
+	outline-color: var(--button_bg_hover);
+	background-color: var(--button_bg_hover);
+}
+.protections-popup-tp-switch[enabled] {
+
+	background-color: var(--button_bg_hover) !important;
+}
+.protections-popup-tp-switch:hover {
+
+	background-color: var(--button_bg_active) !important;
+}
 .protections-popup-description,
 #protections-popup-sendReportView-heading > description {
 
 	background-color: rgba(69, 161, 255, 0.2) !important;
 }
-/* Garish colors of mozilla advertising neutralized:; */
+/* Garish colors of mozilla advertising softened: */
 #protections-popup-mainView-panel-header {
 
-	background: var(--base_bg) !important;
+	background: radial-gradient(circle farthest-side at top right, #a28ad1, #396eb8) !important;
+	filter: grayscale(30%) !important;
 }
 #protections-popup > .panel-arrowcontainer > .panel-arrowbox > .panel-arrow {
 
