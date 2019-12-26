@@ -80,7 +80,7 @@ style "theme-panel-text" {
 		text_shade = 0.2
 	}
 }
-
+2
 style "panel-entry" {
 
 	fg[NORMAL] = @text_color
@@ -101,9 +101,15 @@ style "theme-main-menu-text" = "theme-panel-text" {
 	fg[PRELIGHT] = @selected_fg_color
 	text[PRELIGHT] = @selected_fg_color
 }
+# Xfce4 up to version 4.12
+style "workspace-switcher" {
 
-style "workspace-switcher" = "theme-panel" {
-	bg[SELECTED] = "#4b4b4b"
+	fg[NORMAL] = @insensitive_fg_color
+	fg[PRELIGHT] = @text_color
+	fg[SELECTED] = @selected_fg_color
+	bg[NORMAL] = "#424242"
+	bg[PRELIGHT] = "#626262"
+	bg[SELECTED] = @selected_bg_color
 }
 
 style "indicator" = "theme-panel" {
