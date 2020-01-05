@@ -80,7 +80,7 @@ style "theme-panel-text" {
 		text_shade = 0.2
 	}
 }
-2
+
 style "panel-entry" {
 
 	fg[NORMAL] = @text_color
