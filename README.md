@@ -118,7 +118,7 @@ To use them in *Inkscape*, the file must be stored in this directory:
 
 > **Note:** not all symbols can be customized because Inkscape is partly using standard GTK symbols ([&#x1f41e;](https://bugs.launchpad.net/inkscape/+bug/789804)).
 
-### Goldendict
+### GoldenDict
 
 The file `qt-style.css` in folder `GoldenDict` improves the appearance of sidebars in *GoldenDict*.
 
