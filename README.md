@@ -20,6 +20,7 @@ The following description with further information is part of the file `Shades-o
   - [Thunderbird](#thunderbird)
   - [Firefox](#firefox)
   - [Inkscape](#inkscape)
+  - [GoldenDict](#goldendict)
   - [Syntax Highlighting](#syntax-highlighting)
 - [Requirements](#requirements)
 - [License](#license)
@@ -116,6 +117,12 @@ To use them in *Inkscape*, the file must be stored in this directory:
 `~/.config/inkscape/icons/icons.svg`
 
 > **Note:** not all symbols can be customized because Inkscape is partly using standard GTK symbols ([&#x1f41e;](https://bugs.launchpad.net/inkscape/+bug/789804)).
+
+### Goldendict
+
+The file `qt-style.css` in folder `GoldenDict` improves the appearance of sidebars in *GoldenDict*.
+
+To use them, open *GoldenDict* menu "*Help → Configuration folder*". A new folder will open with a path like this: `~/home/account_name/.goldendict/`. Copy the file `qt-style.css` into this folder.
 
 ### Syntax Highlighting
 
