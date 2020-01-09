@@ -194,6 +194,7 @@
 							<li><a href="#Gedit">Gedit, Pluma, Xed, Mousepad</a></li>
 							<li><a href="#Vim">Vim, GVim</a></li>
 						</ul>
+					<li><a href="#GoldenDict">GoldenDict</a></li>
 				</ul>
 			<li><a href="#Requirements">Requirements</a></li>
 			<li><a href="#License">License</a></li>
@@ -208,6 +209,7 @@
 					<li><a href="#firefox_issues">Firefox customization issues</a></li>
 					<li><a href="#Th_unread_messages">Font color of unread messages in Thunderbird</a></li>
 					<li><a href="#Th_calendar_issues">Thunderbird 68 Calendar issues</a></li>
+					<li><a href="#xfce4-desktop-icons">In Xfce4 names of desktop icons are misaligned</a></li>
 				</ul>
 		</ol>
 
@@ -365,6 +367,13 @@
 
 	<hr>
 
+		<h3 id="GoldenDict">&#8226; GoldenDict</h3>
+
+		<p>The file <code>qt-style.css</code> in folder <code>GoldenDict</code> improves the appearance of sidebars in GoldenDict.</p>
+		<p>To use them, open GoldenDict menu "<i>Help → Configuration folder</i>". A new folder will open with a path like this: <code>~/home/account_name/.goldendict/</code>. Copy the file <code>qt-style.css</code> into this folder.</p>
+
+	<hr>
+
 		<h3 id="Syntax">Syntax Highlighting</h3>
 
 		<p>Shades-of-gray includes the syntax color scheme Shades-of-pastel for several editors. By using pastel colors on dark background like pastel chalks on a blackboard the Shades-of-pastel scheme provides balanced and easy on eyes contrasts.</p>
@@ -411,8 +420,6 @@
 
 		<p>Turn on syntax highlighting (<code>syntax on</code>) in your configuration file (<code>~/.vimrc</code>) and append the line <code>colorscheme shades-of-pastel</code> if you want to use the Shades-of-Pastel scheme by default.</p>
 
-	<hr>
-
 		<h2 id="Requirements">Requirements</h2>
 
 		<ul>
@@ -431,6 +438,19 @@
 	<hr>
 
 		<h2 id="Changelog">Changelogs</h2>
+
+		<h4 id="1.2.1">1.2.1</h4>
+
+		<ul class="version">
+			<li>Gnome Shell 3.34: shadows notification bar fixed (gnome-shell.css)</li>
+			<li>Xfce 4.12 and 4.14: selected workspace-switcher color adjusted</li>
+			<li>GoldenDict: new - customisations added (qt-style.css)</li>
+			<li>Firefox: search button hover color correction (userChrome.css)</li>
+			<li>Firefox: arrowpanel-background variable added (userChrome.css)</li>
+			<li>Firefox: bookmark menu default icons contrast reduced (userChrome.css)</li>
+			<li>Firefox: adjustments protection-popup and megabar (userChrome.css)</li>
+			<li>Firefox: updates up to 72 and 73 (userChrome.css, userContent.css, about.css)</li>
+		</ul>
 
 		<h4 id="1.2.0">1.2.0</h4>
 
@@ -751,6 +771,22 @@
 			thunderbird & disown
 
 		</code></div>
+
+		<hr>
+
+		<h4 id="xfce4-desktop-icons">In Xfce4 names of desktop icons are misaligned</h4>
+
+		<blockquote>
+			<p>In Xfce4 the names of desktop icons are misaligned. Can this problem be solved?</p>
+		</blockquote>
+
+		<p>The icon text align is controlled by <i>Xfce4</i> via <i>xfconf</i>. You can change the relevant property with this terminal command:</p>
+
+		<div><code>
+			xfconf-query -c xfce4-desktop -p /desktop-icons/center-text -n -t bool -s false
+		</code></div>
+
+		<p>This should solve the problem.</p>
 
 	<hr>
 
