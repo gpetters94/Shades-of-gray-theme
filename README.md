@@ -2,10 +2,10 @@
 
 Shades-of-gray is a flat dark GTK-theme with ergonomic contrasts. It supports *Gnome*, *Cinnamon*, *Xfce4*, *Mate* and *Openbox*.
 Theme customizations for *Firefox*, *Thunderbird* and *Inkscape* are additionally included.
-Shades-of-gray is available in seven color variants:
+Shades-of-gray is available in 8 color variants:
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/22373662/52785146-9153ff80-3057-11e9-9d0a-a285ffc32732.png" width="60%"></img></br><i>Gray, Arch, Cerulean, Firebrick, Harvest, Orient, Patina</i>
+<img src="https://user-images.githubusercontent.com/22373662/81475462-a7298380-920c-11ea-94fe-d90587ebec28.png" width="60%"></img></br><i>Gray, Arch, Cerulean, Firebrick, Harvest, Orient, Patina</i>
 </p>
 
 The following description with further information is part of the file `Shades-of-gray-Readme.html`, contained in the Shades-of-gray theme folder.
@@ -111,12 +111,14 @@ To use the customizations for *Firefox* you can copy the contents of directory `
 
 ### Inkscape
 
-Original colored icons in *Inkscape* are hard to identify in dark themes. The file `icon.svg` in folder `Inkscape-icons` contains bright icons.
+Original colored icons in older versions of *Inkscape* are hard to identify in dark themes. The file `icon.svg` in folder `Inkscape-icons` contains bright icons.
 To use them in *Inkscape*, the file must be stored in this directory:
 
 `~/.config/inkscape/icons/icons.svg`
 
 > **Note:** not all symbols can be customized because Inkscape is partly using standard GTK symbols ([&#x1f41e;](https://bugs.launchpad.net/inkscape/+bug/789804)).
+
+As of version 1.0 of Inkscape, this is obsolete.
 
 ### GoldenDict
 
