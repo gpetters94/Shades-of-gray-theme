@@ -177,7 +177,7 @@ GNU General Public License v3.0
 
 ## Screenshots
 
-Cinnamon Patina, Gnome Gray,</br>
+Cinnamon Mint, Gnome Gray,</br>
 Openbox Arch, Xfce4 Cerulean
 <p align="center">
 <img src="https://user-images.githubusercontent.com/22373662/81479858-49a23080-9226-11ea-9372-382aa28fa654.jpg" width="45%"></img>  <img src="https://user-images.githubusercontent.com/22373662/52785560-91083400-3058-11e9-93d0-f9fbae247833.jpg" width="45%"></img>  <img src="https://user-images.githubusercontent.com/22373662/52785587-9e252300-3058-11e9-8231-34429b392dbf.jpg" width="45%"></img>  <img src="https://user-images.githubusercontent.com/22373662/52785477-628a5900-3058-11e9-803f-9c75bc6535b0.jpg" width="45%"></img>
