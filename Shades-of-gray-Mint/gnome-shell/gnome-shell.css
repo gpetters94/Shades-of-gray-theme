@@ -89,7 +89,7 @@ StEntry,
 .popup-menu-item.selected {
 
 	/* Shades of gray */
-	background-color: #787878;
+	/*background-color: #787878;*/
 
 	/* Orient blue */
 	/*background-color: #1B779E;*/
@@ -110,7 +110,7 @@ StEntry,
 	/*background-color: #AD8641;*/
 
 	/* Mint */
-	/*background-color: #6F8756;*/
+	background-color: #6F8756;
 }
 
 /******************************************/
