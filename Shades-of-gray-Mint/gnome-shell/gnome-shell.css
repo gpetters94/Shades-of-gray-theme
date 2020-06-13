@@ -1363,6 +1363,7 @@ StScrollBar StButton#hhandle:active {
 
 	padding: 7px 10px 7px 10px;
 	border: 1px solid rgba(74, 74, 74, 0);
+	background-color: #323232;
 }
 
 .weather-button:hover,
