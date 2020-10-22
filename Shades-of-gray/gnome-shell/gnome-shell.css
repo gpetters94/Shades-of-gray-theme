@@ -362,14 +362,16 @@ StScrollBar StButton#hhandle:active {
 .modal-dialog {
 
 	color: #f5f5f5;
-	background-color: rgba(56, 60, 74, 0);
-	border: none;
-	border-image: url("assets/misc/modal.svg") 9 9 9 67;
-	padding: 0 5px 6px 5px;
+	background-color: #373737;
+	border: 1px solid #191919;
+	border-radius: 3px;
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+	padding: 0;
 }
 .modal-dialog .modal-dialog-content-box {
 
-	padding: 20px 10px 10px 10px;
+	margin: 0;
+	padding: 15px 35px;
 }
 .modal-dialog-linked-button {
 
@@ -426,6 +428,94 @@ StScrollBar StButton#hhandle:active {
 .modal-dialog .run-dialog-label {
 
 	font-size: 0;
+}
+.show-processes-dialog-subject,
+.mount-question-dialog-subject,
+.end-session-dialog-subject {
+
+	font-size: 11pt;
+	font-weight: 600;
+	color: #f5f5f5;
+}
+
+.nm-dialog-content,
+.modal-dialog .modal-dialog-content-box {
+
+	background-color: #373737;
+}
+
+.message-dialog-content {
+
+	spacing: 18px;
+}
+.message-dialog-content .message-dialog-title {
+
+	text-align: center;
+	font-size: 14pt;
+	font-weight: 600;
+}
+.message-dialog-content .message-dialog-title.lightweight {
+
+	font-size: 14pt;
+	font-weight: 600;
+}
+.message-dialog-content .message-dialog-description {
+
+	text-align: center;
+}
+
+.run-dialog .modal-dialog-content-box {
+
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 12px;
+	padding-bottom: 14px; }
+
+.run-dialog .message-dialog-title {
+
+	font-size: 0;
+}
+.run-dialog-entry {
+
+	width: 21em;
+	height: 1.35em;
+}
+.run-dialog-description {
+
+	font-size: 10pt;
+	text-align: center;
+	color: #cccccc;
+}
+
+.dialog-list {
+
+	spacing: 18px;
+}
+.dialog-list .dialog-list-title {
+
+	text-align: center;
+	font-weight: 600;
+}
+.dialog-list .dialog-list-scrollview {
+
+	max-height: 200px;
+}
+.dialog-list .dialog-list-box {
+
+	spacing: 1em;
+}
+.dialog-list .dialog-list-box .dialog-list-item {
+
+	spacing: 1em;
+}
+.dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-title {
+
+	font-weight: 600;
+}
+.dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
+
+	color: #cccccc;
+	font-size: 10pt;
 }
 
 .show-processes-dialog-subject,
