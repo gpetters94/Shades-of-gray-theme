@@ -12,7 +12,7 @@
 	/****** Shades of gray theme colors ******/
 
 	/* Shades of gray: */
-	--base_bg_selected: #787878;
+	/*--base_bg_selected: #787878;*/
 
 	/* Orient blue: */
 	/*--base_bg_selected: #1B779E;*/
@@ -21,7 +21,7 @@
 	/*--base_bg_selected: #6484a4;*/
 
 	/* Arch blue: */
-	/*--base_bg_selected: #1F77B7;*/
+	--base_bg_selected: #1F77B7;
 
 	/* Patina green: */
 	/*--base_bg_selected: #3c7460;*/
@@ -31,6 +31,9 @@
 
 	/* Harvest: */
 	/*--base_bg_selected: #AD8641;*/
+
+	/* Mint: */
+	/*--base_bg_selected: #6F8756;*/
 
 	/*****************************************/
 
