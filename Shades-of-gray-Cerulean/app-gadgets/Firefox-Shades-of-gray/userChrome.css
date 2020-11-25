@@ -4,7 +4,7 @@
 	 Name: Shades of gray Firefox userChrome.css
 	 Author: WernerFP
 	 License: GPL-3.0+
-	 Last change: 2019-12-08
+	 Last change: 2020-11-25
 ***********************************************/
 
 *|*:root {
@@ -12,13 +12,13 @@
 	/****** Shades of gray theme colors ******/
 
 	/* Shades of gray: */
-	/*--base_bg_selected: #787878;*/
+	--base_bg_selected: #787878;
 
 	/* Orient blue: */
 	/*--base_bg_selected: #1B779E;*/
 
 	/* Cerulean blue:; */
-	--base_bg_selected: #6484a4;
+	/*--base_bg_selected: #6484a4;*/
 
 	/* Arch blue: */
 	/*--base_bg_selected: #1F77B7;*/
@@ -472,7 +472,7 @@ menupopup#BMB_bookmarksPopup > menu > menupopup > hbox {
 
 	border: 1px solid  var(--borders) !important;
 	color: var(--base_fg) !important;
-	background: var(--base_bg) !important;
+	background: #404040 !important;
 }
 #BMB_bookmarksPopup .subviewbutton > .menu-iconic-left {
 
@@ -482,7 +482,7 @@ menupopup#BMB_bookmarksPopup > menu > menupopup > hbox {
 #PopupAutoCompleteRichResult .autocomplete-richlistbox {
 
 	color: var(--base_fg) !important;
-	background: var(--base_bg) !important;
+	background: #404040 !important;
 }
 
 .popup-notification-button[default][highlight="true"]:not([disabled]) {
