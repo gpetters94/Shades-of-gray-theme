@@ -25,9 +25,11 @@ License: GPL-3.0+
 	/* Patina green */
 	/*selection-background-color: #3c7460;*/
 	/* Firebrick */
-	/*selection-background-color: #c14e4e;*/
+	selection-background-color: #c14e4e;
 	/* Harvest */
 	/*selection-background-color: #AD8641;*/
+	/* Mint */
+	/*selection-background-color: #6F8756;*/
 }
 .menu .popup-menu-item:active,
 .window-list-item-box .progress,
@@ -47,9 +49,11 @@ License: GPL-3.0+
 	/* Patina green */
 	/*background-color: #3c7460;*/
 	/* Firebrick */
-	/*background-color: #c14e4e;*/
+	background-color: #c14e4e;
 	/* Harvest */
 	/*background-color: #AD8641;*/
+	/* Mint */
+	/*background-color: #6F8756;*/
 }
 .window-list-item-box:active,
 .window-list-item-box:checked,
@@ -70,11 +74,12 @@ License: GPL-3.0+
 	/* Patina green */
 	/*border-color: #3c7460;*/
 	/* Firebrick */
-	/*border-color: #c14e4e;*/
+	border-color: #c14e4e;
 	/* Harvest */
 	/*border-color: #AD8641;*/
+	/* Mint */
+	/*border-color: #6F8756;*/
 }
-
 /******************************************/
 
 stage {

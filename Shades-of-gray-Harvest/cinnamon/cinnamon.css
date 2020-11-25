@@ -28,6 +28,8 @@ License: GPL-3.0+
 	/*selection-background-color: #c14e4e;*/
 	/* Harvest */
 	selection-background-color: #AD8641;
+	/* Mint */
+	/*selection-background-color: #6F8756;*/
 }
 .menu .popup-menu-item:active,
 .window-list-item-box .progress,
@@ -50,6 +52,8 @@ License: GPL-3.0+
 	/*background-color: #c14e4e;*/
 	/* Harvest */
 	background-color: #AD8641;
+	/* Mint */
+	/*background-color: #6F8756;*/
 }
 .window-list-item-box:active,
 .window-list-item-box:checked,
@@ -73,6 +77,8 @@ License: GPL-3.0+
 	/*border-color: #c14e4e;*/
 	/* Harvest */
 	border-color: #AD8641;
+	/* Mint */
+	/*border-color: #6F8756;*/
 }
 
 /******************************************/

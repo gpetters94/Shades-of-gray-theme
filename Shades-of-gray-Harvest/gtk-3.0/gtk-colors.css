@@ -30,6 +30,8 @@ License: GPL-3.0+
 /* Harvest */
 @define-color theme_selected_bg_color #AD8641;
 
+/* Mint */
+/*@define-color theme_selected_bg_color #6F8756;*/
 
 /******************************************/
 /*********** Window Manager ***************/
