@@ -1,3 +1,5 @@
+**Note:** *I have archived the repository on 02/15/2021 because I cannot currently give Shades-of-gray the attention it needs.*
+
 # Shades-of-gray
 
 Shades-of-gray is a flat dark GTK-theme with ergonomic contrasts. It supports *Gnome*, *Cinnamon*, *Xfce4*, *Mate* and *Openbox*.
