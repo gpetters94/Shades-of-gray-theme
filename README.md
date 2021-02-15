@@ -1,4 +1,4 @@
-**Note:** *I have archived the repository on 02/15/2021 because I cannot currently give Shades-of-gray the attention it needs.*
+**Note:** *I archived the repository on 02/15/2021 because I can't give it the attention it needs right now.*
 
 # Shades-of-gray
 
